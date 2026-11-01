@@ -1,0 +1,8 @@
+pandas
+numpy
+scipy
+pulp
+scikit-learn
+scgraph
+matplotlib
+jupyter
