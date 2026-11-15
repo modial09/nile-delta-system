@@ -1,0 +1,330 @@
+============================================================================
+NILE DELTA ALLOCATION MODEL VERSION 4
+Margin basis on every table: forecast prices at the 2024 level
+with official 2022 costs, pounds. Winter potato cost is the
+summer potato cost of 86657.14 pounds per hectare, a stated
+assumption for a named gap (no winter potato cost exists).
+============================================================================
+Physical cultivated area total: 1,676,580 hectares
+Annual cropped area total (descriptor, never a constraint): 3,176,474 hectares
+
+Reserve table (construction stated in the code and the note):
+Governorate | physical | winter reserve | winter limit | summer reserve | summer limit | unmodeled annual
+Beheira | 387,541 | 182,686 | 204,855 | 167,931 | 219,610 | 350,617
+Sharkia | 375,274 | 140,487 | 234,787 | 129,230 | 246,044 | 269,717
+Dakahlia | 271,077 | 83,985 | 187,092 | 98,252 | 172,825 | 182,237
+Kafr El Sheikh | 228,118 | 76,772 | 151,346 | 67,719 | 160,399 | 144,491
+Gharbia | 159,439 | 79,331 | 80,108 | 87,980 | 71,458 | 167,312
+Menoufia | 141,087 | 51,055 | 90,033 | 66,251 | 74,837 | 117,305
+Qalyubia | 66,784 | 23,664 | 43,121 | 38,251 | 28,533 | 61,915
+Damietta | 47,260 | 28,030 | 19,230 | 27,922 | 19,338 | 55,952
+
+Yield fills for blank source cells (area weighted published mean):
+  Rice in Menoufia: 9.138 tonnes per hectare
+  Maize_nili in Kafr El Sheikh: 8.358 tonnes per hectare
+  Maize_nili in Menoufia: 8.358 tonnes per hectare
+  Maize_nili in Qalyubia: 8.358 tonnes per hectare
+  Maize_nili in Damietta: 8.358 tonnes per hectare
+  Potatoes_nili in Sharkia: 18.120 tonnes per hectare
+  Potatoes_nili in Dakahlia: 18.120 tonnes per hectare
+  Potatoes_nili in Kafr El Sheikh: 18.120 tonnes per hectare
+  Potatoes_nili in Gharbia: 18.120 tonnes per hectare
+  Potatoes_nili in Menoufia: 18.120 tonnes per hectare
+  Potatoes_nili in Qalyubia: 18.120 tonnes per hectare
+  Potatoes_nili in Damietta: 18.120 tonnes per hectare
+
+District yield scaling to the forecast national level (expected state):
+  Wheat: scale 0.9728
+  Sugar beet: scale 1.1354
+  Potatoes_winter: scale 1.1451
+  Rice: scale 0.9993
+  Maize_summer: scale 0.8743
+  Maize_nili: scale 0.9193
+  Potatoes_summer: scale 0.9639
+  Potatoes_nili: scale 1.7393
+
+Forecast prices (pounds per tonne) and yields (tonnes per hectare), with backtest errors:
+  price wheat: forecast 10,296.94 low 9,500.80 high 12,951.11 model drift RMSE 1,485.60 MAPE 14.61 percent
+  price rice_paddy: forecast 19,394.14 low 19,324.81 high 23,480.32 model drift RMSE 3,735.60 MAPE 14.47 percent
+  price maize: forecast 14,836.22 low 14,561.64 high 19,061.05 model drift RMSE 1,998.12 MAPE 15.64 percent
+  price sugar_beet: forecast 820.52 low 793.52 high 972.06 model drift RMSE 92.26 MAPE 10.21 percent
+  price potatoes: forecast 8,405.44 low 8,143.20 high 9,609.40 model drift RMSE 1,396.76 MAPE 19.52 percent
+  yield wheat: forecast 6.6789 low 6.4854 high 7.1477 model random_forest RMSE 0.3250 MAPE 4.05 percent
+  yield rice_paddy: forecast 9.1315 low 8.8217 high 9.3594 model naive_last RMSE 0.2696 MAPE 2.12 percent
+  yield maize: forecast 7.6834 low 7.3823 high 8.2055 model random_forest RMSE 0.6912 MAPE 6.16 percent
+  yield sugar_beet: forecast 56.0570 low 51.1310 high 59.5386 model random_forest RMSE 5.8925 MAPE 6.39 percent
+  yield potatoes: forecast 31.5165 low 30.3124 high 32.4186 model ridge RMSE 1.4879 MAPE 3.10 percent
+
+Costs 2022 (pounds per hectare, rent included):
+  Wheat: 37,742.86
+  Sugar beet: 39,454.76
+  Potatoes_winter: 86,657.14
+  Rice: 41,850.00
+  Maize_summer: 37,671.43
+  Maize_nili: 37,888.10
+  Potatoes_summer: 86,657.14
+  Potatoes_nili: 54,176.19
+
+Water duties, applied basis (cubic metres per hectare):
+  Wheat: 5,126
+  Sugar beet: 6,100
+  Potatoes_winter: 4,079
+  Rice: 16,600
+  Maize_summer: 9,305
+  Maize_nili: 7,433
+  Potatoes_summer: 6,145
+  Potatoes_nili: 6,145
+Sugar beet duty is the midpoint 6100 of the arbitrated range 5600 to 6600.
+Nili maize duty 7433 is printed in the water file source note.
+Nili potato duty uses the summer potato duty, a stated assumption.
+
+Inflow record: mean flow 91.935 billion cubic metres, 100 years
+Inflow states (budgets are the 11.00 calibration times the state ratio):
+  dry: ratio 0.7807 budget 8.588 BCM probability 0.2275 (count 23)
+  normal: ratio 0.9547 budget 10.502 BCM probability 0.4451 (count 45)
+  high: ratio 1.2213 budget 13.434 BCM probability 0.3165 (count 32)
+  drought: ratio 0.8709 budget 9.580 BCM probability 0.0110 (ten year windows 91, windows at or below this ratio 1)
+Drought probability construction: the share of ten year windows at or
+below the lowest window ratio, with the three single year state
+probabilities scaled by one minus that share so the four sum to one.
+Price and yield layer probabilities: low 0.25, expected 0.50, high 0.25,
+reading the forecast band as quartiles. Independence between the inflow
+layer and the price and yield layer is a named assumption.
+
+Reference tonnage (observed areas times published district yields): 12,254,407 tonnes
+  Wheat: 4,617,795 tonnes
+  Rice: 4,086,080 tonnes
+  Maize_summer: 3,550,533 tonnes
+
+WaPOR comparison (validation only, see the verdict in the note):
+Governorate | modeled baseline full applied demand (BCM) | WaPOR mean total consumption 2018 to 2025 (BCM)
+Beheira | 3.133 | 6.719
+Sharkia | 3.608 | 4.661
+Dakahlia | 3.461 | 3.731
+Kafr El Sheikh | 2.999 | 3.439
+Gharbia | 1.241 | 2.152
+Menoufia | 1.098 | 2.023
+Qalyubia | 0.434 | 0.935
+Damietta | 0.424 | 0.757
+Total | 16.398 | 24.416
+WaPOR values are total consumption over all surfaces per governorate,
+with no cropland mask. They are never presented as cropland consumption.
+The modeled figure covers the modeled crops only, on the applied basis,
+while WaPOR measures consumption over every surface. No efficiency or
+requirement scalar is derived from this comparison: direct calibration
+is not defensible on these two bases, so WaPOR is used as validation only.
+The modeled baseline demand sits below the WaPOR total in every
+governorate, which is the order the two definitions require.
+
+FRONTIER primary, no caps caps=False
+Level percent | status | expected margin EGP | cost vs unconstrained EGP | cost vs next lower level EGP
+0 | Optimal | 429,588,780,373 | 0 | 0 | seconds 0
+    expected staple tonnes 0 | minimum scenario staple tonnes 0
+    planted (probability weighted for summer): Wheat 0 ha | Sugar beet 0 ha | Potatoes_winter 1,010,570 ha | Rice 0 ha | Maize_summer 0 ha | Maize_nili 0 ha | Potatoes_summer 395,289 ha | Potatoes_nili 501,555 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 1,010,570 hectares is 16.72 times its observed area of 60,449 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 395,289 hectares is 9.79 times its observed area of 40,378 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 501,555 hectares is 953.82 times its observed area of 526 hectares. The fixed price stops being credible at this scale.
+50 | Optimal | 290,166,264,371 | 139,422,516,002 | 139,422,516,002 | seconds 6
+    expected staple tonnes 6,278,372 | minimum scenario staple tonnes 6,127,204
+    planted (probability weighted for summer): Wheat 437,346 ha | Sugar beet 0 ha | Potatoes_winter 573,225 ha | Rice 70,169 ha | Maize_summer 356,106 ha | Maize_nili 0 ha | Potatoes_summer 235,100 ha | Potatoes_nili 109,379 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 573,225 hectares is 9.48 times its observed area of 60,449 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 235,100 hectares is 5.82 times its observed area of 40,378 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 109,379 hectares is 208.01 times its observed area of 526 hectares. The fixed price stops being credible at this scale.
+60 | Optimal | 243,671,396,588 | 185,917,383,785 | 46,494,867,783 | seconds 12
+    expected staple tonnes 7,505,158 | minimum scenario staple tonnes 7,352,644
+    planted (probability weighted for summer): Wheat 573,910 ha | Sugar beet 0 ha | Potatoes_winter 436,661 ha | Rice 50,903 ha | Maize_summer 426,268 ha | Maize_nili 0 ha | Potatoes_summer 226,682 ha | Potatoes_nili 54,716 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 436,661 hectares is 7.22 times its observed area of 60,449 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 226,682 hectares is 5.61 times its observed area of 40,378 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 54,716 hectares is 104.05 times its observed area of 526 hectares. The fixed price stops being credible at this scale.
+70 | Optimal | 194,764,695,263 | 234,824,085,110 | 48,906,701,325 | seconds 21
+    expected staple tonnes 8,758,488 | minimum scenario staple tonnes 8,578,085
+    planted (probability weighted for summer): Wheat 758,105 ha | Sugar beet 0 ha | Potatoes_winter 252,466 ha | Rice 44,415 ha | Maize_summer 427,124 ha | Maize_nili 0 ha | Potatoes_summer 219,888 ha | Potatoes_nili 57,338 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 252,466 hectares is 4.18 times its observed area of 60,449 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 219,888 hectares is 5.45 times its observed area of 40,378 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 57,338 hectares is 109.04 times its observed area of 526 hectares. The fixed price stops being credible at this scale.
+80 | Infeasible | none | none | none | seconds 0
+85 | Infeasible | none | none | none | seconds 0
+90 | Infeasible | none | none | none | seconds 0
+93 | Infeasible | none | none | none | seconds 0
+95 | Infeasible | none | none | none | seconds 0
+100 | Infeasible | none | none | none | seconds 0
+Feasible ceiling on this ladder: 70 percent
+CEILING primary, no caps: maximum held staple tonnage in every scenario 9,246,265 tonnes, which is 75.45 percent of the reference tonnage 12,254,407
+Robustness plan at floor 70 percent: status Optimal
+Robustness plan saved to data/processed/plan_v4_robust_plan.csv
+CEILING sugar beet duty 5,600: maximum held staple tonnage in every scenario 9,246,265 tonnes, which is 75.45 percent of the reference tonnage 12,254,407
+CEILING sugar beet duty 6,600: maximum held staple tonnage in every scenario 9,246,265 tonnes, which is 75.45 percent of the reference tonnage 12,254,407
+CEILING rice Ky 1.0 (primary carries 1.20, unverified): maximum held staple tonnage in every scenario 9,246,265 tonnes, which is 75.45 percent of the reference tonnage 12,254,407
+CEILING rice Ky 1.4 (primary carries 1.20, unverified): maximum held staple tonnage in every scenario 9,246,265 tonnes, which is 75.45 percent of the reference tonnage 12,254,407
+CEILING rescaled district yields (labelled sensitivity only): maximum held staple tonnage in every scenario 8,531,954 tonnes, which is 69.62 percent of the reference tonnage 12,254,407
+
+FRONTIER winter potatoes at the Nili cost 54176.19 (sensitivity; primary uses the summer cost) caps=False
+Level percent | status | expected margin EGP | cost vs unconstrained EGP | cost vs next lower level EGP
+0 | Optimal | 462,413,066,422 | 0 | 0 | seconds 0
+    expected staple tonnes 0 | minimum scenario staple tonnes 0
+    planted (probability weighted for summer): Wheat 0 ha | Sugar beet 0 ha | Potatoes_winter 1,010,570 ha | Rice 0 ha | Maize_summer 0 ha | Maize_nili 0 ha | Potatoes_summer 395,289 ha | Potatoes_nili 501,555 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 1,010,570 hectares is 16.72 times its observed area of 60,449 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 395,289 hectares is 9.79 times its observed area of 40,378 hectares. The fixed price stops being credible at this scale.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 501,555 hectares is 953.82 times its observed area of 526 hectares. The fixed price stops being credible at this scale.
+90 | Infeasible | none | none | none | seconds 0
+Feasible ceiling on this ladder: 0 percent
+
+WATER VALUES: LP relaxation duals at floor 75 percent
+These are marginal duals from the linear relaxation of the same
+formulation, labelled as LP relaxation duals. Raw dual is pounds per
+cubic metre of expected margin; conditional divides by the combined
+scenario probability.
+LP relaxation status: Optimal | objective 159,182,779,221
+Governorate | scenario | raw dual EGP per m3 | conditional EGP per m3
+Beheira | dry_low | 47.9217 | 842.68
+Sharkia | dry_low | 46.0627 | 809.99
+Dakahlia | dry_low | 52.3329 | 920.25
+Kafr El Sheikh | dry_low | 50.1864 | 882.50
+Gharbia | dry_low | 47.9603 | 843.36
+Menoufia | dry_low | 49.5861 | 871.95
+Qalyubia | dry_low | 44.2281 | 777.73
+Damietta | dry_low | 47.1945 | 829.89
+Beheira | dry_expected | 6.1545 | 54.11
+Sharkia | dry_expected | 5.9203 | 52.05
+Dakahlia | dry_expected | 5.7131 | 50.23
+Kafr El Sheikh | dry_expected | 6.4328 | 56.56
+Gharbia | dry_expected | 5.1224 | 45.04
+Menoufia | dry_expected | 5.3273 | 46.84
+Qalyubia | dry_expected | 5.7965 | 50.96
+Damietta | dry_expected | 5.0260 | 44.19
+Beheira | dry_high | 0.9574 | 16.84
+Sharkia | dry_high | 0.9210 | 16.20
+Dakahlia | dry_high | 0.9862 | 17.34
+Kafr El Sheikh | dry_high | 0.9445 | 16.61
+Gharbia | dry_high | 0.9401 | 16.53
+Menoufia | dry_high | 0.9720 | 17.09
+Qalyubia | dry_high | 0.9017 | 15.86
+Damietta | dry_high | 0.9251 | 16.27
+Beheira | normal_low | 4.4694 | 40.17
+Sharkia | normal_low | 5.0093 | 45.02
+Dakahlia | normal_low | 5.6640 | 50.91
+Kafr El Sheikh | normal_low | 4.9800 | 44.76
+Gharbia | normal_low | 4.4694 | 40.17
+Menoufia | normal_low | 4.6786 | 42.05
+Qalyubia | normal_low | 0.0000 | 0.00
+Damietta | normal_low | 1.6091 | 14.46
+Beheira | normal_expected | 9.2671 | 41.64
+Sharkia | normal_expected | 11.9966 | 53.91
+Dakahlia | normal_expected | 9.3804 | 42.15
+Kafr El Sheikh | normal_expected | 9.6861 | 43.53
+Gharbia | normal_expected | 8.3688 | 37.61
+Menoufia | normal_expected | 9.4082 | 42.28
+Qalyubia | normal_expected | 2.0616 | 9.26
+Damietta | normal_expected | 2.5771 | 11.58
+Beheira | normal_high | 1.8733 | 16.84
+Sharkia | normal_high | 2.1476 | 19.30
+Dakahlia | normal_high | 1.9296 | 17.34
+Kafr El Sheikh | normal_high | 1.8479 | 16.61
+Gharbia | normal_high | 1.8394 | 16.53
+Menoufia | normal_high | 1.9018 | 17.09
+Qalyubia | normal_high | 0.0000 | 0.00
+Damietta | normal_high | 1.2776 | 11.48
+Beheira | high_low | 0.8079 | 10.21
+Sharkia | high_low | 0.1840 | 2.33
+Dakahlia | high_low | 2.6799 | 33.87
+Kafr El Sheikh | high_low | 1.4596 | 18.45
+Gharbia | high_low | 3.1782 | 40.17
+Menoufia | high_low | 1.1712 | 14.80
+Qalyubia | high_low | 0.0000 | 0.00
+Damietta | high_low | 0.4288 | 5.42
+Beheira | high_expected | 1.6394 | 10.36
+Sharkia | high_expected | 1.2436 | 7.86
+Dakahlia | high_expected | 1.7656 | 11.16
+Kafr El Sheikh | high_expected | 1.7907 | 11.32
+Gharbia | high_expected | 0.0000 | 0.00
+Menoufia | high_expected | 1.6882 | 10.67
+Qalyubia | high_expected | 0.0000 | 0.00
+Damietta | high_expected | 1.5901 | 10.05
+Beheira | high_high | 1.0172 | 12.86
+Sharkia | high_high | 0.0000 | 0.00
+Dakahlia | high_high | 1.0955 | 13.85
+Kafr El Sheikh | high_high | 1.1111 | 14.04
+Gharbia | high_high | 0.1523 | 1.92
+Menoufia | high_high | 1.0475 | 13.24
+Qalyubia | high_high | 0.0000 | 0.00
+Damietta | high_high | 0.9866 | 12.47
+Beheira | drought_low | 0.1498 | 54.54
+Sharkia | drought_low | 0.1424 | 51.84
+Dakahlia | drought_low | 0.1656 | 60.29
+Kafr El Sheikh | drought_low | 0.1712 | 62.33
+Gharbia | drought_low | 0.1430 | 52.05
+Menoufia | drought_low | 0.1570 | 57.16
+Qalyubia | drought_low | 0.1587 | 57.77
+Damietta | drought_low | 0.1370 | 49.88
+Beheira | drought_expected | 0.2330 | 42.41
+Sharkia | drought_expected | 0.2860 | 52.05
+Dakahlia | drought_expected | 0.2497 | 45.44
+Kafr El Sheikh | drought_expected | 0.2336 | 42.52
+Gharbia | drought_expected | 0.2288 | 41.64
+Menoufia | drought_expected | 0.2323 | 42.28
+Qalyubia | drought_expected | 0.3307 | 60.19
+Damietta | drought_expected | 0.2251 | 40.98
+Beheira | drought_high | 0.0463 | 16.84
+Sharkia | drought_high | 0.0445 | 16.20
+Dakahlia | drought_high | 0.0476 | 17.34
+Kafr El Sheikh | drought_high | 0.0456 | 16.61
+Gharbia | drought_high | 0.0454 | 16.53
+Menoufia | drought_high | 0.0470 | 17.09
+Qalyubia | drought_high | 0.0490 | 17.85
+Damietta | drought_high | 0.0447 | 16.27
+
+BASELINE AND DECOMPOSITION (accounting only, no causal claim)
+Baseline expected margin (same price and cost basis): EGP 79,671,400,397
+Baseline expected staple tonnes: 8,225,526 | minimum scenario staple tonnes: 6,774,438
+Optimised unconstrained expected margin: EGP 429,588,780,373
+Accounting difference, optimised minus baseline: EGP 349,917,379,976 (439.20 percent of the baseline margin)
+Accounting components: the baseline margin above and the optimised
+margin above. No input is said to have caused any share of the change.
+
+Information values use the stated floor of 70 percent (90 percent is used only where the frontier holds it).
+
+INFORMATION VALUES AGAINST TRUE MEANS
+True mean budget: 10.9844 billion cubic metres
+True mean prices (pounds per tonne): Wheat 10,761, Sugar beet 852, Potatoes_winter 8,641, Rice 20,398, Maize_summer 15,824, Maize_nili 15,824, Potatoes_summer 8,641, Potatoes_nili 8,641
+Recourse problem value RP at the stated floor of 70 percent: EGP 194,764,695,263
+  wait and see dry_low: scenario margin EGP 81,858,016,484 probability 0.0569
+  wait and see dry_expected: scenario margin EGP 107,785,917,783 probability 0.1137
+  wait and see dry_high: scenario margin EGP 183,194,933,645 probability 0.0569
+  wait and see normal_low: scenario margin EGP 157,761,634,374 probability 0.1113
+  wait and see normal_expected: scenario margin EGP 188,494,369,973 probability 0.2225
+  wait and see normal_high: scenario margin EGP 281,601,695,673 probability 0.1113
+  wait and see high_low: scenario margin EGP 248,092,741,998 probability 0.0791
+  wait and see high_expected: scenario margin EGP 283,599,680,754 probability 0.1582
+  wait and see high_high: scenario margin EGP 390,613,969,734 probability 0.0791
+  wait and see drought_low: scenario margin EGP 123,008,767,102 probability 0.0027
+  wait and see drought_expected: scenario margin EGP 150,934,337,523 probability 0.0055
+  wait and see drought_high: scenario margin EGP 234,930,773,092 probability 0.0027
+Wait and see value WS: EGP 215,387,623,690
+EVPI equals WS minus RP: EGP 20,622,928,427
+Expected value problem (true means, stated floor 70 percent): status Optimal
+FINDING: the true mean plan cannot hold the stated floor in scenario(s): ['dry_low', 'dry_expected', 'dry_high', 'normal_low', 'normal_expected', 'high_low', 'high_expected', 'drought_low', 'drought_expected', 'drought_high']
+True mean plan evaluated with no floor: EGP 209,970,047,975 (an upper bound that flatters it, not an EEV under the guarantee)
+  penalised recourse dry_low: margin before penalty EGP 147,690,042,568 shortfall 2,718,226 tonnes
+  penalised recourse dry_expected: margin before penalty EGP 166,631,991,744 shortfall 2,523,026 tonnes
+  penalised recourse dry_high: margin before penalty EGP 225,242,605,049 shortfall 2,102,311 tonnes
+  penalised recourse normal_low: margin before penalty EGP 182,027,453,669 shortfall 887,887 tonnes
+  penalised recourse normal_expected: margin before penalty EGP 203,337,719,323 shortfall 622,019 tonnes
+  penalised recourse normal_high: margin before penalty EGP 273,473,030,946 shortfall 72,527 tonnes
+  penalised recourse high_low: margin before penalty EGP 188,964,487,537 shortfall 360,890 tonnes
+  penalised recourse high_expected: margin before penalty EGP 210,771,628,566 shortfall 75,249 tonnes
+  penalised recourse high_high: margin before penalty EGP 283,609,076,836 shortfall 0 tonnes
+  penalised recourse drought_low: margin before penalty EGP 166,451,746,996 shortfall 1,819,267 tonnes
+  penalised recourse drought_expected: margin before penalty EGP 186,673,574,976 shortfall 1,588,925 tonnes
+  penalised recourse drought_high: margin before penalty EGP 251,349,211,333 shortfall 1,104,945 tonnes
+Penalised EEV under a named penalty of 25000 pounds per tonne of shortfall: EGP 187,415,904,232
+Penalised VSS (RP minus penalised EEV, named as penalised): EGP 7,348,791,030
+No standard VSS is reported, because the true mean plan is
+infeasible under the hard floor in at least one scenario.
+
+STRESS RUNS (no floor, budgets scaled, side by side capacity and choice)
+Budget scale 0.90: profit choice status Optimal | capacity status Optimal
+  Profit objective chooses: expected margin EGP 412,488,222,263 | expected staple tonnes 0 | minimum scenario staple tonnes 0 (0.00 percent of reference)
+  Maximum staple capacity: 8,560,095 tonnes held in every scenario (69.85 percent of reference)
+Budget scale 0.80: profit choice status Optimal | capacity status Optimal
+  Profit objective chooses: expected margin EGP 386,352,573,081 | expected staple tonnes 0 | minimum scenario staple tonnes 0 (0.00 percent of reference)
+  Maximum staple capacity: 7,873,926 tonnes held in every scenario (64.25 percent of reference)

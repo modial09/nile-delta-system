@@ -1,0 +1,207 @@
+========================================================================
+PROBLEM ONE, VERSION 3 RUN, variant beet2400
+Every parameter is from data/DATA_FOUNDATION.md.
+========================================================================
+
+National crop yields, Egypt means 2014 to 2023, FAOSTAT via
+Our World in Data (foundation Section 1):
+            yield_t_ha     area_ha  production_t
+crop                                            
+Wheat             6.57  1380276.96    9074631.16
+Rice              9.15   523962.85    4796660.17
+Maize             7.37  1033132.56    7615261.77
+Sugar beet       52.19   231745.93   12094146.14
+Potatoes         28.09   204258.39    5736942.35
+
+Prices, FAOSTAT producer prices, latest complete year 2023,
+Egyptian pounds per tonne (foundation Section 2). Rice is paddy.
+  Wheat        EGP     10,000 per tonne
+  Rice         EGP     18,761 per tonne
+  Maize        EGP     14,400 per tonne
+  Sugar beet   EGP      2,400 per tonne (factory procurement 2024 to 2025, Section 3)
+  Potatoes     EGP      8,160 per tonne
+
+Production costs, CAPMAS 2016 to 2017, Egyptian pounds per
+hectare, rent inclusive (foundation Section 4). Potatoes uses
+the summer row: CAPMAS publishes no winter potatoes cost, so
+the summer row is adopted and flagged. Every cost figure in
+this run is at 2016 to 2017 levels.
+  Wheat        EGP  21,473.81 per hectare
+  Rice         EGP  19,902.38 per hectare
+  Maize        EGP  18,933.33 per hectare
+  Sugar beet   EGP  17,607.14 per hectare
+  Potatoes     EGP  49,533.33 per hectare
+
+Water requirements in this parameter set, cubic metres per hectare:
+  Wheat          5,126.00
+  Rice          16,600.00
+  Maize          9,305.00
+  Sugar beet     9,426.00
+  Potatoes       4,825.85
+Potatoes applied value is arithmetic on sourced values: winter 4,079 weighted by 61,667.34 hectares and summer 6,145 weighted by 34,913.34 hectares, Nili area excluded (foundation Section 8).
+
+Yield response factors (foundation Section 9). Wheat 1.05 is
+the winter wheat value. Rice 1.20 is carried from version 2
+but is unverified, per Section 9 and gap 23.
+  Wheat        1.05
+  Rice         1.20
+  Maize        1.25
+  Sugar beet   1.00
+  Potatoes     1.10
+
+Land base, total cropped area 2020 to 2021, hectares, read from
+capmas_governorate_total_cropped_area.csv (foundation Section 5):
+  Beheira            720,838.86
+  Sharkia            679,537.74
+  Dakahlia           533,501.22
+  Kafr El Sheikh     450,194.64
+  Gharbia            308,141.82
+  Menoufia           269,171.70
+  Qalyubia           119,479.92
+  Damietta            95,607.96
+  Total            3,176,473.86
+
+District yield multipliers, real and crop specific, computed
+from the 2020 to 2021 panels (foundation Section 7). Menoufia
+rice is a neutral fill of 1.00 for an unreported cell.
+                Wheat   Rice  Maize  Sugar beet  Potatoes
+Beheira         0.996  0.971  1.002       0.898     0.954
+Sharkia         1.069  0.917  0.964       1.042     1.097
+Dakahlia        0.960  1.046  1.073       1.066     1.023
+Kafr El Sheikh  0.920  1.061  1.047       0.926     1.302
+Gharbia         1.002  0.960  0.984       1.220     1.068
+Menoufia        1.026  1.000  1.017       1.028     0.908
+Qalyubia        0.988  0.831  0.943       0.989     1.504
+Damietta        0.957  0.942  0.968       1.210     0.841
+
+Production weighted mean yields, computed against foundation
+Section 7 printed values, tonnes per hectare:
+  Wheat        computed 6.87 | foundation prints 6.87
+  Rice         computed 9.14 | foundation prints 9.14
+  Maize        computed 8.79 | foundation prints 8.79
+  Sugar beet   computed 49.37 | foundation prints 49.37
+  Potatoes     computed 28.39 | foundation prints 28.39
+
+Baseline pattern, the real district pattern for 2020 to 2021,
+hectares by governorate and crop (foundation Section 6).
+Menoufia rice uses the delivered 2019 to 2020 published value
+of 7.98 hectares for that one cell, flagged in RERUN_CHOICES.md.
+                    Wheat       Rice      Maize  Sugar beet  Potatoes
+Beheira         159848.22   75872.16   80455.20    17288.88  29477.28
+Sharkia         171737.16   89664.54  105651.84    39424.56   2973.60
+Dakahlia        101766.00  123695.46   40509.84    40329.24  26459.16
+Kafr El Sheikh   97672.26  105779.94   37430.40    64137.36    844.20
+Gharbia          55161.96   32431.14   31415.58     7071.12  10836.00
+Menoufia         53200.98       7.98   77051.94     1162.56  17883.60
+Qalyubia         21122.64     382.20   31264.38      175.14   3808.14
+Damietta         12097.26   19320.00     254.10     2770.32   5004.30
+
+Baseline staple production at full water: 11,493,640 tons
+Food floor at 90 percent: 10,344,276 tons of staples per scenario
+
+Scenario budgets and probabilities in this parameter set.
+Every budget rests on the expected anchor of 11.00 billion
+cubic metres, which is a calibration (foundation Section 11).
+  low       budget 8.591 billion cubic metres | probability 0.23
+  expected  budget 10.505 billion cubic metres | probability 0.45
+  high      budget 13.431 billion cubic metres | probability 0.32
+
+Stochastic model status: Optimal; food floor held: True
+
+Optimised plan, expected values across scenarios:
+  Expected margin:        EGP 147,993,830,742
+  Expected staple output: 10,344,276 tons
+  Expected water use:     11.001 billion cubic metres
+  Scenario low       margin EGP 57,561,054,886 | staples 10,344,276 t | water 8.591 BCM
+  Scenario expected  margin EGP 158,587,566,288 | staples 10,344,276 t | water 10.505 BCM
+  Scenario high      margin EGP 198,094,947,775 | staples 10,344,276 t | water 13.431 BCM
+
+Planting plan, hectares by district and crop:
+                   Wheat  Rice   Maize  Sugar beet  Potatoes
+Beheira         360419.0   0.0  1569.0     70443.0  108126.0
+Sharkia         339769.0   0.0     0.0     67867.0  101931.0
+Dakahlia        266751.0   0.0  1161.0     52136.0   80025.0
+Kafr El Sheikh  225097.0   0.0     0.0     44962.0   67529.0
+Gharbia         154071.0   0.0     0.0     30775.0   46221.0
+Menoufia        134586.0   0.0   586.0     26305.0   40376.0
+Qalyubia         46675.0   0.0     0.0     19038.0   17922.0
+Damietta         47804.0   0.0     0.0      9549.0   14341.0
+
+Water coverage, share of the agronomic requirement delivered:
+              low  expected  high
+crop                             
+Wheat       1.000     1.000   1.0
+Rice          NaN       NaN   NaN
+Maize       1.000     1.000   1.0
+Sugar beet  0.000     0.033   1.0
+Potatoes    0.211     1.000   1.0
+A share of zero means the plan writes that crop off in that scenario: hectares planted, cost sunk, nothing harvested.
+
+Water shadow prices, raw duals of the stochastic model, Egyptian pounds per cubic metre of expected margin:
+scenario        expected   high     low
+district                               
+Beheira            7.140  1.951  11.460
+Dakahlia           7.211  2.663  12.292
+Damietta           7.237  3.278  10.100
+Gharbia            7.296  3.320  12.835
+Kafr El Sheikh     5.540  2.071  15.640
+Menoufia           7.485  2.504  10.906
+Qalyubia           5.912  2.336  18.071
+Sharkia            6.232  2.564  13.182
+
+Water values inside each scenario, raw dual divided by the scenario probability, Egyptian pounds per cubic metre:
+scenario        expected   high    low
+district                              
+Beheira            15.87   6.10  49.83
+Dakahlia           16.02   8.32  53.44
+Damietta           16.08  10.24  43.91
+Gharbia            16.21  10.38  55.80
+Kafr El Sheikh     12.31   6.47  68.00
+Menoufia           16.63   7.82  47.42
+Qalyubia           13.14   7.30  78.57
+Sharkia            13.85   8.01  57.31
+Both tables report duals, that is marginal values. Menoufia rice multiplier is a neutral fill of 1.00 for an unreported cell (foundation Sections 6 and 7), so read the Menoufia row with that flag in mind.
+
+Dual verification, deterministic model, Dakahlia expected scenario: solver dual 15.794 EGP per cubic metre; brute force bump implies 15.794; close agreement expected, exact equality is not, because a finite bump crosses kink points.
+Dual verification, stochastic model, Dakahlia expected scenario: reported raw dual 7.211; brute force bump inside the stochastic model implies 7.211.
+
+Baseline, the real district pattern in the same data:
+  Water demand at full watering: 16.724 BCM against an expected budget of 10.50 BCM. The budget is a calibration (foundation Section 11).
+  Expected margin:        EGP 96,779,569,341
+  Expected staple output: 7,386,025 tons
+  Expected water use:     10.937 BCM
+  Margin per cubic metre: EGP 8.85 baseline against EGP 13.45 optimised. Margin per cubic metre is an average return, never a price.
+  HEADLINE: optimised minus baseline expected margin = EGP 51,214,261,401 (52.92 percent)
+
+Stress runs, stochastic model rebuilt at reduced budgets:
+
+  Water cut 10 percent (status Optimal, food floor held: False):
+    The food floor CANNOT be held at this cut. Staple output falls to 326,570 tons, which is 3 percent of the floor.
+    Margin without the floor is EGP 176,203,394,815 and is NOT comparable to the floored runs, because it is bought by cutting food production.
+    District absorbing the largest staple loss: Sharkia (2,387,509 tons in the expected scenario)
+
+  Water cut 20 percent (status Optimal, food floor held: False):
+    The food floor CANNOT be held at this cut. Staple output falls to 0 tons, which is 0 percent of the floor.
+    Margin without the floor is EGP 165,237,311,866 and is NOT comparable to the floored runs, because it is bought by cutting food production.
+    District absorbing the largest staple loss: Sharkia (2,387,509 tons in the expected scenario)
+
+Information values (prices at 2023 levels, costs at 2016 to 2017 levels):
+  Wait and see statuses: all Optimal ({'low': 'Optimal', 'expected': 'Optimal', 'high': 'Optimal'})
+  Recourse (stochastic) value: EGP 147,993,830,742
+  Wait and see value:          EGP 160,541,880,635
+  EVPI:                        EGP 12,548,049,893
+  Expected result of planning on the average year: EGP 139,968,163,242
+  VSS:                         EGP 8,025,667,499
+
+GUARANTEE SWEEP, sugar beet at EGP 2,400 per tonne. The food floor at 90, 95 and 100 percent of baseline staple production.
+Margin per cubic metre below is an average return, never a price.
+  Floor at 90 percent of baseline staple production:
+    Optimised expected margin: EGP 147,993,830,742
+    Baseline expected margin:  EGP 96,779,569,341
+    Gain: EGP 51,214,261,401 (52.92 percent)
+    Margin per cubic metre, optimised: EGP 13.45 (average return)
+    Margin per cubic metre, baseline:  EGP 8.85 (average return)
+  Floor at 95 percent of baseline staple production: the floor CANNOT be held in every scenario (solve status Infeasible). No margin is reported for this level.
+  Floor at 100 percent of baseline staple production: the floor CANNOT be held in every scenario (solve status Infeasible). No margin is reported for this level.
+
+End of run for variant beet2400.

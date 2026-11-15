@@ -1,7 +1,9 @@
 pandas
 numpy
 scipy
-pulp
+pulp==2.9.0
+# Pulp is pinned: the 4.x rewrite changed the variable and solver
+# API and breaks src/allocation_model.py. Verified 12 Nov 2026.
 scikit-learn
 scgraph
 matplotlib

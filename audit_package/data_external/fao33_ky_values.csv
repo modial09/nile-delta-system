@@ -1,0 +1,7 @@
+crop,ky_seasonal,value_type,note,secondary_source_for_fao33
+wheat winter,1.05,seasonal Ky,Egypt grows winter wheat so this is the relevant wheat entry,FAO Irrigation and Drainage Paper 56 Table 24 summarising FAO Paper 33; also Steduto et al 2012 FAO Paper 66 Table 1
+wheat spring,1.15,seasonal Ky,not the Egyptian season; listed to show FAO 33 splits wheat by season,FAO 56 Table 24; Steduto et al 2012 Table 1
+rice,GAP,seasonal Ky,no seasonal rice entry appears in FAO 56 Table 24 or in Steduto et al 2012 Table 1; FAO 56 text states Paper 33 gives Ky for only about 23 crops,GAP after checking FAO 56 Table 24 and FAO Paper 66 Table 1 on 14 November 2026
+maize,1.25,seasonal Ky,,FAO 56 Table 24; Steduto et al 2012 Table 1
+sugar beet,1.0,seasonal Ky,listed as Sugarbeet in Steduto Table 1 and Sugarbeet in FAO 56 Table 24,FAO 56 Table 24; Steduto et al 2012 Table 1
+potatoes,1.1,seasonal Ky,listed as Potato singular in both tables,FAO 56 Table 24; Steduto et al 2012 Table 1

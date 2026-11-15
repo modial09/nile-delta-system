@@ -1,0 +1,177 @@
+governorate,governorate_ar,crop,season,agricultural_year,yield_tons_per_feddan,yield_tons_per_hectare,yield_basis,source_id,source_table,evidence_grade,data_status
+Beheira,البحيرة,wheat,winter,2020/2021,2.872,6.838,published,MOA_Winter_2020_2021,Table 2,first_hand,published_value
+Sharkia,الشرقية,wheat,winter,2020/2021,3.082,7.338,published,MOA_Winter_2020_2021,Table 2,first_hand,published_value
+Dakahlia,الدقهلية,wheat,winter,2020/2021,2.769,6.593,published,MOA_Winter_2020_2021,Table 2,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,wheat,winter,2020/2021,2.652,6.314,published,MOA_Winter_2020_2021,Table 2,first_hand,published_value
+Gharbia,الغربية,wheat,winter,2020/2021,2.888,6.876,published,MOA_Winter_2020_2021,Table 2,first_hand,published_value
+Menoufia,المنوفية,wheat,winter,2020/2021,2.959,7.045,published,MOA_Winter_2020_2021,Table 2,first_hand,published_value
+Qalyubia,القليوبية,wheat,winter,2020/2021,2.85,6.786,published,MOA_Winter_2020_2021,Table 2,first_hand,published_value
+Damietta,دمياط,wheat,winter,2020/2021,2.759,6.569,published,MOA_Winter_2020_2021,Table 2,first_hand,published_value
+Beheira,البحيرة,sugar_beet,winter,2020/2021,18.624,44.343,published,MOA_Winter_2020_2021,Table 12,first_hand,published_value
+Sharkia,الشرقية,sugar_beet,winter,2020/2021,21.611,51.455,published,MOA_Winter_2020_2021,Table 12,first_hand,published_value
+Dakahlia,الدقهلية,sugar_beet,winter,2020/2021,22.094,52.605,published,MOA_Winter_2020_2021,Table 12,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,sugar_beet,winter,2020/2021,19.211,45.74,published,MOA_Winter_2020_2021,Table 12,first_hand,published_value
+Gharbia,الغربية,sugar_beet,winter,2020/2021,25.3,60.238,published,MOA_Winter_2020_2021,Table 12,first_hand,published_value
+Menoufia,المنوفية,sugar_beet,winter,2020/2021,21.319,50.76,published,MOA_Winter_2020_2021,Table 12,first_hand,published_value
+Qalyubia,القليوبية,sugar_beet,winter,2020/2021,20.501,48.812,published,MOA_Winter_2020_2021,Table 12,first_hand,published_value
+Damietta,دمياط,sugar_beet,winter,2020/2021,25.095,59.75,published,MOA_Winter_2020_2021,Table 12,first_hand,published_value
+Beheira,البحيرة,rice,summer,2020/2021,3.727,8.874,published,MOA_Summer_2020_2021,Table 20,first_hand,published_value
+Sharkia,الشرقية,rice,summer,2020/2021,3.521,8.383,published,MOA_Summer_2020_2021,Table 20,first_hand,published_value
+Dakahlia,الدقهلية,rice,summer,2020/2021,4.014,9.557,published,MOA_Summer_2020_2021,Table 20,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,rice,summer,2020/2021,4.071,9.693,published,MOA_Summer_2020_2021,Table 20,first_hand,published_value
+Gharbia,الغربية,rice,summer,2020/2021,3.683,8.769,published,MOA_Summer_2020_2021,Table 20,first_hand,published_value
+Menoufia,المنوفية,rice,summer,2020/2021,,,,MOA_Summer_2020_2021,Table 20,first_hand,not_reported_in_source_table
+Qalyubia,القليوبية,rice,summer,2020/2021,3.188,7.59,published,MOA_Summer_2020_2021,Table 20,first_hand,published_value
+Damietta,دمياط,rice,summer,2020/2021,3.615,8.607,published,MOA_Summer_2020_2021,Table 20,first_hand,published_value
+Beheira,البحيرة,maize,summer,2020/2021,3.697,8.802,published,MOA_Summer_2020_2021,Table 22,first_hand,published_value
+Sharkia,الشرقية,maize,summer,2020/2021,3.556,8.467,published,MOA_Summer_2020_2021,Table 22,first_hand,published_value
+Dakahlia,الدقهلية,maize,summer,2020/2021,3.961,9.431,published,MOA_Summer_2020_2021,Table 22,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,maize,summer,2020/2021,3.864,9.2,published,MOA_Summer_2020_2021,Table 22,first_hand,published_value
+Gharbia,الغربية,maize,summer,2020/2021,3.63,8.643,published,MOA_Summer_2020_2021,Table 22,first_hand,published_value
+Menoufia,المنوفية,maize,summer,2020/2021,3.753,8.936,published,MOA_Summer_2020_2021,Table 22,first_hand,published_value
+Qalyubia,القليوبية,maize,summer,2020/2021,3.482,8.29,published,MOA_Summer_2020_2021,Table 22,first_hand,published_value
+Damietta,دمياط,maize,summer,2020/2021,3.572,8.505,published,MOA_Summer_2020_2021,Table 22,first_hand,published_value
+Beheira,البحيرة,potatoes,all_seasons,2020/2021,11.372,27.076,published,MOA_Summer_2020_2021,Table 78,first_hand,published_value
+Sharkia,الشرقية,potatoes,all_seasons,2020/2021,13.08,31.143,published,MOA_Summer_2020_2021,Table 78,first_hand,published_value
+Dakahlia,الدقهلية,potatoes,all_seasons,2020/2021,12.197,29.04,published,MOA_Summer_2020_2021,Table 78,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,potatoes,all_seasons,2020/2021,15.52,36.952,published,MOA_Summer_2020_2021,Table 78,first_hand,published_value
+Gharbia,الغربية,potatoes,all_seasons,2020/2021,12.736,30.324,published,MOA_Summer_2020_2021,Table 78,first_hand,published_value
+Menoufia,المنوفية,potatoes,all_seasons,2020/2021,10.822,25.767,published,MOA_Summer_2020_2021,Table 78,first_hand,published_value
+Qalyubia,القليوبية,potatoes,all_seasons,2020/2021,17.932,42.695,published,MOA_Summer_2020_2021,Table 78,first_hand,published_value
+Damietta,دمياط,potatoes,all_seasons,2020/2021,10.022,23.862,published,MOA_Summer_2020_2021,Table 78,first_hand,published_value
+Beheira,البحيرة,potatoes,winter,2020/2021,10.1,24.048,published,MOA_Summer_2020_2021,Table 79,first_hand,published_value
+Sharkia,الشرقية,potatoes,winter,2020/2021,11.008,26.21,published,MOA_Summer_2020_2021,Table 79,first_hand,published_value
+Dakahlia,الدقهلية,potatoes,winter,2020/2021,12.089,28.783,published,MOA_Summer_2020_2021,Table 79,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,potatoes,winter,2020/2021,15.724,37.438,published,MOA_Summer_2020_2021,Table 79,first_hand,published_value
+Gharbia,الغربية,potatoes,winter,2020/2021,10.153,24.174,published,MOA_Summer_2020_2021,Table 79,first_hand,published_value
+Menoufia,المنوفية,potatoes,winter,2020/2021,10.122,24.1,published,MOA_Summer_2020_2021,Table 79,first_hand,published_value
+Qalyubia,القليوبية,potatoes,winter,2020/2021,12.722,30.29,published,MOA_Summer_2020_2021,Table 79,first_hand,published_value
+Damietta,دمياط,potatoes,winter,2020/2021,9.947,23.683,published,MOA_Summer_2020_2021,Table 79,first_hand,published_value
+Beheira,البحيرة,potatoes,summer,2020/2021,13.14,31.286,published,MOA_Summer_2020_2021,Table 80,first_hand,published_value
+Sharkia,الشرقية,potatoes,summer,2020/2021,19.436,46.276,published,MOA_Summer_2020_2021,Table 80,first_hand,published_value
+Dakahlia,الدقهلية,potatoes,summer,2020/2021,12.602,30.005,published,MOA_Summer_2020_2021,Table 80,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,potatoes,summer,2020/2021,13.596,32.371,published,MOA_Summer_2020_2021,Table 80,first_hand,published_value
+Gharbia,الغربية,potatoes,summer,2020/2021,14.622,34.814,published,MOA_Summer_2020_2021,Table 80,first_hand,published_value
+Menoufia,المنوفية,potatoes,summer,2020/2021,12.16,28.952,published,MOA_Summer_2020_2021,Table 80,first_hand,published_value
+Qalyubia,القليوبية,potatoes,summer,2020/2021,19.241,45.812,published,MOA_Summer_2020_2021,Table 80,first_hand,published_value
+Damietta,دمياط,potatoes,summer,2020/2021,11.402,27.148,published,MOA_Summer_2020_2021,Table 80,first_hand,published_value
+Beheira,البحيرة,potatoes,nili,2020/2021,7.838,18.662,published,MOA_Summer_2020_2021,Table 81,first_hand,published_value
+Sharkia,الشرقية,potatoes,nili,2020/2021,,,,MOA_Summer_2020_2021,Table 81,first_hand,not_reported_in_source_table
+Dakahlia,الدقهلية,potatoes,nili,2020/2021,,,,MOA_Summer_2020_2021,Table 81,first_hand,not_reported_in_source_table
+Kafr El Sheikh,كفر الشيخ,potatoes,nili,2020/2021,,,,MOA_Summer_2020_2021,Table 81,first_hand,not_reported_in_source_table
+Gharbia,الغربية,potatoes,nili,2020/2021,10.442,24.862,published,MOA_Summer_2020_2021,Table 81,first_hand,published_value
+Menoufia,المنوفية,potatoes,nili,2020/2021,7.789,18.545,published,MOA_Summer_2020_2021,Table 81,first_hand,published_value
+Qalyubia,القليوبية,potatoes,nili,2020/2021,,,,MOA_Summer_2020_2021,Table 81,first_hand,not_reported_in_source_table
+Damietta,دمياط,potatoes,nili,2020/2021,,,,MOA_Summer_2020_2021,Table 81,first_hand,not_reported_in_source_table
+Beheira,البحيرة,wheat,winter,2023/2024,3.032,7.219,published,MOA_Winter_2023_2024,Table 2,first_hand,published_value
+Sharkia,الشرقية,wheat,winter,2023/2024,3.007,7.16,published,MOA_Winter_2023_2024,Table 2,first_hand,published_value
+Dakahlia,الدقهلية,wheat,winter,2023/2024,2.785,6.631,published,MOA_Winter_2023_2024,Table 2,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,wheat,winter,2023/2024,2.641,6.288,published,MOA_Winter_2023_2024,Table 2,first_hand,published_value
+Gharbia,الغربية,wheat,winter,2023/2024,3.084,7.343,published,MOA_Winter_2023_2024,Table 2,first_hand,published_value
+Menoufia,المنوفية,wheat,winter,2023/2024,3.291,7.836,published,MOA_Winter_2023_2024,Table 2,first_hand,published_value
+Qalyubia,القليوبية,wheat,winter,2023/2024,2.986,7.11,published,MOA_Winter_2023_2024,Table 2,first_hand,published_value
+Damietta,دمياط,wheat,winter,2023/2024,2.721,6.479,published,MOA_Winter_2023_2024,Table 2,first_hand,published_value
+Beheira,البحيرة,sugar_beet,winter,2023/2024,26.448,62.971,published,MOA_Winter_2023_2024,Table 12,first_hand,published_value
+Sharkia,الشرقية,sugar_beet,winter,2023/2024,27.633,65.793,published,MOA_Winter_2023_2024,Table 12,first_hand,published_value
+Dakahlia,الدقهلية,sugar_beet,winter,2023/2024,23.177,55.183,published,MOA_Winter_2023_2024,Table 12,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,sugar_beet,winter,2023/2024,21.115,50.274,published,MOA_Winter_2023_2024,Table 12,first_hand,published_value
+Gharbia,الغربية,sugar_beet,winter,2023/2024,25.27,60.167,published,MOA_Winter_2023_2024,Table 12,first_hand,published_value
+Menoufia,المنوفية,sugar_beet,winter,2023/2024,19.714,46.938,published,MOA_Winter_2023_2024,Table 12,first_hand,published_value
+Qalyubia,القليوبية,sugar_beet,winter,2023/2024,22.899,54.521,published,MOA_Winter_2023_2024,Table 12,first_hand,published_value
+Damietta,دمياط,sugar_beet,winter,2023/2024,19.853,47.269,published,MOA_Winter_2023_2024,Table 12,first_hand,published_value
+Beheira,البحيرة,potatoes,winter,2023/2024,12.782,30.433,published,MOA_Winter_2023_2024,Table 34,first_hand,published_value
+Sharkia,الشرقية,potatoes,winter,2023/2024,13.009,30.974,published,MOA_Winter_2023_2024,Table 34,first_hand,published_value
+Dakahlia,الدقهلية,potatoes,winter,2023/2024,14.5,34.524,published,MOA_Winter_2023_2024,Table 34,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,potatoes,winter,2023/2024,9.78,23.286,published,MOA_Winter_2023_2024,Table 34,first_hand,published_value
+Gharbia,الغربية,potatoes,winter,2023/2024,10.113,24.079,published,MOA_Winter_2023_2024,Table 34,first_hand,published_value
+Menoufia,المنوفية,potatoes,winter,2023/2024,10.569,25.164,published,MOA_Winter_2023_2024,Table 34,first_hand,published_value
+Qalyubia,القليوبية,potatoes,winter,2023/2024,11.619,27.664,published,MOA_Winter_2023_2024,Table 34,first_hand,published_value
+Damietta,دمياط,potatoes,winter,2023/2024,12.358,29.424,published,MOA_Winter_2023_2024,Table 34,first_hand,published_value
+Beheira,البحيرة,rice,summer,2019/2020,3.563,8.483,published,MOA_Summer_2019_2020,Table 20,first_hand,published_value
+Sharkia,الشرقية,rice,summer,2019/2020,3.291,7.836,published,MOA_Summer_2019_2020,Table 20,first_hand,published_value
+Dakahlia,الدقهلية,rice,summer,2019/2020,4.009,9.545,published,MOA_Summer_2019_2020,Table 20,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,rice,summer,2019/2020,4.001,9.526,published,MOA_Summer_2019_2020,Table 20,first_hand,published_value
+Gharbia,الغربية,rice,summer,2019/2020,3.851,9.169,published,MOA_Summer_2019_2020,Table 20,first_hand,published_value
+Menoufia,المنوفية,rice,summer,2019/2020,3.526,8.395,published,MOA_Summer_2019_2020,Table 20,first_hand,published_value
+Qalyubia,القليوبية,rice,summer,2019/2020,3.261,7.764,published,MOA_Summer_2019_2020,Table 20,first_hand,published_value
+Damietta,دمياط,rice,summer,2019/2020,3.465,8.25,published,MOA_Summer_2019_2020,Table 20,first_hand,published_value
+Beheira,البحيرة,maize,summer,2019/2020,3.569,8.498,published,MOA_Summer_2019_2020,Table 22,first_hand,published_value
+Sharkia,الشرقية,maize,summer,2019/2020,3.726,8.871,published,MOA_Summer_2019_2020,Table 22,first_hand,published_value
+Dakahlia,الدقهلية,maize,summer,2019/2020,4.081,9.717,published,MOA_Summer_2019_2020,Table 22,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,maize,summer,2019/2020,3.567,8.493,published,MOA_Summer_2019_2020,Table 22,first_hand,published_value
+Gharbia,الغربية,maize,summer,2019/2020,3.267,7.779,published,MOA_Summer_2019_2020,Table 22,first_hand,published_value
+Menoufia,المنوفية,maize,summer,2019/2020,3.692,8.79,published,MOA_Summer_2019_2020,Table 22,first_hand,published_value
+Qalyubia,القليوبية,maize,summer,2019/2020,3.261,7.764,published,MOA_Summer_2019_2020,Table 22,first_hand,published_value
+Damietta,دمياط,maize,summer,2019/2020,3.467,8.255,published,MOA_Summer_2019_2020,Table 22,first_hand,published_value
+Beheira,البحيرة,potatoes,all_seasons,2019/2020,11.397,27.136,published,MOA_Summer_2019_2020,Table 78,first_hand,published_value
+Sharkia,الشرقية,potatoes,all_seasons,2019/2020,13.03,31.024,published,MOA_Summer_2019_2020,Table 78,first_hand,published_value
+Dakahlia,الدقهلية,potatoes,all_seasons,2019/2020,12.36,29.429,published,MOA_Summer_2019_2020,Table 78,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,potatoes,all_seasons,2019/2020,15.726,37.443,published,MOA_Summer_2019_2020,Table 78,first_hand,published_value
+Gharbia,الغربية,potatoes,all_seasons,2019/2020,12.813,30.507,published,MOA_Summer_2019_2020,Table 78,first_hand,published_value
+Menoufia,المنوفية,potatoes,all_seasons,2019/2020,10.839,25.807,published,MOA_Summer_2019_2020,Table 78,first_hand,published_value
+Qalyubia,القليوبية,potatoes,all_seasons,2019/2020,14.546,34.633,published,MOA_Summer_2019_2020,Table 78,first_hand,published_value
+Damietta,دمياط,potatoes,all_seasons,2019/2020,8.749,20.831,published,MOA_Summer_2019_2020,Table 78,first_hand,published_value
+Beheira,البحيرة,wheat,winter,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Sharkia,الشرقية,wheat,winter,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Dakahlia,الدقهلية,wheat,winter,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Kafr El Sheikh,كفر الشيخ,wheat,winter,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Gharbia,الغربية,wheat,winter,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Menoufia,المنوفية,wheat,winter,2021/2022,3.006,7.157,computed_from_published_area_and_production,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,published_area_and_production_yield_computed
+Qalyubia,القليوبية,wheat,winter,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Damietta,دمياط,wheat,winter,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Beheira,البحيرة,wheat,winter,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Sharkia,الشرقية,wheat,winter,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Dakahlia,الدقهلية,wheat,winter,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Kafr El Sheikh,كفر الشيخ,wheat,winter,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Gharbia,الغربية,wheat,winter,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Menoufia,المنوفية,wheat,winter,2022/2023,3.224,7.676,computed_from_published_area_and_production,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,published_area_and_production_yield_computed
+Qalyubia,القليوبية,wheat,winter,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Damietta,دمياط,wheat,winter,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Beheira,البحيرة,maize_white,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Sharkia,الشرقية,maize_white,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Dakahlia,الدقهلية,maize_white,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Kafr El Sheikh,كفر الشيخ,maize_white,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Gharbia,الغربية,maize_white,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Menoufia,المنوفية,maize_white,summer,2021/2022,3.399,8.093,computed_from_published_area_and_production,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,published_area_and_production_yield_computed
+Qalyubia,القليوبية,maize_white,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Damietta,دمياط,maize_white,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Beheira,البحيرة,maize_white,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Sharkia,الشرقية,maize_white,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Dakahlia,الدقهلية,maize_white,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Kafr El Sheikh,كفر الشيخ,maize_white,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Gharbia,الغربية,maize_white,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Menoufia,المنوفية,maize_white,summer,2022/2023,3.563,8.483,computed_from_published_area_and_production,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,published_area_and_production_yield_computed
+Qalyubia,القليوبية,maize_white,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Damietta,دمياط,maize_white,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Beheira,البحيرة,maize_yellow,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Sharkia,الشرقية,maize_yellow,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Dakahlia,الدقهلية,maize_yellow,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Kafr El Sheikh,كفر الشيخ,maize_yellow,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Gharbia,الغربية,maize_yellow,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Menoufia,المنوفية,maize_yellow,summer,2021/2022,3.548,8.448,computed_from_published_area_and_production,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,published_area_and_production_yield_computed
+Qalyubia,القليوبية,maize_yellow,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Damietta,دمياط,maize_yellow,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Beheira,البحيرة,maize_yellow,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Sharkia,الشرقية,maize_yellow,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Dakahlia,الدقهلية,maize_yellow,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Kafr El Sheikh,كفر الشيخ,maize_yellow,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Gharbia,الغربية,maize_yellow,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Menoufia,المنوفية,maize_yellow,summer,2022/2023,3.543,8.436,computed_from_published_area_and_production,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,published_area_and_production_yield_computed
+Qalyubia,القليوبية,maize_yellow,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Damietta,دمياط,maize_yellow,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,study text and tables,second_hand,not_covered_by_this_source
+Beheira,البحيرة,maize,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Sharkia,الشرقية,maize,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Dakahlia,الدقهلية,maize,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Kafr El Sheikh,كفر الشيخ,maize,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Gharbia,الغربية,maize,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Menoufia,المنوفية,maize,summer,2021/2022,3.409,8.117,computed_from_published_area_and_production,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,published_area_and_production_yield_computed
+Qalyubia,القليوبية,maize,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Damietta,دمياط,maize,summer,2021/2022,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Beheira,البحيرة,maize,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Sharkia,الشرقية,maize,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Dakahlia,الدقهلية,maize,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Kafr El Sheikh,كفر الشيخ,maize,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Gharbia,الغربية,maize,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Menoufia,المنوفية,maize,summer,2022/2023,3.559,8.474,computed_from_published_area_and_production,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,published_area_and_production_yield_computed
+Qalyubia,القليوبية,maize,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source
+Damietta,دمياط,maize,summer,2022/2023,,,,HCSR_2025_secondhand_CAPMAS,computed sum of white and yellow rows,second_hand,not_covered_by_this_source

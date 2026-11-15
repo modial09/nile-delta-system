@@ -1,0 +1,156 @@
+{
+ "ceil_minus_0.001": {
+  "floor": 0.8014759314185036,
+  "status": "Optimal",
+  "objective": 174088745148.42206,
+  "ranges": {
+   "dry_expected": {
+    "values": {
+     "Beheira": 48.62838744927536,
+     "Sharkia": 54.19777736231883,
+     "Dakahlia": 53.67390750724637,
+     "Kafr El Sheikh": 58.889754946859895,
+     "Gharbia": 50.324807690821245,
+     "Menoufia": 57.19987439613526,
+     "Qalyubia": 64.31630123671496,
+     "Damietta": 54.441018164251204
+    },
+    "min_binding": 48.62838744927536,
+    "max_binding": 64.31630123671496,
+    "n_binding": 8,
+    "argmin": "Beheira",
+    "argmax": "Qalyubia"
+   },
+   "normal_expected": {
+    "values": {
+     "Beheira": 39.67190207901235,
+     "Sharkia": 53.53864790123456,
+     "Dakahlia": 42.50689720493827,
+     "Kafr El Sheikh": 44.04073613333333,
+     "Gharbia": 37.33659491851852,
+     "Menoufia": 40.27585986666667,
+     "Qalyubia": 49.511212592592585,
+     "Damietta": 16.68213707654321
+    },
+    "min_binding": 16.68213707654321,
+    "max_binding": 53.53864790123456,
+    "n_binding": 8,
+    "argmin": "Damietta",
+    "argmax": "Sharkia"
+   },
+   "high_expected": {
+    "values": {
+     "Beheira": 12.705049048611109,
+     "Sharkia": 12.002075944444442,
+     "Dakahlia": 13.77276658333333,
+     "Kafr El Sheikh": 13.189935597222219,
+     "Gharbia": 14.363953138888888,
+     "Menoufia": 14.642830854166665,
+     "Qalyubia": 12.551812631944443,
+     "Damietta": 13.722630638888887
+    },
+    "min_binding": 12.002075944444442,
+    "max_binding": 14.642830854166665,
+    "n_binding": 8,
+    "argmin": "Sharkia",
+    "argmax": "Menoufia"
+   },
+   "dry_low": {
+    "values": {
+     "Beheira": 1157.612951884058,
+     "Sharkia": 1097.3607000966183,
+     "Dakahlia": 1240.3371744927535,
+     "Kafr El Sheikh": 1196.8167893719803,
+     "Gharbia": 1136.701749758454,
+     "Menoufia": 1165.3431864734298,
+     "Qalyubia": 1073.5033487922703,
+     "Damietta": 1103.202530821256
+    },
+    "min_binding": 1073.5033487922703,
+    "max_binding": 1240.3371744927535,
+    "n_binding": 8,
+    "argmin": "Qalyubia",
+    "argmax": "Dakahlia"
+   }
+  }
+ },
+ "labelled_0.8015": {
+  "floor": 0.8015,
+  "status": "Optimal",
+  "objective": 174061181458.5819,
+  "ranges": {
+   "dry_expected": {
+    "values": {
+     "Beheira": 48.62838744927536,
+     "Sharkia": 54.19777736231883,
+     "Dakahlia": 53.67390750724637,
+     "Kafr El Sheikh": 58.889754946859895,
+     "Gharbia": 50.324807690821245,
+     "Menoufia": 57.19987439613526,
+     "Qalyubia": 64.31630123671496,
+     "Damietta": 54.441018164251204
+    },
+    "min_binding": 48.62838744927536,
+    "max_binding": 64.31630123671496,
+    "n_binding": 8,
+    "argmin": "Beheira",
+    "argmax": "Qalyubia"
+   },
+   "normal_expected": {
+    "values": {
+     "Beheira": 39.67190207901235,
+     "Sharkia": 53.53864790123456,
+     "Dakahlia": 42.50689720493827,
+     "Kafr El Sheikh": 44.04073613333333,
+     "Gharbia": 37.33659491851852,
+     "Menoufia": 40.27585986666667,
+     "Qalyubia": 49.511212592592585,
+     "Damietta": 16.68213707654321
+    },
+    "min_binding": 16.68213707654321,
+    "max_binding": 53.53864790123456,
+    "n_binding": 8,
+    "argmin": "Damietta",
+    "argmax": "Sharkia"
+   },
+   "high_expected": {
+    "values": {
+     "Beheira": 12.705049048611109,
+     "Sharkia": 12.002075944444442,
+     "Dakahlia": 13.77276658333333,
+     "Kafr El Sheikh": 13.189935597222219,
+     "Gharbia": 14.363953138888888,
+     "Menoufia": 14.642830854166665,
+     "Qalyubia": 14.175943347222221,
+     "Damietta": 13.722630638888887
+    },
+    "min_binding": 12.002075944444442,
+    "max_binding": 14.642830854166665,
+    "n_binding": 8,
+    "argmin": "Sharkia",
+    "argmax": "Menoufia"
+   },
+   "dry_low": {
+    "values": {
+     "Beheira": 1157.612951884058,
+     "Sharkia": 1097.3607000966183,
+     "Dakahlia": 1240.3371744927535,
+     "Kafr El Sheikh": 1196.8167893719803,
+     "Gharbia": 1136.701749758454,
+     "Menoufia": 1165.3431864734298,
+     "Qalyubia": 1073.5033487922703,
+     "Damietta": 1103.202530821256
+    },
+    "min_binding": 1073.5033487922703,
+    "max_binding": 1240.3371744927535,
+    "n_binding": 8,
+    "argmin": "Qalyubia",
+    "argmax": "Dakahlia"
+   }
+  }
+ },
+ "log_conversion": {
+  "cells": 96,
+  "max_gap_pounds_per_m3": 0.017600000000001614
+ }
+}

@@ -1,0 +1,145 @@
+kind,district,crop,inflow,area,floor_share
+winter,Beheira,Wheat,all,204854.87,0.80000000000000004
+winter,Beheira,Sugar beet,all,0,0.80000000000000004
+winter,Beheira,Potatoes_winter,all,0,0.80000000000000004
+winter,Sharkia,Wheat,all,227432.70999999999,0.80000000000000004
+winter,Sharkia,Sugar beet,all,0,0.80000000000000004
+winter,Sharkia,Potatoes_winter,all,7354.4005999999999,0.80000000000000004
+winter,Dakahlia,Wheat,all,187092.07999999999,0.80000000000000004
+winter,Dakahlia,Sugar beet,all,0,0.80000000000000004
+winter,Dakahlia,Potatoes_winter,all,0,0.80000000000000004
+winter,Kafr El Sheikh,Wheat,all,0,0.80000000000000004
+winter,Kafr El Sheikh,Sugar beet,all,0,0.80000000000000004
+winter,Kafr El Sheikh,Potatoes_winter,all,162429.54000000001,0.80000000000000004
+winter,Gharbia,Wheat,all,80107.534,0.80000000000000004
+winter,Gharbia,Sugar beet,all,0,0.80000000000000004
+winter,Gharbia,Potatoes_winter,all,0,0.80000000000000004
+winter,Menoufia,Wheat,all,90032.680999999997,0.80000000000000004
+winter,Menoufia,Sugar beet,all,0,0.80000000000000004
+winter,Menoufia,Potatoes_winter,all,0,0.80000000000000004
+winter,Qalyubia,Wheat,all,43120.544000000002,0.80000000000000004
+winter,Qalyubia,Sugar beet,all,0,0.80000000000000004
+winter,Qalyubia,Potatoes_winter,all,0,0.80000000000000004
+winter,Damietta,Wheat,all,19866,0.80000000000000004
+winter,Damietta,Sugar beet,all,0,0.80000000000000004
+winter,Damietta,Potatoes_winter,all,0,0.80000000000000004
+summer,Beheira,Rice,dry,0,0.80000000000000004
+summer,Beheira,Rice,normal,0,0.80000000000000004
+summer,Beheira,Rice,high,0,0.80000000000000004
+summer,Beheira,Maize_summer,dry,100479.71000000001,0.80000000000000004
+summer,Beheira,Maize_summer,normal,148034.32000000001,0.80000000000000004
+summer,Beheira,Maize_summer,high,220869.20000000001,0.80000000000000004
+summer,Beheira,Potatoes_summer,dry,0,0.80000000000000004
+summer,Beheira,Potatoes_summer,normal,0,0.80000000000000004
+summer,Beheira,Potatoes_summer,high,0,0.80000000000000004
+nili,Beheira,Maize_nili,dry,0,0.80000000000000004
+nili,Beheira,Maize_nili,normal,0,0.80000000000000004
+nili,Beheira,Maize_nili,high,0,0.80000000000000004
+nili,Beheira,Potatoes_nili,dry,0,0.80000000000000004
+nili,Beheira,Potatoes_nili,normal,0,0.80000000000000004
+nili,Beheira,Potatoes_nili,high,0,0.80000000000000004
+summer,Sharkia,Rice,dry,0,0.80000000000000004
+summer,Sharkia,Rice,normal,0,0.80000000000000004
+summer,Sharkia,Rice,high,0,0.80000000000000004
+summer,Sharkia,Maize_summer,dry,78065.543000000005,0.80000000000000004
+summer,Sharkia,Maize_summer,normal,5059.3059000000003,0.80000000000000004
+summer,Sharkia,Maize_summer,high,0,0.80000000000000004
+summer,Sharkia,Potatoes_summer,dry,0,0.80000000000000004
+summer,Sharkia,Potatoes_summer,normal,187939.72,0.80000000000000004
+summer,Sharkia,Potatoes_summer,high,246111.04999999999,0.80000000000000004
+nili,Sharkia,Maize_nili,dry,0,0.80000000000000004
+nili,Sharkia,Maize_nili,normal,0,0.80000000000000004
+nili,Sharkia,Maize_nili,high,0,0.80000000000000004
+nili,Sharkia,Potatoes_nili,dry,0,0.80000000000000004
+nili,Sharkia,Potatoes_nili,normal,0,0.80000000000000004
+nili,Sharkia,Potatoes_nili,high,48627.199999999997,0.80000000000000004
+summer,Dakahlia,Rice,dry,0,0.80000000000000004
+summer,Dakahlia,Rice,normal,0,0.80000000000000004
+summer,Dakahlia,Rice,high,0,0.80000000000000004
+summer,Dakahlia,Maize_summer,dry,46154.743999999999,0.80000000000000004
+summer,Dakahlia,Maize_summer,normal,79418.275999999998,0.80000000000000004
+summer,Dakahlia,Maize_summer,high,130364.87,0.80000000000000004
+summer,Dakahlia,Potatoes_summer,dry,0,0.80000000000000004
+summer,Dakahlia,Potatoes_summer,normal,0,0.80000000000000004
+summer,Dakahlia,Potatoes_summer,high,8719.7684000000008,0.80000000000000004
+nili,Dakahlia,Maize_nili,dry,0,0.80000000000000004
+nili,Dakahlia,Maize_nili,normal,0,0.80000000000000004
+nili,Dakahlia,Maize_nili,high,0,0.80000000000000004
+nili,Dakahlia,Potatoes_nili,dry,0,0.80000000000000004
+nili,Dakahlia,Potatoes_nili,normal,0,0.80000000000000004
+nili,Dakahlia,Potatoes_nili,high,0,0.80000000000000004
+summer,Kafr El Sheikh,Rice,dry,0,0.80000000000000004
+summer,Kafr El Sheikh,Rice,normal,0,0.80000000000000004
+summer,Kafr El Sheikh,Rice,high,0,0.80000000000000004
+summer,Kafr El Sheikh,Maize_summer,dry,125573.25999999999,0.80000000000000004
+summer,Kafr El Sheikh,Maize_summer,normal,82361.646999999997,0.80000000000000004
+summer,Kafr El Sheikh,Maize_summer,high,16135.689,0.80000000000000004
+summer,Kafr El Sheikh,Potatoes_summer,dry,0,0.80000000000000004
+summer,Kafr El Sheikh,Potatoes_summer,normal,0,0.80000000000000004
+summer,Kafr El Sheikh,Potatoes_summer,high,144263.70000000001,0.80000000000000004
+nili,Kafr El Sheikh,Maize_nili,dry,0,0.80000000000000004
+nili,Kafr El Sheikh,Maize_nili,normal,0,0.80000000000000004
+nili,Kafr El Sheikh,Maize_nili,high,0,0.80000000000000004
+nili,Kafr El Sheikh,Potatoes_nili,dry,0,0.80000000000000004
+nili,Kafr El Sheikh,Potatoes_nili,normal,0,0.80000000000000004
+nili,Kafr El Sheikh,Potatoes_nili,high,20937.869999999999,0.80000000000000004
+summer,Gharbia,Rice,dry,0,0.80000000000000004
+summer,Gharbia,Rice,normal,0,0.80000000000000004
+summer,Gharbia,Rice,high,0,0.80000000000000004
+summer,Gharbia,Maize_summer,dry,43636.875999999997,0.80000000000000004
+summer,Gharbia,Maize_summer,normal,62257.514999999999,0.80000000000000004
+summer,Gharbia,Maize_summer,high,0,0.80000000000000004
+summer,Gharbia,Potatoes_summer,dry,0,0.80000000000000004
+summer,Gharbia,Potatoes_summer,normal,1429.2552000000001,0.80000000000000004
+summer,Gharbia,Potatoes_summer,high,74789.948000000004,0.80000000000000004
+nili,Gharbia,Maize_nili,dry,0,0.80000000000000004
+nili,Gharbia,Maize_nili,normal,0,0.80000000000000004
+nili,Gharbia,Maize_nili,high,0,0.80000000000000004
+nili,Gharbia,Potatoes_nili,dry,0,0.80000000000000004
+nili,Gharbia,Potatoes_nili,normal,0,0.80000000000000004
+nili,Gharbia,Potatoes_nili,high,66286.422000000006,0.80000000000000004
+summer,Menoufia,Rice,dry,0,0.80000000000000004
+summer,Menoufia,Rice,normal,0,0.80000000000000004
+summer,Menoufia,Rice,high,0,0.80000000000000004
+summer,Menoufia,Maize_summer,dry,28067.213,0.80000000000000004
+summer,Menoufia,Maize_summer,normal,45379.843000000001,0.80000000000000004
+summer,Menoufia,Maize_summer,high,71895.952000000005,0.80000000000000004
+summer,Menoufia,Potatoes_summer,dry,0,0.80000000000000004
+summer,Menoufia,Potatoes_summer,normal,0,0.80000000000000004
+summer,Menoufia,Potatoes_summer,high,0,0.80000000000000004
+nili,Menoufia,Maize_nili,dry,0,0.80000000000000004
+nili,Menoufia,Maize_nili,normal,0,0.80000000000000004
+nili,Menoufia,Maize_nili,high,0,0.80000000000000004
+nili,Menoufia,Potatoes_nili,dry,0,0.80000000000000004
+nili,Menoufia,Potatoes_nili,normal,0,0.80000000000000004
+nili,Menoufia,Potatoes_nili,high,0,0.80000000000000004
+summer,Qalyubia,Rice,dry,0,0.80000000000000004
+summer,Qalyubia,Rice,normal,0,0.80000000000000004
+summer,Qalyubia,Rice,high,0,0.80000000000000004
+summer,Qalyubia,Maize_summer,dry,8729.0319,0.80000000000000004
+summer,Qalyubia,Maize_summer,normal,0,0.80000000000000004
+summer,Qalyubia,Maize_summer,high,0,0.80000000000000004
+summer,Qalyubia,Potatoes_summer,dry,19697.992999999999,0.80000000000000004
+summer,Qalyubia,Potatoes_summer,normal,35563.919999999998,0.80000000000000004
+summer,Qalyubia,Potatoes_summer,high,35563.919999999998,0.80000000000000004
+nili,Qalyubia,Maize_nili,dry,0,0.80000000000000004
+nili,Qalyubia,Maize_nili,normal,0,0.80000000000000004
+nili,Qalyubia,Maize_nili,high,0,0.80000000000000004
+nili,Qalyubia,Potatoes_nili,dry,0,0.80000000000000004
+nili,Qalyubia,Potatoes_nili,normal,0,0.80000000000000004
+nili,Qalyubia,Potatoes_nili,high,15549.246999999999,0.80000000000000004
+summer,Damietta,Rice,dry,0,0.80000000000000004
+summer,Damietta,Rice,normal,0,0.80000000000000004
+summer,Damietta,Rice,high,0,0.80000000000000004
+summer,Damietta,Maize_summer,dry,15071.584000000001,0.80000000000000004
+summer,Damietta,Maize_summer,normal,19789.560000000001,0.80000000000000004
+summer,Damietta,Maize_summer,high,0,0.80000000000000004
+summer,Damietta,Potatoes_summer,dry,0,0.80000000000000004
+summer,Damietta,Potatoes_summer,normal,0,0.80000000000000004
+summer,Damietta,Potatoes_summer,high,19789.560000000001,0.80000000000000004
+nili,Damietta,Maize_nili,dry,0,0.80000000000000004
+nili,Damietta,Maize_nili,normal,0,0.80000000000000004
+nili,Damietta,Maize_nili,high,0,0.80000000000000004
+nili,Damietta,Potatoes_nili,dry,0,0.80000000000000004
+nili,Damietta,Potatoes_nili,normal,1637.2647999999999,0.80000000000000004
+nili,Damietta,Potatoes_nili,high,25263.484,0.80000000000000004

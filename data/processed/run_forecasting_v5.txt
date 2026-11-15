@@ -1,0 +1,81 @@
+Nile Delta forecasting module version 5 run log
+Selection metric: lowest one step backtest RMSE per crop
+Band: forecast plus empirical 25th and 75th percentiles of
+the selected model backtest residuals at the used horizon,
+the residual quartiles, matching the layer weights of
+0.25, 0.50 and 0.25 the allocation model applies. Price
+forecasts target 2025 for every crop: one step from the
+2024 observation for wheat, maize and potatoes, two steps
+from the 2023 observation for paddy rice and sugar beet,
+whose farm gate series end in 2023 in every vintage held.
+Fertilizer feature: NOT BUILT. The Pink Sheet file in this
+project holds no fertilizer series, only international
+wheat, maize and milled rice reference prices for 2022 to
+2025. Models run on lagged target values, time trend and
+lagged planted area. This is a named gap, not a silent drop.
+
+wheat price (EGP per tonne)
+  last observed year 2024, forecast season 2025
+  selected model drift on 14 test seasons, RMSE 2373.3753, MAE 1328.8013, MAPE 16.48 percent, skill against naive 0.964
+  forecast 17891.5758 with band 17812.3067 to 18693.7649, printed beside its backtest RMSE 2373.3753 and MAPE 16.48 percent
+  horizon 1 step(s) to target year 2025; sequential quartile band coverage 0.0 percent over 9 later origins
+  failure note: rice_paddy price model ridge scored best in the backtest but its full data refit at horizon 2 returned inf, which is not a usable forecast. It is recorded as failed at the forecast step and selection passes on.
+
+rice_paddy price (EGP per tonne)
+  last observed year 2023, forecast season 2025
+  selected model drift on 10 test seasons, RMSE 5941.1423, MAE 2932.1736, MAPE 25.93 percent, skill against naive 0.982
+  forecast 20027.2759 with band 19978.1922 to 21226.8559, printed beside its backtest RMSE 5941.1423 and MAPE 25.93 percent
+  horizon 2 step(s) to target year 2025; sequential quartile band coverage 20.0 percent over 5 later origins
+
+maize price (EGP per tonne)
+  last observed year 2024, forecast season 2025
+  selected model drift on 14 test seasons, RMSE 2359.9496, MAE 1388.5153, MAPE 16.35 percent, skill against naive 0.947
+  forecast 20532.9394 with band 20493.9334 to 22439.9009, printed beside its backtest RMSE 2359.9496 and MAPE 16.35 percent
+  horizon 1 step(s) to target year 2025; sequential quartile band coverage 11.1 percent over 9 later origins
+
+sugar_beet price (EGP per tonne)
+  last observed year 2023, forecast season 2025
+  selected model drift on 10 test seasons, RMSE 118.9767, MAE 87.6304, MAPE 15.07 percent, skill against naive 0.850
+  forecast 846.0345 with band 832.7410 to 979.3445, printed beside its backtest RMSE 118.9767 and MAPE 15.07 percent
+  horizon 2 step(s) to target year 2025; sequential quartile band coverage 20.0 percent over 5 later origins
+
+potatoes price (EGP per tonne)
+  last observed year 2024, forecast season 2025
+  selected model drift on 14 test seasons, RMSE 1452.2464, MAE 898.7359, MAPE 19.53 percent, skill against naive 0.967
+  forecast 10753.2727 with band 10876.8347 to 11481.1549, printed beside its backtest RMSE 1452.2464 and MAPE 19.53 percent
+  horizon 1 step(s) to target year 2025; sequential quartile band coverage 22.2 percent over 9 later origins
+
+wheat yield (tonnes per hectare)
+  last observed year 2024, forecast season 2025
+  selected model random_forest on 24 test seasons, RMSE 0.3250, MAE 0.2604, MAPE 4.05 percent, skill against naive 0.959
+  forecast 6.6789 with band 6.6686 to 6.9682, printed beside its backtest RMSE 0.3250 and MAPE 4.05 percent
+  horizon 1 step(s) to target year 2025; sequential quartile band coverage 21.1 percent over 19 later origins
+
+rice_paddy yield (tonnes per hectare)
+  last observed year 2024, forecast season 2025
+  selected model naive_last on 24 test seasons, RMSE 0.2696, MAE 0.1981, MAPE 2.12 percent, skill against naive 1.000
+  forecast 9.1315 with band 8.9823 to 9.2482, printed beside its backtest RMSE 0.2696 and MAPE 2.12 percent
+  horizon 1 step(s) to target year 2025; sequential quartile band coverage 15.8 percent over 19 later origins
+
+maize yield (tonnes per hectare)
+  last observed year 2024, forecast season 2025
+  selected model random_forest on 24 test seasons, RMSE 0.6912, MAE 0.4119, MAPE 6.16 percent, skill against naive 0.824
+  forecast 7.6834 with band 7.5608 to 8.1134, printed beside its backtest RMSE 0.6912 and MAPE 6.16 percent
+  horizon 1 step(s) to target year 2025; sequential quartile band coverage 57.9 percent over 19 later origins
+
+sugar_beet yield (tonnes per hectare)
+  last observed year 2024, forecast season 2025
+  selected model random_forest on 24 test seasons, RMSE 5.8925, MAE 3.5418, MAPE 6.39 percent, skill against naive 0.768
+  forecast 56.0570 with band 53.4131 to 57.5149, printed beside its backtest RMSE 5.8925 and MAPE 6.39 percent
+  horizon 1 step(s) to target year 2025; sequential quartile band coverage 26.3 percent over 19 later origins
+
+potatoes yield (tonnes per hectare)
+  last observed year 2024, forecast season 2025
+  selected model ridge on 24 test seasons, RMSE 1.4879, MAE 0.8369, MAPE 3.10 percent, skill against naive 0.926
+  forecast 31.5165 with band 31.0644 to 31.7627, printed beside its backtest RMSE 1.4879 and MAPE 3.10 percent
+  horizon 1 step(s) to target year 2025; sequential quartile band coverage 26.3 percent over 19 later origins
+
+Outlier sensitivity, selected model, headline scores keep the
+published values and score those origins in full:
+  maize yield: origin 2019 actual 4.9513, selected model forecast 7.7164; RMSE without that single origin 0.4075 on 23 origins, sensitivity only
+  sugar_beet yield: origin 2020 actual 72.8148, selected model forecast 49.2843; RMSE without that single origin 3.4868 on 23 origins, sensitivity only

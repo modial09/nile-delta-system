@@ -1,0 +1,265 @@
+{
+ "floor50_cell": {
+  "floor_t": 6127203.580185315,
+  "max_staple": {
+   "dry_low": 6127203.625384855,
+   "dry_expected": 6345266.651645758,
+   "dry_high": 6783179.19683388,
+   "normal_low": 6127203.609628748,
+   "normal_expected": 6345266.635246905,
+   "normal_high": 6783179.179320666,
+   "high_low": 6127203.675654312,
+   "high_expected": 6345266.703965881,
+   "high_high": 6783179.252709338,
+   "drought_low": 6127203.62768981,
+   "drought_expected": 6345266.65404474,
+   "drought_high": 6783179.19939588
+  },
+  "headroom": {
+   "dry_low": 0.04519954044371843,
+   "dry_expected": 218063.07146044355,
+   "dry_high": 655975.616648565,
+   "normal_low": 0.02944343350827694,
+   "normal_expected": 218063.05506158993,
+   "normal_high": 655975.5991353514,
+   "high_low": 0.09546899702399969,
+   "high_expected": 218063.12378056627,
+   "high_high": 655975.6725240238,
+   "drought_low": 0.04750449489802122,
+   "drought_expected": 218063.07385942526,
+   "drought_high": 655975.6192105655
+  },
+  "min_headroom": 0.02944343350827694,
+  "min_scenarios": [
+   "dry_low",
+   "normal_low",
+   "drought_low"
+  ],
+  "seconds": 0.3
+ },
+ "floor60_cell": {
+  "floor_t": 7352644.296222378,
+  "max_staple": {
+   "dry_low": 7352644.407167942,
+   "dry_expected": 7616061.493704395,
+   "dry_high": 8139284.059973744,
+   "normal_low": 7352644.311406432,
+   "normal_expected": 7616312.6075739255,
+   "normal_high": 8141522.538581213,
+   "high_low": 7352644.261762864,
+   "high_expected": 7616312.555905224,
+   "high_high": 8141522.483401441,
+   "drought_low": 7352644.354955604,
+   "drought_expected": 7616312.652899621,
+   "drought_high": 8141522.586986949
+  },
+  "headroom": {
+   "dry_low": 0.11094556469470263,
+   "dry_expected": 263417.1974820178,
+   "dry_high": 786639.7637513662,
+   "normal_low": 0.015184054151177406,
+   "normal_expected": 263668.31135154795,
+   "normal_high": 788878.2423588354,
+   "high_low": -0.03445951361209154,
+   "high_expected": 263668.25968284626,
+   "high_high": 788878.1871790634,
+   "drought_low": 0.05873322673141956,
+   "drought_expected": 263668.3566772435,
+   "drought_high": 788878.2907645712
+  },
+  "min_headroom": -0.03445951361209154,
+  "min_scenarios": [
+   "normal_low",
+   "high_low"
+  ],
+  "seconds": 0.3
+ },
+ "floor70_cell": {
+  "floor_t": 8578085.01225944,
+  "max_staple": {
+   "dry_low": 8578085.035159787,
+   "dry_expected": 8877266.030781604,
+   "dry_high": 9491217.444958504,
+   "normal_low": 8578085.001468884,
+   "normal_expected": 8877265.995716332,
+   "normal_high": 9491217.407510422,
+   "high_low": 8578085.060043477,
+   "high_expected": 8877266.056680387,
+   "high_high": 9491217.4726172,
+   "drought_low": 8578084.984089736,
+   "drought_expected": 8877265.977628227,
+   "drought_high": 9491217.388193168
+  },
+  "headroom": {
+   "dry_low": 0.022900346666574478,
+   "dry_expected": 299181.01852216385,
+   "dry_high": 913132.4326990638,
+   "normal_low": -0.01079055666923523,
+   "normal_expected": 299180.98345689103,
+   "normal_high": 913132.3952509817,
+   "high_low": 0.04778403602540493,
+   "high_expected": 299181.0444209464,
+   "high_high": 913132.4603577591,
+   "drought_low": -0.028169704601168633,
+   "drought_expected": 299180.9653687868,
+   "drought_high": 913132.3759337272
+  },
+  "min_headroom": -0.028169704601168633,
+  "min_scenarios": [
+   "normal_low",
+   "drought_low"
+  ],
+  "seconds": 0.3
+ },
+ "floor75_cell": {
+  "floor_t": 9190805.370277971,
+  "max_staple": {
+   "dry_low": 9190805.393008422,
+   "dry_expected": 9508655.231995586,
+   "dry_high": 10166846.82338542,
+   "normal_low": 9190805.337716449,
+   "normal_expected": 9508655.174448062,
+   "normal_high": 10166846.761927338,
+   "high_low": 9190805.362298287,
+   "high_expected": 9508655.200032678,
+   "high_high": 10166846.78925052,
+   "drought_low": 9190805.39103519,
+   "drought_expected": 9508655.229941858,
+   "drought_high": 10166846.821192134
+  },
+  "headroom": {
+   "dry_low": 0.022730451077222824,
+   "dry_expected": 317849.8617176153,
+   "dry_high": 976041.4531074483,
+   "normal_low": -0.0325615219771862,
+   "normal_expected": 317849.8041700907,
+   "normal_high": 976041.3916493673,
+   "high_low": -0.007979683578014374,
+   "high_expected": 317849.8297547065,
+   "high_high": 976041.4189725481,
+   "drought_low": 0.020757218822836876,
+   "drought_expected": 317849.85966388695,
+   "drought_high": 976041.4509141631
+  },
+  "min_headroom": -0.0325615219771862,
+  "min_scenarios": [
+   "normal_low",
+   "high_low"
+  ],
+  "seconds": 0.3
+ },
+ "floor80_cell": {
+  "floor_t": 9803525.728296503,
+  "max_staple": {
+   "dry_low": 9803525.710949404,
+   "dry_expected": 10130719.2674811,
+   "dry_high": 10834485.317749592,
+   "normal_low": 9803525.676300094,
+   "normal_expected": 10130719.231418325,
+   "normal_high": 10834485.279236222,
+   "high_low": 9803525.771664737,
+   "high_expected": 10130719.330673223,
+   "high_high": 10834485.38523584,
+   "drought_low": 9803525.700405264,
+   "drought_expected": 10130719.256506829,
+   "drought_high": 10834485.306029579
+  },
+  "headroom": {
+   "dry_low": -0.017347099259495735,
+   "dry_expected": 327193.5391845964,
+   "dry_high": 1030959.5894530881,
+   "normal_low": -0.05199640989303589,
+   "normal_expected": 327193.5031218212,
+   "normal_high": 1030959.5509397183,
+   "high_low": 0.04336823336780071,
+   "high_expected": 327193.60237671994,
+   "high_high": 1030959.656939337,
+   "drought_low": -0.027891239151358604,
+   "drought_expected": 327193.52821032517,
+   "drought_high": 1030959.5777330752
+  },
+  "min_headroom": -0.05199640989303589,
+  "min_scenarios": [
+   "dry_low",
+   "normal_low",
+   "drought_low"
+  ],
+  "seconds": 0.3
+ },
+ "floor70_physical": {
+  "headroom": {
+   "dry_low": 0.022900346666574478,
+   "dry_expected": 299181.01852216385,
+   "dry_high": 913132.4326990638,
+   "normal_low": -0.01079055666923523,
+   "normal_expected": 299180.98345689103,
+   "normal_high": 913132.3952509817,
+   "high_low": 0.04778403602540493,
+   "high_expected": 299181.0444209464,
+   "high_high": 913132.4603577591,
+   "drought_low": -0.028169704601168633,
+   "drought_expected": 299180.9653687868,
+   "drought_high": 913132.3759337272
+  },
+  "min_headroom": -0.028169704601168633,
+  "n_failed": 0,
+  "seconds": 0.7
+ },
+ "floor70_pool": {
+  "headroom": {
+   "dry_low": null,
+   "dry_expected": null,
+   "dry_high": null,
+   "normal_low": null,
+   "normal_expected": null,
+   "normal_high": null,
+   "high_low": null,
+   "high_expected": null,
+   "high_high": null,
+   "drought_low": null,
+   "drought_expected": null,
+   "drought_high": null
+  },
+  "min_headroom": null,
+  "n_failed": 12,
+  "seconds": 0.3
+ },
+ "floor80_physical": {
+  "headroom": {
+   "dry_low": -0.017347099259495735,
+   "dry_expected": 327193.5391845964,
+   "dry_high": 1030959.5894530881,
+   "normal_low": -0.05199640989303589,
+   "normal_expected": 327193.5031218212,
+   "normal_high": 1030959.5509397183,
+   "high_low": 0.04336823336780071,
+   "high_expected": 327193.60237671994,
+   "high_high": 1030959.656939337,
+   "drought_low": -0.027891239151358604,
+   "drought_expected": 327193.52821032517,
+   "drought_high": 1030959.5777330752
+  },
+  "min_headroom": -0.05199640989303589,
+  "n_failed": 0,
+  "seconds": 0.6
+ },
+ "floor80_pool": {
+  "headroom": {
+   "dry_low": null,
+   "dry_expected": null,
+   "dry_high": null,
+   "normal_low": null,
+   "normal_expected": null,
+   "normal_high": null,
+   "high_low": null,
+   "high_expected": null,
+   "high_high": null,
+   "drought_low": null,
+   "drought_expected": null,
+   "drought_high": null
+  },
+  "min_headroom": null,
+  "n_failed": 12,
+  "seconds": 0.2
+ }
+}

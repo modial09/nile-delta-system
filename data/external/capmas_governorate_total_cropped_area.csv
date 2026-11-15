@@ -1,0 +1,28 @@
+governorate,governorate_ar,agricultural_year,measure,area_feddan,area_hectares,source_id,source_table,evidence_grade,data_status
+Beheira,البحيرة,2020/2021,total_cropped_area,1716283,720838.86,MOA_Summer_2020_2021,Table 19,first_hand,published_value
+Sharkia,الشرقية,2020/2021,total_cropped_area,1617947,679537.74,MOA_Summer_2020_2021,Table 19,first_hand,published_value
+Dakahlia,الدقهلية,2020/2021,total_cropped_area,1270241,533501.22,MOA_Summer_2020_2021,Table 19,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,2020/2021,total_cropped_area,1071892,450194.64,MOA_Summer_2020_2021,Table 19,first_hand,published_value
+Gharbia,الغربية,2020/2021,total_cropped_area,733671,308141.82,MOA_Summer_2020_2021,Table 19,first_hand,published_value
+Menoufia,المنوفية,2020/2021,total_cropped_area,640885,269171.7,MOA_Summer_2020_2021,Table 19,first_hand,published_value
+Qalyubia,القليوبية,2020/2021,total_cropped_area,284476,119479.92,MOA_Summer_2020_2021,Table 19,first_hand,published_value
+Damietta,دمياط,2020/2021,total_cropped_area,227638,95607.96,MOA_Summer_2020_2021,Table 19,first_hand,published_value
+Beheira,البحيرة,2020/2021,cultivated_area,922716,387540.72,MOA_Summer_2020_2021,Table 17,first_hand,published_value
+Sharkia,الشرقية,2020/2021,cultivated_area,893510,375274.2,MOA_Summer_2020_2021,Table 17,first_hand,published_value
+Dakahlia,الدقهلية,2020/2021,cultivated_area,645422,271077.24,MOA_Summer_2020_2021,Table 17,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,2020/2021,cultivated_area,543138,228117.96,MOA_Summer_2020_2021,Table 17,first_hand,published_value
+Gharbia,الغربية,2020/2021,cultivated_area,379616,159438.72,MOA_Summer_2020_2021,Table 17,first_hand,published_value
+Menoufia,المنوفية,2020/2021,cultivated_area,335922,141087.24,MOA_Summer_2020_2021,Table 17,first_hand,published_value
+Qalyubia,القليوبية,2020/2021,cultivated_area,159010,66784.2,MOA_Summer_2020_2021,Table 17,first_hand,published_value
+Damietta,دمياط,2020/2021,cultivated_area,112524,47260.08,MOA_Summer_2020_2021,Table 17,first_hand,published_value
+Beheira,البحيرة,2019/2020,total_cropped_area,1752543,736068.06,MOA_Summer_2019_2020,Table 19,first_hand,published_value
+Sharkia,الشرقية,2019/2020,total_cropped_area,1615245,678402.9,MOA_Summer_2019_2020,Table 19,first_hand,published_value
+Dakahlia,الدقهلية,2019/2020,total_cropped_area,1304871,548045.82,MOA_Summer_2019_2020,Table 19,first_hand,published_value
+Kafr El Sheikh,كفر الشيخ,2019/2020,total_cropped_area,1105645,464370.9,MOA_Summer_2019_2020,Table 19,first_hand,published_value
+Gharbia,الغربية,2019/2020,total_cropped_area,732997,307858.74,MOA_Summer_2019_2020,Table 19,first_hand,published_value
+Menoufia,المنوفية,2019/2020,total_cropped_area,648354,272308.68,MOA_Summer_2019_2020,Table 19,first_hand,published_value
+Qalyubia,القليوبية,2019/2020,total_cropped_area,264820,111224.4,MOA_Summer_2019_2020,Table 19,first_hand,published_value
+Damietta,دمياط,2019/2020,total_cropped_area,227367,95494.14,MOA_Summer_2019_2020,Table 19,first_hand,published_value
+Menoufia,المنوفية,2022/2023,total_cropped_area,608610,255616.2,HCSR_2025_secondhand_CAPMAS,study text,second_hand,published_value
+Menoufia,المنوفية,2022/2023,cultivated_area,300111,126046.62,HCSR_2025_secondhand_CAPMAS,study text,second_hand,published_value
+Menoufia,المنوفية,2023,zemam_area,448413,188333.46,HCSR_2025_secondhand_CAPMAS,study text quoting CAPMAS zemam bulletin 2023,second_hand,published_value

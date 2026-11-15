@@ -1,0 +1,22 @@
+crop,value_as_published,unit_as_published,converted_cubic_metres_per_hectare,basis,location_basis,source
+wheat,127.2,mm per season net irrigation requirement,1272,net irrigation requirement (crop evapotranspiration minus effective rain); NOT applied water,Delta territory Egypt,Gabr 2022 Modeling Earth Systems and Environment 8:3127 to 3142 Table 6; FAO CROPWAT 8.0; weather 1985 to 2018
+wheat,178.2,mm per season crop evapotranspiration,1782,crop evapotranspiration ETc,Delta territory Egypt,Gabr 2022 Table 6; see caution in research notes: this ETc is far below the same paper other territories and below west Delta CROPWAT study
+rice,1144.1,mm per season net irrigation requirement,11441,net irrigation requirement; effective rain taken as zero in this table,Delta territory Egypt,Gabr 2022 Table 6
+rice,1144.1,mm per season crop evapotranspiration,11441,crop evapotranspiration ETc,Delta territory Egypt,Gabr 2022 Table 6
+maize,576.2,mm per season net irrigation requirement,5762,net irrigation requirement,Delta territory Egypt,Gabr 2022 Table 6
+maize,576.2,mm per season crop evapotranspiration,5762,crop evapotranspiration ETc,Delta territory Egypt,Gabr 2022 Table 6
+sugar beet,392.7,mm per season net irrigation requirement,3927,net irrigation requirement,Delta territory Egypt,Gabr 2022 Table 6 (crop listed as Sugar B)
+sugar beet,419.2,mm per season crop evapotranspiration,4192,crop evapotranspiration ETc,Delta territory Egypt,Gabr 2022 Table 6
+potatoes,244.8,mm per season net irrigation requirement,2448,net irrigation requirement,Delta territory Egypt,Gabr 2022 Table 6
+potatoes,318.4,mm per season crop evapotranspiration,3184,crop evapotranspiration ETc,Delta territory Egypt,Gabr 2022 Table 6
+wheat,2153,cubic metres per feddan per season,5126,applied water requirement as published by CAPMAS; basis stated only as water requirement,Egypt (used for East Nile Delta Ismailia Canal area),CAPMAS 2017 as reproduced in Abdelwahab et al 2024 Acta Sci Pol Formatio Circumiectus 23(4) Table 3; winter crop
+rice,6972,cubic metres per feddan per season,16600,applied water requirement as published by CAPMAS,Egypt (East Nile Delta use),CAPMAS 2017 via Abdelwahab et al 2024 Table 3; summer crop
+maize,3908,cubic metres per feddan per season,9305,applied water requirement as published by CAPMAS,Egypt (East Nile Delta use),CAPMAS 2017 via Abdelwahab et al 2024 Table 3; summer crop; Nili season maize in same table is 3122 per feddan equals 7433 per hectare
+sugar beet,3959,cubic metres per feddan per season,9426,applied water requirement as published by CAPMAS,Egypt (East Nile Delta use),CAPMAS 2017 via Abdelwahab et al 2024 Table 3; winter crop; spelled Sugar beat in source table
+potatoes,1713,cubic metres per feddan per season,4079,applied water requirement as published by CAPMAS; winter season,Egypt (East Nile Delta use),CAPMAS 2017 via Abdelwahab et al 2024 Table 3; winter crop
+potatoes,2581,cubic metres per feddan per season,6145,applied water requirement as published by CAPMAS; summer season,Egypt (East Nile Delta use),CAPMAS 2017 via Abdelwahab et al 2024 Table 3; summer crop
+wheat,1464,cubic metres per feddan,3486,crop water requirement from MWRI water duty tables; applied duty basis,Lower Egypt (Delta),MWRI 2003 duty tables as reproduced in Sallam and Abd El Nasser 2006 2nd Intl Conf Water Resources and Arid Environment Table 1
+rice,5521,cubic metres per feddan,13145,crop water requirement from MWRI water duty tables; applied duty basis,Lower Egypt (Delta),MWRI 2003 via Sallam and Abd El Nasser 2006 Table 1
+wheat,490.4,mm per season crop water requirement,4904,crop evapotranspiration basis computed with CROPWAT 4.2 Penman Monteith,West of Nile Delta newly reclaimed area Egypt,Australian Journal of Basic and Applied Sciences 2008 2(1):165 to 173
+sugar beet,556.65,mm per season crop water requirement,5567,crop evapotranspiration basis computed with CROPWAT 4.2 Penman Monteith,West of Nile Delta Egypt,AJBAS 2008 2(1):165 to 173
+maize,668.5,mm per season crop water requirement,6685,crop evapotranspiration basis computed with CROPWAT 4.2 Penman Monteith,West of Nile Delta Egypt,AJBAS 2008 2(1):165 to 173

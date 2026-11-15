@@ -1,0 +1,17 @@
+crop,year,season,cost_per_feddan_egp_as_published,cost_per_hectare_egp_converted,includes_rent,source
+wheat,2016/2017,winter,9019,21473.81,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2016/2017 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+sugar_beet,2016/2017,winter,7395,17607.14,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2016/2017 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+rice_paddy,2016/2017,summer,8359,19902.38,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2016/2017 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+maize,2016/2017,summer,7952,18933.33,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2016/2017 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+maize,2016/2017,nili,5897,14040.48,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2016/2017 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+potatoes,2016/2017,summer,20804,49533.33,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2016/2017 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+potatoes,2016/2017,nili,11827,28159.52,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2016/2017 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+wheat,2015/2016,winter,7054,16795.24,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2015/2016 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+sugar_beet,2015/2016,winter,6853,16316.67,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2015/2016 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+rice_paddy,2015/2016,summer,6153,14650.0,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2015/2016 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+maize,2015/2016,summer,5609,13354.76,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2015/2016 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+maize,2015/2016,nili,4112,9790.48,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2015/2016 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+potatoes,2015/2016,summer,11123,26483.33,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2015/2016 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+potatoes,2015/2016,nili,6779,16140.48,yes,CAPMAS Annual Bulletin of Estimates of Income from the Agricultural Sector 2015/2016 Tables 15 to 17 (data source Ministry of Agriculture Economic Affairs Sector)
+wheat,2022/2023,winter,17000,40476.19,yes,Government report figures republished by Safha1 on 30 May 2024 citing Ministry of Planning reporting: total production cost per feddan about 17000 EGP in 2022/2023 with land rent 4700 EGP stated as a component
+wheat,2023/2024,winter,22000,52380.95,yes,"Same government report as republished by Safha1 on 30 May 2024: forecast total production cost per feddan about 22000 EGP for 2023/2024 (forecast in the source, not an outturn)"

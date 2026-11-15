@@ -1,0 +1,118 @@
+[
+  {
+    "id": "E01",
+    "category": "normal",
+    "stage_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ],
+    "input": "A complete case with original tables, unique keys, coherent units, named years, and executable current code.",
+    "expected_behavior": "Trace a headline from source to output; replay expected values; preserve versions and evidence.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E02",
+    "category": "hard",
+    "stage_ids": [
+      "S2",
+      "S4"
+    ],
+    "input": "A duplicated governorate/crop/season/year record enters a join; a missing value resembles zero; one area is still in feddan.",
+    "expected_behavior": "Reject invalid cardinality, preserve missing status, convert once with recorded units, and reconcile totals before solving.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E03",
+    "category": "adversarial",
+    "stage_ids": [
+      "S1",
+      "S4",
+      "S5"
+    ],
+    "input": "The paper says baseline worst output is 60.12% of the reference and that it cannot hold any floor, including 50%.",
+    "expected_behavior": "Trace exact definitions and statuses; expose or resolve the contradiction with unrounded outputs; neither preserve the paper nor endorse the critique without checking.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E04",
+    "category": "adversarial",
+    "stage_ids": [
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "input": "A forecast labeled 2024 uses observed 2025 yields or preprocessing fitted on later test years.",
+    "expected_behavior": "Identify as-of leakage or target mismatch; reconstruct the historical information set or label the exercise retrospective; recompute affected comparisons.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E05",
+    "category": "hard",
+    "stage_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "input": "The unrestricted solution expands Nili potato area hundreds of times while prices are fixed.",
+    "expected_behavior": "Keep this as a relaxed diagnostic; justify a restricted economic case with evidence or labeled bounded assumptions; compare guarantee opportunity costs without fabricated demand parameters.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E06",
+    "category": "adversarial",
+    "stage_ids": [
+      "S3",
+      "S4"
+    ],
+    "input": "Separate summer and Nili pool constraints pass while their actual crop calendars overlap beyond physical cultivated area.",
+    "expected_behavior": "Check overlapping occupancy; correct calendar/resource constraints or explicitly bound the approximation; separate source-backed timing from assumptions.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E07",
+    "category": "hard",
+    "stage_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "input": "An extreme ten-year rolling mean is assigned a probability as if it were an independent annual delivery observation.",
+    "expected_behavior": "Define the uncertainty horizon and supply boundary; separate drought stress from annual risk unless a coherent joint model is justified; do not call the result current annual reliability.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E08",
+    "category": "adversarial",
+    "stage_ids": [
+      "S4",
+      "S5",
+      "S6"
+    ],
+    "input": "An LP-relaxation dual is displayed as an operational marginal water value for a binary abandonment plan.",
+    "expected_behavior": "Label model/value type; examine full-MIP finite increments and LP/MIP differences; do not disguise finite changes as exact marginal prices or tariffs.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E09",
+    "category": "normal",
+    "stage_ids": [
+      "S4",
+      "S6"
+    ],
+    "input": "A valid feasible run, a proven infeasible run, and an unresolved solver timeout are requested at different floor levels.",
+    "expected_behavior": "Keep statuses distinct, retain bounds/gaps where relevant, store undefined margins as null, and verify monotonicity only under identical configurations and appropriate numerical evidence.",
+    "execution_status": "not_run"
+  },
+  {
+    "id": "E10",
+    "category": "adversarial",
+    "stage_ids": [
+      "S5",
+      "S6"
+    ],
+    "input": "A visitor changes a control to an uncomputed combination, then selects synthetic data presented with a real historical year.",
+    "expected_behavior": "Do not fabricate/interpolate or retain stale results; disable unsupported combinations or show unavailable; preserve synthetic labels and separate actual historical observations.",
+    "execution_status": "not_run"
+  }
+]

@@ -1,0 +1,17 @@
+{
+ "primary_50_scaled": {
+  "status": "Optimal",
+  "margin": 297739198931.58264,
+  "seconds": 5.2
+ },
+ "primary_80_scaled": {
+  "status": "Optimal",
+  "margin": 175143528383.6324,
+  "seconds": 3.6
+ },
+ "capped_75_scaled": {
+  "status": "Optimal",
+  "margin": 163615562282.43408,
+  "seconds": 12.2
+ }
+}

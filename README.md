@@ -1,54 +1,37 @@
-# Allocating Water and Routing Fertilizer in the Nile Delta
+# Pricing the Food Guarantee: A Stochastic Water Allocation Model for the Nile Delta
 
-An integrated stochastic optimization study, with a forecasting module, built on public data.
+I am Mohamed Diallo. This repository holds my applied project for graduate study in business analytics: a two stage stochastic water allocation model for eight Nile Delta governorates and five crops, built to price a staple food guarantee level by level.
 
-## The problem I am solving
+## The question
 
-Egypt farms the Nile Delta with a fixed and shrinking water budget, yet water and fertilizer are still allocated by habit and history rather than by value. Scarce water flows to low return crops while high return districts go short, and fertilizer delivery adds wasted cost on top of wasted water.
+Egypt divides a fixed share of Nile water among districts and crops every season. I ask what it costs, in expected farm margin, to promise that aggregate wheat, paddy rice and summer maize tonnage holds at a stated share of its current level in every water and price state the model represents, and what one more cubic metre of water earns in each governorate at the margin.
 
-## The system I am building
+## What the model does
 
-The system answers that problem with two chained optimization models and one forecasting module.
+Planting is decided at two points. Winter planting is fixed before the inflow state is known. Summer and Nili planting respond to the observed state. Land binds by season against physical cultivated area, with a reserve held for crops outside the model. A planted crop may be abandoned in a bad state, taking no water and no output, with its cost already sunk. The guarantee is a hard floor in every scenario. A forecasting module supplies prices and yields: ridge, random forest and gradient boosting models raced against simple baselines on rolling backtests, with every error printed. On prices, no learning model beat the drift line, and the paper says so.
 
-1. Problem One, allocation. A two stage stochastic linear program that decides how much land to plant to each crop in each district and how much water each planting receives, under low, expected, and high Nile inflow scenarios. Its objective is total farm margin, subject to the water budget, land limits, and minimum food production. Its dual solution prices water by district, in money per cubic metre.
-2. Problem Two, distribution. The planting pattern from Problem One implies fertilizer demand by district, using published application rates per crop. A routing model then plans delivery from depots to district collection points at the lowest travel cost, with real road distances computed through SCGraph, the open source logistics library from MIT CTL.
-3. The forecasting module. A machine learning layer that forecasts next season crop prices and yields from historical series, and reports its own accuracy honestly through backtesting. Its forecast means and spreads generate the scenario parameters that Problem One consumes, so prediction supports prescription instead of replacing it.
+## Data
 
-## What the system outputs
+Ministry of Agriculture bulletins for land, cropping pattern and district yields, read first hand in Arabic. The ministry cost bulletin through 2022 for costs. FAOSTAT for prices, with observed 2024 values for wheat, maize and potatoes. The gauged Aswan inflow record, 1871 to 1970, for water states. FAO WaPOR satellite consumption as a validation comparison only. Every input carries its source, year and unit in the data appendix of the paper and in docs/foundation_rebuild/S2_Parameter_Dictionary.md.
 
-1. An allocation plan: hectares by crop and district, with water per district under each inflow scenario
-2. A water value map: the shadow price of water by district
-3. A stress answer: what a 10 percent and a 20 percent water cut does to margin and food output, and which districts absorb the shock
-4. Fertilizer demand by district, in tons by nutrient
-5. Delivery routes with cost per ton, compared against a nearest depot baseline
-6. A working paper for SSRN, this open code, and a one page plain English brief
+## What version 5 found
 
-## How I test it
+These are verified model results on a stated basis: forecast 2025 prices, official 2022 costs, a calibrated water anchor of 11.00 billion cubic metres for the model area. They are not measurements of Egypt.
 
-1. Baseline comparison against the actual current cropping pattern in the same data
-2. Backtesting on earlier years of prices and yields
-3. Stress testing at reduced water budgets
-4. Sensitivity analysis on prices and on the water shadow prices
-5. Routing validation against known road distances on sample routes
+The highest guarantee the model holds in every scenario is 82.41 percent of the reference tonnage. The 80 percent level costs 268,610,886,052 pounds of expected margin against the same model left free. The pattern Egypt actually plants holds the 65 percent level and fails from 70. Under market sanity caps on crop areas, the 75 percent guarantee costs 32,666,817,585 pounds and the capped ceiling is 79.50 percent. A tenth less water deletes the 80 percent rung entirely. Full results sit in paper/Results_Note_v5.md and the addendum runs in data/processed/.
 
-The falsification rule is fixed in advance: if the optimized allocation cannot beat the real pattern on historical data by a meaningful margin, the thesis fails and the paper reports that.
+## Verification
 
-## Repository map
+This project has been audited four times: an internal audit, an independent audit brief I commissioned, and in November 2026 two blind independent checks run for the foundation rebuild, one numerical and one a domain critique, followed by a blind verification of the repaired build. The checks killed real claims. The earlier statement that the historical pattern holds no guarantee at any level was false and is corrected above. The full record, including every failure, is in docs/foundation_rebuild/ and paper/.
 
-* `docs/problem_statement.md` holds the one page problem statement
-* `docs/design.md` holds the full design: formulations, data, testing, stakeholder plan, and timeline
-* `data/SOURCES.md` lists every data source, what it provides, and its pull status
-* `src/` holds the model code: `allocation_model.py`, `routing_model.py`, `forecasting.py`, `data_loading.py`
-* `notebooks/` holds the working notebooks, starting with `01_first_look.ipynb`
-* `paper/` holds the working paper outline and drafts
+## What is not here
 
-## How to run
+An earlier design chained a fertilizer routing model on top of the allocation model. I cut it to protect the core, and it is not in this repository as working code. No interface has been built. The paper in paper/ is the November 2026 version whose numbers version 5 supersedes; the results note and the research memo are the current documents.
 
-1. Create a Python environment with Python 3.11 or later
-2. Install the packages listed in `requirements.txt`
-3. Pull the data files listed in `data/SOURCES.md` into `data/raw/`
-4. Open `notebooks/01_first_look.ipynb` and work through the project in notebook order
+## Limits I state wherever the numbers travel
 
-## Status
+The water anchor is a calibration, not a published release series. Prices and costs stand on different years, bridged in sensitivity runs by labelled assumed factors. The low and high price and yield layers carry nominal probabilities; their measured coverage is weaker than their construction. The uncapped optima plant potatoes far beyond any market, so the capped ladder is the implementable price list. No Egyptian irrigation specialist has reviewed the work yet; Professor Anusha of Hult reviews it next, before it goes anywhere else.
 
-Week one: repository scaffolded, design frozen, data pull in progress. Nothing in this repository is published yet. A public release with a Zenodo DOI is planned for December 2026, ahead of the January application deadline.
+## Reproduce
+
+Install the requirements in requirements.txt, then run src/forecasting_v5.py and src/allocation_model_v5.py. The runs regenerate the saved result files exactly, which the independent verification confirmed.
