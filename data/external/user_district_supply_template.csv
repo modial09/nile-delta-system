@@ -1,0 +1,9 @@
+governorate,default_supply_billion_cubic_metres_at_anchor,user_supply_billion_cubic_metres,note
+Beheira,2.5426,,Default is the version 6 built split by physical land share; a user with district delivery records replaces the third column and the model reads it instead
+Sharkia,2.4622,,Default is the version 6 built split by physical land share; a user with district delivery records replaces the third column and the model reads it instead
+Dakahlia,1.7785,,Default is the version 6 built split by physical land share; a user with district delivery records replaces the third column and the model reads it instead
+Kafr El Sheikh,1.4967,,Default is the version 6 built split by physical land share; a user with district delivery records replaces the third column and the model reads it instead
+Gharbia,1.0461,,Default is the version 6 built split by physical land share; a user with district delivery records replaces the third column and the model reads it instead
+Menoufia,0.9257,,Default is the version 6 built split by physical land share; a user with district delivery records replaces the third column and the model reads it instead
+Qalyubia,0.4382,,Default is the version 6 built split by physical land share; a user with district delivery records replaces the third column and the model reads it instead
+Damietta,0.3101,,Default is the version 6 built split by physical land share; a user with district delivery records replaces the third column and the model reads it instead
