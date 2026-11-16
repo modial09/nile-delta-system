@@ -1,0 +1,159 @@
+{
+ "montecarlo": {
+  "cover": 0.25,
+  "floor_t": 5150000.0,
+  "n_draws": 200,
+  "capacity_hold_share": 0.185,
+  "capacity_p10": 4739066.3,
+  "capacity_median": 4992727.0,
+  "capacity_p90": 5157919.0,
+  "delivery_hold_share": 0.185,
+  "delivery_wheat_median": 4992727.009770734,
+  "margin_p10": 131385791816.1836,
+  "margin_median": 190805012412.38464,
+  "margin_p90": 325144891770.8992
+ },
+ "backtest": {
+  "cover": 0.25,
+  "floor_t": 5150000.0,
+  "years": {
+   "2015": {
+    "plan_capacity_t": 4963212.3,
+    "plan_holds": false,
+    "plan_delivery_wheat_t": 4963212.314051621,
+    "plan_margin": 131385791816.1836,
+    "pattern_capacity_t": 4443477.5,
+    "pattern_holds": false
+   },
+   "2016": {
+    "plan_capacity_t": 4992727.0,
+    "plan_holds": false,
+    "plan_delivery_wheat_t": 4992727.009770734,
+    "plan_margin": 136653957351.27405,
+    "pattern_capacity_t": 4469901.5,
+    "pattern_holds": false
+   },
+   "2017": {
+    "plan_capacity_t": 5164845.9,
+    "plan_holds": true,
+    "plan_delivery_wheat_t": 5164845.8730714815,
+    "plan_margin": 131327030813.8664,
+    "pattern_capacity_t": 4623996.5,
+    "pattern_holds": false
+   },
+   "2018": {
+    "plan_capacity_t": 4739066.3,
+    "plan_holds": false,
+    "plan_delivery_wheat_t": 4739066.270286824,
+    "plan_margin": 145331089423.61548,
+    "pattern_capacity_t": 4242803.5,
+    "pattern_holds": false
+   },
+   "2019": {
+    "plan_capacity_t": 4894244.3,
+    "plan_holds": false,
+    "plan_delivery_wheat_t": 4894244.300585529,
+    "plan_margin": 260444727281.279,
+    "pattern_capacity_t": 4381731.6,
+    "pattern_holds": false
+   },
+   "2020": {
+    "plan_capacity_t": 4793352.2,
+    "plan_holds": false,
+    "plan_delivery_wheat_t": 4793352.228484478,
+    "plan_margin": 295570249523.1303,
+    "pattern_capacity_t": 4291404.7,
+    "pattern_holds": false
+   },
+   "2021": {
+    "plan_capacity_t": 5157919.0,
+    "plan_holds": true,
+    "plan_delivery_wheat_t": 5157918.954688425,
+    "plan_margin": 325144891770.8992,
+    "pattern_capacity_t": 4617795.0,
+    "pattern_holds": false
+   },
+   "2022": {
+    "plan_capacity_t": 5043775.4,
+    "plan_holds": false,
+    "plan_delivery_wheat_t": 5043775.330516483,
+    "plan_margin": 383798379493.3853,
+    "pattern_capacity_t": 4515604.2,
+    "pattern_holds": false
+   },
+   "2023": {
+    "plan_capacity_t": 5102503.6,
+    "plan_holds": false,
+    "plan_delivery_wheat_t": 5102503.550937789,
+    "plan_margin": 293922791542.2105,
+    "pattern_capacity_t": 4568182.6,
+    "pattern_holds": false
+   },
+   "2024": {
+    "plan_capacity_t": 5103105.9,
+    "plan_holds": false,
+    "plan_delivery_wheat_t": 5103105.905518036,
+    "plan_margin": 190805012412.38464,
+    "pattern_capacity_t": 4568721.8,
+    "pattern_holds": false
+   }
+  }
+ },
+ "breakeven": {
+  "base_cost": 28903787445.816376,
+  "cover": 0.25,
+  "rows": {
+   "berseem price": {
+    "down": 24865079406.56024,
+    "up": 31715628288.513336,
+    "swing": 4038708039.256134
+   },
+   "maize price": {
+    "down": 24557614867.27298,
+    "up": 33392151943.728302,
+    "swing": 4488364497.911926
+   },
+   "potato prices": {
+    "down": 25575370035.92398,
+    "up": 30384767039.50171,
+    "swing": 3328417409.892395
+   },
+   "rice price": {
+    "down": 28903787445.816376,
+    "up": 28903787445.816376,
+    "swing": 0.0
+   },
+   "water anchor": {
+    "down": 31059363056.871063,
+    "up": 27781064710.466003,
+    "swing": 2155575611.0546875
+   },
+   "wheat cost": {
+    "down": 22779172575.568573,
+    "up": 35066049187.035065,
+    "swing": 6162261741.218689
+   },
+   "wheat price": {
+    "down": 38299382021.53323,
+    "up": 19940133657.400177,
+    "swing": 9395594575.716858
+   },
+   "wheat yield": {
+    "down": 44986210453.4108,
+    "up": 16408491495.783966,
+    "swing": 16082423007.594421
+   }
+  },
+  "breakeven": {
+   "winner": "wheat yield",
+   "direction": "up",
+   "bracket": [
+    1.1,
+    2.0
+   ],
+   "cost_at_lo": 16408491495.783966,
+   "cost_at_hi": 0.0,
+   "breakeven_multiplier": 1.1140625000000002
+  }
+ }
+}

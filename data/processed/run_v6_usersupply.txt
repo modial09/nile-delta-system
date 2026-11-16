@@ -1,0 +1,136 @@
+============================================================================
+NILE DELTA ALLOCATION MODEL VERSION 6, REPAIR BUILD OF 16 NOVEMBER 2026
+Basis, stated in full: prices are 2025 forecasts from the FAOSTAT
+farm gate series (the version 5 forecasting run, unchanged). Costs
+are on the same year: wheat at the Agricultural Research Center
+budget for 2024/25 of 34,468 pounds per feddan including rent;
+every other crop at its official 2022 cost moved to 2025 by the
+consumer price factor 1.959039 (index 119.834237 in
+2022 to 234.759958 in 2025, World Bank via the workbook). Berseem
+cost is its 2021 to 2022 ministry budget on the same bridge.
+The guarantee floor binds on wheat tonnage alone. Levels are
+shares of national wheat consumption of 20,600,000 tonnes
+(USDA FAS Cairo, EG2026-0013, September 2026). Months of stock
+is wheat tonnage divided by one twelfth of that consumption.
+Water budgets scale from the built calibration anchor of 11.00
+billion cubic metres, which no source publishes, split across
+governorates by physical land share. Scenario weights are stated
+planning weights, not measured frequencies.
+============================================================================
+Physical cultivated area total: 1,676,580 hectares
+BASELINE FEASIBILITY CHECK: 24 of 24 pools pass.
+
+DECISION MAKER INPUT TEMPLATE: which cells came from the user and which from the public defaults
+  Template file: /home/hatch/workspace/mit-projects/nile-delta-system/data/external/decision_maker_input_template.csv
+  Water for Beheira: public default total 2.4784 billion cubic metres. All three source cells were blank.
+  Water for Sharkia: public default total 2.4000 billion cubic metres. All three source cells were blank.
+  Water for Dakahlia: public default total 1.7336 billion cubic metres. All three source cells were blank.
+  Water for Kafr El Sheikh: public default total 1.4589 billion cubic metres. All three source cells were blank.
+  Water for Gharbia: public default total 1.0196 billion cubic metres. All three source cells were blank.
+  Water for Menoufia: public default total 0.9023 billion cubic metres. All three source cells were blank.
+  Water for Qalyubia: public default total 0.4271 billion cubic metres. All three source cells were blank.
+  Water for Damietta: public default total 0.3022 billion cubic metres. All three source cells were blank.
+  Price for Wheat: public default expected price 17,891.58 pounds per tonne. The cell was blank.
+  Cost for Wheat: public default cost 82,066.67 pounds per hectare. The cell was blank.
+  Price for Sugar beet: public default expected price 846.03 pounds per tonne. The cell was blank.
+  Cost for Sugar beet: public default cost 77,293.42 pounds per hectare. The cell was blank.
+  Price for Potatoes_winter: public default expected price 10,753.27 pounds per tonne. The cell was blank.
+  Cost for Potatoes_winter: public default cost 169,764.73 pounds per hectare. The cell was blank.
+  Price for Berseem: public default expected price 2,566.62 pounds per tonne. The cell was blank.
+  Cost for Berseem: public default cost 45,673.60 pounds per hectare. The cell was blank.
+  Price for Rice: public default expected price 20,027.28 pounds per tonne. The cell was blank.
+  Cost for Rice: public default cost 81,985.79 pounds per hectare. The cell was blank.
+  Price for Maize_summer: public default expected price 20,532.94 pounds per tonne. The cell was blank.
+  Cost for Maize_summer: public default cost 73,799.81 pounds per hectare. The cell was blank.
+  Price for Potatoes_summer: public default expected price 10,753.27 pounds per tonne. The cell was blank.
+  Cost for Potatoes_summer: public default cost 169,764.73 pounds per hectare. The cell was blank.
+  Price for Maize_nili: public default expected price 20,532.94 pounds per tonne. The cell was blank.
+  Cost for Maize_nili: public default cost 74,224.27 pounds per hectare. The cell was blank.
+  Price for Potatoes_nili: public default expected price 10,753.27 pounds per tonne. The cell was blank.
+  Cost for Potatoes_nili: public default cost 106,133.28 pounds per hectare. The cell was blank.
+
+Yield fills for blank source cells (area weighted published mean):
+  Maize_nili in Kafr El Sheikh: 8.358 tonnes per hectare
+  Maize_nili in Menoufia: 8.358 tonnes per hectare
+  Maize_nili in Qalyubia: 8.358 tonnes per hectare
+  Maize_nili in Damietta: 8.358 tonnes per hectare
+  Potatoes_nili in Sharkia: 18.120 tonnes per hectare
+  Potatoes_nili in Dakahlia: 18.120 tonnes per hectare
+  Potatoes_nili in Kafr El Sheikh: 18.120 tonnes per hectare
+  Potatoes_nili in Gharbia: 18.120 tonnes per hectare
+  Potatoes_nili in Menoufia: 18.120 tonnes per hectare
+  Potatoes_nili in Qalyubia: 18.120 tonnes per hectare
+  Potatoes_nili in Damietta: 18.120 tonnes per hectare
+  Rice in Menoufia: 8.395 tonnes per hectare (published 2019 to 2020 yield of the same governorate)
+
+Costs on the 2025 basis (pounds per hectare, rent included):
+  Wheat: 82,066.67
+  Sugar beet: 77,293.42
+  Potatoes_winter: 169,764.73
+  Berseem: 45,673.60
+  Rice: 81,985.79
+  Maize_summer: 73,799.81
+  Potatoes_summer: 169,764.73
+  Maize_nili: 74,224.27
+  Potatoes_nili: 106,133.28
+
+Berseem: study area baseline 359,311 hectares (construction stated in the code), yield 68.183 tonnes per hectare fresh, price 2,566.62 pounds per tonne (feed value construction, 0.125 times the maize price).
+
+Baseline rice area: 447,153 hectares against the decree bound of 451,164 hectares (inside the decree).
+
+Water states: storage start, inflow year type, inflow ratio, release factor, budget at the anchor (BCM), planning weight
+  low storage, dry inflow: ratio 0.7807 factor 0.7407 budget 8.148 weight 0.1000
+  low storage, normal inflow: ratio 0.9547 factor 0.9147 budget 10.062 weight 0.1500
+  low storage, high inflow: ratio 1.2213 factor 1.0500 budget 11.550 weight 0.0833
+  normal storage, dry inflow: ratio 0.7807 factor 0.8007 budget 8.808 weight 0.1000
+  normal storage, normal inflow: ratio 0.9547 factor 0.9747 budget 10.722 weight 0.1500
+  normal storage, high inflow: ratio 1.2213 factor 1.0500 budget 11.550 weight 0.0833
+  high storage, dry inflow: ratio 0.7807 factor 0.8807 budget 9.688 weight 0.1000
+  high storage, normal inflow: ratio 0.9547 factor 1.0500 budget 11.550 weight 0.1500
+  high storage, high inflow: ratio 1.2213 factor 1.0500 budget 11.550 weight 0.0833
+
+Pattern wheat on the published basis: 4,617,795 tonnes, a cover of 22.42 percent, 2.69 months of stock, before recourse.
+Tracked staples on the published basis: Wheat 4,617,795 tonnes, Rice 4,086,074 tonnes, Maize_summer 3,550,533 tonnes
+
+USER SUPPLIED DISTRICT WATER, demonstration run
+A user holding district delivery records replaces the built split.
+Demonstration supply: Damietta 20 percent above its default split,
+Kafr El Sheikh 20 percent below, all other districts at default.
+Loader read the demonstration file: MISMATCH
+CEILING capped, built split: maximum wheat tonnage held in every scenario 5,733,795 tonnes, a cover of 27.83 percent, 3.34 months of stock
+CEILING capped, user supplied split: maximum wheat tonnage held in every scenario 5,733,795 tonnes, a cover of 27.83 percent, 3.34 months of stock
+
+FRONTIER capped, built split caps=True budget_scale=1.0
+Cover percent | months | status | expected margin EGP | cost vs unconstrained EGP | cost vs next lower EGP | CVaR margin EGP | CVaR cost EGP | min scenario wheat tonnes
+0.0 | 0.00 | Optimal | 221,699,177,650 | 0 | 0 | 195,645,625,198 | 0 | 0 | seconds 6
+    expected wheat tonnes 0 | expected tracked staples 1,433,375
+    planted (probability weighted for late season crops): Wheat 0 ha | Sugar beet 0 ha | Potatoes_winter 251,487 ha | Berseem 502,974 ha | Rice 0 ha | Maize_summer 164,292 ha | Potatoes_summer 251,487 ha | Maize_nili 197,592 ha | Potatoes_nili 215,959 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 251,487 hectares is 4.16 times its observed area of 60,449 hectares.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 251,487 hectares is 6.23 times its observed area of 40,378 hectares.
+    MARKET ABSORPTION WARNING: Maize_nili planted 197,592 hectares is 6.72 times its observed area of 29,423 hectares.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 215,959 hectares is 410.69 times its observed area of 526 hectares.
+20.0 | 2.40 | Optimal | 202,170,306,859 | 19,528,870,791 | 19,528,870,791 | 173,561,296,458 | 22,084,328,740 | 4,120,000 | seconds 7
+    expected wheat tonnes 4,159,550 | expected tracked staples 4,599,435
+    planted (probability weighted for late season crops): Wheat 599,452 ha | Sugar beet 0 ha | Potatoes_winter 227,571 ha | Berseem 431,288 ha | Rice 0 ha | Maize_summer 50,386 ha | Potatoes_summer 250,803 ha | Maize_nili 57,147 ha | Potatoes_nili 166,240 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 227,571 hectares is 3.76 times its observed area of 60,449 hectares.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 250,803 hectares is 6.21 times its observed area of 40,378 hectares.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 166,240 hectares is 316.14 times its observed area of 526 hectares.
+
+FRONTIER capped, user supplied split caps=True budget_scale=1.0
+Cover percent | months | status | expected margin EGP | cost vs unconstrained EGP | cost vs next lower EGP | CVaR margin EGP | CVaR cost EGP | min scenario wheat tonnes
+0.0 | 0.00 | Optimal | 221,930,421,536 | 0 | 0 | 195,826,635,724 | 0 | 0 | seconds 6
+    expected wheat tonnes 0 | expected tracked staples 1,591,536
+    planted (probability weighted for late season crops): Wheat 0 ha | Sugar beet 0 ha | Potatoes_winter 251,487 ha | Berseem 502,974 ha | Rice 0 ha | Maize_summer 182,454 ha | Potatoes_summer 251,487 ha | Maize_nili 179,986 ha | Potatoes_nili 216,166 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 251,487 hectares is 4.16 times its observed area of 60,449 hectares.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 251,487 hectares is 6.23 times its observed area of 40,378 hectares.
+    MARKET ABSORPTION WARNING: Maize_nili planted 179,986 hectares is 6.12 times its observed area of 29,423 hectares.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 216,166 hectares is 411.09 times its observed area of 526 hectares.
+20.0 | 2.40 | Optimal | 202,049,350,603 | 19,881,070,933 | 19,881,070,933 | 174,283,676,817 | 21,542,958,907 | 4,120,000 | seconds 7
+    expected wheat tonnes 4,160,018 | expected tracked staples 4,696,807
+    planted (probability weighted for late season crops): Wheat 595,053 ha | Sugar beet 0 ha | Potatoes_winter 214,509 ha | Berseem 402,653 ha | Rice 0 ha | Maize_summer 61,512 ha | Potatoes_summer 251,375 ha | Maize_nili 77,981 ha | Potatoes_nili 171,969 ha
+    MARKET ABSORPTION WARNING: Potatoes_winter planted 214,509 hectares is 3.55 times its observed area of 60,449 hectares.
+    MARKET ABSORPTION WARNING: Potatoes_summer planted 251,375 hectares is 6.23 times its observed area of 40,378 hectares.
+    MARKET ABSORPTION WARNING: Maize_nili planted 77,981 hectares is 2.65 times its observed area of 29,423 hectares.
+    MARKET ABSORPTION WARNING: Potatoes_nili planted 171,969 hectares is 327.04 times its observed area of 526 hectares.
+Demonstration supply file removed; no user supply is stored.
+Unrounded results written to data/processed/results_v6_usersupply.json

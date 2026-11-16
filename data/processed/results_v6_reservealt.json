@@ -1,0 +1,32 @@
+{
+ "ceiling_caps_primary_split": 0.2783395776699029,
+ "ceiling_caps_winter_first_split": 0.2783395776699029,
+ "frontier_caps_primary_split": {
+  "0.00": {
+   "margin": 221699177649.90744,
+   "cvar": 195645625197.83737,
+   "wheat_min": 0.0,
+   "wheat_expected": 0.0
+  },
+  "0.20": {
+   "margin": 202170306858.62302,
+   "cvar": 173561296457.98807,
+   "wheat_min": 4119999.979180364,
+   "wheat_expected": 4159549.5525988955
+  }
+ },
+ "frontier_caps_winter_first_split": {
+  "0.00": {
+   "margin": 221699177649.90744,
+   "cvar": 195645625197.83737,
+   "wheat_min": 0.0,
+   "wheat_expected": 0.0
+  },
+  "0.20": {
+   "margin": 201989069680.1018,
+   "cvar": 173395013955.95786,
+   "wheat_min": 4119999.9800262265,
+   "wheat_expected": 4159549.5534549076
+  }
+ }
+}

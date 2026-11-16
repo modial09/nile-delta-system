@@ -1,0 +1,393 @@
+kind,district,crop,water_state,area,floor_cover
+winter,Beheira,Wheat,all,275955.45000000001,0.25
+winter,Beheira,Sugar beet,all,0,0.25
+winter,Beheira,Potatoes_winter,all,0,0.25
+winter,Beheira,Berseem,all,0,0.25
+winter,Sharkia,Wheat,all,0,0.25
+winter,Sharkia,Sugar beet,all,0,0.25
+winter,Sharkia,Potatoes_winter,all,293888.53000000003,0.25
+winter,Sharkia,Berseem,all,0,0.25
+winter,Dakahlia,Wheat,all,218983.54000000001,0.25
+winter,Dakahlia,Sugar beet,all,0,0.25
+winter,Dakahlia,Potatoes_winter,all,993.74760000000003,0.25
+winter,Dakahlia,Berseem,all,0,0.25
+winter,Kafr El Sheikh,Wheat,all,0,0.25
+winter,Kafr El Sheikh,Sugar beet,all,0,0.25
+winter,Kafr El Sheikh,Potatoes_winter,all,211317.88,0.25
+winter,Kafr El Sheikh,Berseem,all,0,0.25
+winter,Gharbia,Wheat,all,100944.53999999999,0.25
+winter,Gharbia,Sugar beet,all,0,0.25
+winter,Gharbia,Potatoes_winter,all,0,0.25
+winter,Gharbia,Berseem,all,0,0.25
+winter,Menoufia,Wheat,all,96333.298999999999,0.25
+winter,Menoufia,Sugar beet,all,0,0.25
+winter,Menoufia,Potatoes_winter,all,0,0.25
+winter,Menoufia,Berseem,all,0,0.25
+winter,Qalyubia,Wheat,all,37928.264000000003,0.25
+winter,Qalyubia,Sugar beet,all,0,0.25
+winter,Qalyubia,Potatoes_winter,all,0,0.25
+winter,Qalyubia,Berseem,all,0,0.25
+winter,Damietta,Wheat,all,29994.385999999999,0.25
+winter,Damietta,Sugar beet,all,0,0.25
+winter,Damietta,Potatoes_winter,all,0,0.25
+winter,Damietta,Berseem,all,0,0.25
+summer,Beheira,Rice,low_dry,0,0.25
+summer,Beheira,Rice,low_normal,0,0.25
+summer,Beheira,Rice,low_high,0,0.25
+summer,Beheira,Rice,normal_dry,0,0.25
+summer,Beheira,Rice,normal_normal,0,0.25
+summer,Beheira,Rice,normal_high,0,0.25
+summer,Beheira,Rice,high_dry,0,0.25
+summer,Beheira,Rice,high_normal,0,0.25
+summer,Beheira,Rice,high_high,0,0.25
+summer,Beheira,Maize_summer,low_dry,0,0.25
+summer,Beheira,Maize_summer,low_normal,0,0.25
+summer,Beheira,Maize_summer,low_high,0,0.25
+summer,Beheira,Maize_summer,normal_dry,0,0.25
+summer,Beheira,Maize_summer,normal_normal,0,0.25
+summer,Beheira,Maize_summer,normal_high,0,0.25
+summer,Beheira,Maize_summer,high_dry,0,0.25
+summer,Beheira,Maize_summer,high_normal,0,0.25
+summer,Beheira,Maize_summer,high_high,0,0.25
+summer,Beheira,Potatoes_summer,low_dry,76289.069000000003,0.25
+summer,Beheira,Potatoes_summer,low_normal,148298.13,0.25
+summer,Beheira,Potatoes_summer,low_high,204268.37,0.25
+summer,Beheira,Potatoes_summer,normal_dry,101115.53999999999,0.25
+summer,Beheira,Potatoes_summer,normal_normal,173124.60000000001,0.25
+summer,Beheira,Potatoes_summer,normal_high,204268.37,0.25
+summer,Beheira,Potatoes_summer,high_dry,134217.5,0.25
+summer,Beheira,Potatoes_summer,high_normal,204268.37,0.25
+summer,Beheira,Potatoes_summer,high_high,204268.37,0.25
+nili,Beheira,Maize_nili,low_dry,0,0.25
+nili,Beheira,Maize_nili,low_normal,0,0.25
+nili,Beheira,Maize_nili,low_high,0,0.25
+nili,Beheira,Maize_nili,normal_dry,0,0.25
+nili,Beheira,Maize_nili,normal_normal,0,0.25
+nili,Beheira,Maize_nili,normal_high,0,0.25
+nili,Beheira,Maize_nili,high_dry,0,0.25
+nili,Beheira,Maize_nili,high_normal,0,0.25
+nili,Beheira,Maize_nili,high_high,0,0.25
+nili,Beheira,Potatoes_nili,low_dry,0,0.25
+nili,Beheira,Potatoes_nili,low_normal,0,0.25
+nili,Beheira,Potatoes_nili,low_high,0,0.25
+nili,Beheira,Potatoes_nili,normal_dry,0,0.25
+nili,Beheira,Potatoes_nili,normal_normal,0,0.25
+nili,Beheira,Potatoes_nili,normal_high,0,0.25
+nili,Beheira,Potatoes_nili,high_dry,0,0.25
+nili,Beheira,Potatoes_nili,high_normal,0,0.25
+nili,Beheira,Potatoes_nili,high_high,0,0.25
+summer,Sharkia,Rice,low_dry,0,0.25
+summer,Sharkia,Rice,low_normal,0,0.25
+summer,Sharkia,Rice,low_high,0,0.25
+summer,Sharkia,Rice,normal_dry,0,0.25
+summer,Sharkia,Rice,normal_normal,0,0.25
+summer,Sharkia,Rice,normal_high,0,0.25
+summer,Sharkia,Rice,high_dry,0,0.25
+summer,Sharkia,Rice,high_normal,0,0.25
+summer,Sharkia,Rice,high_high,0,0.25
+summer,Sharkia,Maize_summer,low_dry,0,0.25
+summer,Sharkia,Maize_summer,low_normal,0,0.25
+summer,Sharkia,Maize_summer,low_high,0,0.25
+summer,Sharkia,Maize_summer,normal_dry,0,0.25
+summer,Sharkia,Maize_summer,normal_normal,0,0.25
+summer,Sharkia,Maize_summer,normal_high,0,0.25
+summer,Sharkia,Maize_summer,high_dry,0,0.25
+summer,Sharkia,Maize_summer,high_normal,0,0.25
+summer,Sharkia,Maize_summer,high_high,0,0.25
+summer,Sharkia,Potatoes_summer,low_dry,101702.3,0.25
+summer,Sharkia,Potatoes_summer,low_normal,171432.10999999999,0.25
+summer,Sharkia,Potatoes_summer,low_high,225630.78,0.25
+summer,Sharkia,Potatoes_summer,normal_dry,125742.96000000001,0.25
+summer,Sharkia,Potatoes_summer,normal_normal,195472.76999999999,0.25
+summer,Sharkia,Potatoes_summer,normal_high,225630.78,0.25
+summer,Sharkia,Potatoes_summer,high_dry,157797.17000000001,0.25
+summer,Sharkia,Potatoes_summer,high_normal,225630.78,0.25
+summer,Sharkia,Potatoes_summer,high_high,225630.78,0.25
+nili,Sharkia,Maize_nili,low_dry,0,0.25
+nili,Sharkia,Maize_nili,low_normal,0,0.25
+nili,Sharkia,Maize_nili,low_high,0,0.25
+nili,Sharkia,Maize_nili,normal_dry,0,0.25
+nili,Sharkia,Maize_nili,normal_normal,0,0.25
+nili,Sharkia,Maize_nili,normal_high,0,0.25
+nili,Sharkia,Maize_nili,high_dry,0,0.25
+nili,Sharkia,Maize_nili,high_normal,0,0.25
+nili,Sharkia,Maize_nili,high_high,0,0.25
+nili,Sharkia,Potatoes_nili,low_dry,0,0.25
+nili,Sharkia,Potatoes_nili,low_normal,0,0.25
+nili,Sharkia,Potatoes_nili,low_high,0,0.25
+nili,Sharkia,Potatoes_nili,normal_dry,0,0.25
+nili,Sharkia,Potatoes_nili,normal_normal,0,0.25
+nili,Sharkia,Potatoes_nili,normal_high,0,0.25
+nili,Sharkia,Potatoes_nili,high_dry,0,0.25
+nili,Sharkia,Potatoes_nili,high_normal,0,0.25
+nili,Sharkia,Potatoes_nili,high_high,0,0.25
+summer,Dakahlia,Rice,low_dry,0,0.25
+summer,Dakahlia,Rice,low_normal,0,0.25
+summer,Dakahlia,Rice,low_high,0,0.25
+summer,Dakahlia,Rice,normal_dry,0,0.25
+summer,Dakahlia,Rice,normal_normal,0,0.25
+summer,Dakahlia,Rice,normal_high,0,0.25
+summer,Dakahlia,Rice,high_dry,0,0.25
+summer,Dakahlia,Rice,high_normal,0,0.25
+summer,Dakahlia,Rice,high_high,0,0.25
+summer,Dakahlia,Maize_summer,low_dry,0,0.25
+summer,Dakahlia,Maize_summer,low_normal,0,0.25
+summer,Dakahlia,Maize_summer,low_high,0,0.25
+summer,Dakahlia,Maize_summer,normal_dry,0,0.25
+summer,Dakahlia,Maize_summer,normal_normal,0,0.25
+summer,Dakahlia,Maize_summer,normal_high,0,0.25
+summer,Dakahlia,Maize_summer,high_dry,0,0.25
+summer,Dakahlia,Maize_summer,high_normal,0,0.25
+summer,Dakahlia,Maize_summer,high_high,0,0.25
+summer,Dakahlia,Potatoes_summer,low_dry,31049.561000000002,0.25
+summer,Dakahlia,Potatoes_summer,low_normal,81418.505000000005,0.25
+summer,Dakahlia,Potatoes_summer,low_high,120568.61,0.25
+summer,Dakahlia,Potatoes_summer,normal_dry,48415.197999999997,0.25
+summer,Dakahlia,Potatoes_summer,normal_normal,98784.142000000007,0.25
+summer,Dakahlia,Potatoes_summer,normal_high,120568.61,0.25
+summer,Dakahlia,Potatoes_summer,high_dry,71569.381999999998,0.25
+summer,Dakahlia,Potatoes_summer,high_normal,120568.61,0.25
+summer,Dakahlia,Potatoes_summer,high_high,120568.61,0.25
+nili,Dakahlia,Maize_nili,low_dry,0,0.25
+nili,Dakahlia,Maize_nili,low_normal,0,0.25
+nili,Dakahlia,Maize_nili,low_high,0,0.25
+nili,Dakahlia,Maize_nili,normal_dry,0,0.25
+nili,Dakahlia,Maize_nili,normal_normal,0,0.25
+nili,Dakahlia,Maize_nili,normal_high,0,0.25
+nili,Dakahlia,Maize_nili,high_dry,0,0.25
+nili,Dakahlia,Maize_nili,high_normal,0,0.25
+nili,Dakahlia,Maize_nili,high_high,0,0.25
+nili,Dakahlia,Potatoes_nili,low_dry,0,0.25
+nili,Dakahlia,Potatoes_nili,low_normal,0,0.25
+nili,Dakahlia,Potatoes_nili,low_high,0,0.25
+nili,Dakahlia,Potatoes_nili,normal_dry,0,0.25
+nili,Dakahlia,Potatoes_nili,normal_normal,0,0.25
+nili,Dakahlia,Potatoes_nili,normal_high,0,0.25
+nili,Dakahlia,Potatoes_nili,high_dry,0,0.25
+nili,Dakahlia,Potatoes_nili,high_normal,0,0.25
+nili,Dakahlia,Potatoes_nili,high_high,0,0.25
+summer,Kafr El Sheikh,Rice,low_dry,0,0.25
+summer,Kafr El Sheikh,Rice,low_normal,0,0.25
+summer,Kafr El Sheikh,Rice,low_high,0,0.25
+summer,Kafr El Sheikh,Rice,normal_dry,0,0.25
+summer,Kafr El Sheikh,Rice,normal_normal,0,0.25
+summer,Kafr El Sheikh,Rice,normal_high,0,0.25
+summer,Kafr El Sheikh,Rice,high_dry,0,0.25
+summer,Kafr El Sheikh,Rice,high_normal,0,0.25
+summer,Kafr El Sheikh,Rice,high_high,0,0.25
+summer,Kafr El Sheikh,Maize_summer,low_dry,0,0.25
+summer,Kafr El Sheikh,Maize_summer,low_normal,0,0.25
+summer,Kafr El Sheikh,Maize_summer,low_high,0,0.25
+summer,Kafr El Sheikh,Maize_summer,normal_dry,0,0.25
+summer,Kafr El Sheikh,Maize_summer,normal_normal,0,0.25
+summer,Kafr El Sheikh,Maize_summer,normal_high,0,0.25
+summer,Kafr El Sheikh,Maize_summer,high_dry,0,0.25
+summer,Kafr El Sheikh,Maize_summer,high_normal,0,0.25
+summer,Kafr El Sheikh,Maize_summer,high_high,0,0.25
+summer,Kafr El Sheikh,Potatoes_summer,low_dry,40134.498,0.25
+summer,Kafr El Sheikh,Potatoes_summer,low_normal,82521.164999999994,0.25
+summer,Kafr El Sheikh,Potatoes_summer,low_high,115466.91,0.25
+summer,Kafr El Sheikh,Potatoes_summer,normal_dry,54748.095999999998,0.25
+summer,Kafr El Sheikh,Potatoes_summer,normal_normal,97134.763000000006,0.25
+summer,Kafr El Sheikh,Potatoes_summer,normal_high,115466.91,0.25
+summer,Kafr El Sheikh,Potatoes_summer,high_dry,74232.892999999996,0.25
+summer,Kafr El Sheikh,Potatoes_summer,high_normal,115466.91,0.25
+summer,Kafr El Sheikh,Potatoes_summer,high_high,115466.91,0.25
+nili,Kafr El Sheikh,Maize_nili,low_dry,0,0.25
+nili,Kafr El Sheikh,Maize_nili,low_normal,0,0.25
+nili,Kafr El Sheikh,Maize_nili,low_high,0,0.25
+nili,Kafr El Sheikh,Maize_nili,normal_dry,0,0.25
+nili,Kafr El Sheikh,Maize_nili,normal_normal,0,0.25
+nili,Kafr El Sheikh,Maize_nili,normal_high,0,0.25
+nili,Kafr El Sheikh,Maize_nili,high_dry,0,0.25
+nili,Kafr El Sheikh,Maize_nili,high_normal,0,0.25
+nili,Kafr El Sheikh,Maize_nili,high_high,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,low_dry,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,low_normal,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,low_high,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,normal_dry,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,normal_normal,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,normal_high,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,high_dry,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,high_normal,0,0.25
+nili,Kafr El Sheikh,Potatoes_nili,high_high,0,0.25
+summer,Gharbia,Rice,low_dry,0,0.25
+summer,Gharbia,Rice,low_normal,0,0.25
+summer,Gharbia,Rice,low_high,0,0.25
+summer,Gharbia,Rice,normal_dry,0,0.25
+summer,Gharbia,Rice,normal_normal,0,0.25
+summer,Gharbia,Rice,normal_high,0,0.25
+summer,Gharbia,Rice,high_dry,0,0.25
+summer,Gharbia,Rice,high_normal,0,0.25
+summer,Gharbia,Rice,high_high,0,0.25
+summer,Gharbia,Maize_summer,low_dry,0,0.25
+summer,Gharbia,Maize_summer,low_normal,0,0.25
+summer,Gharbia,Maize_summer,low_high,0,0.25
+summer,Gharbia,Maize_summer,normal_dry,0,0.25
+summer,Gharbia,Maize_summer,normal_normal,0,0.25
+summer,Gharbia,Maize_summer,normal_high,0,0.25
+summer,Gharbia,Maize_summer,high_dry,0,0.25
+summer,Gharbia,Maize_summer,high_normal,0,0.25
+summer,Gharbia,Maize_summer,high_high,0,0.25
+summer,Gharbia,Potatoes_summer,low_dry,41885.716999999997,0.25
+summer,Gharbia,Potatoes_summer,low_normal,71511.073999999993,0.25
+summer,Gharbia,Potatoes_summer,low_high,94537.877999999997,0.25
+summer,Gharbia,Potatoes_summer,normal_dry,52099.614000000001,0.25
+summer,Gharbia,Potatoes_summer,normal_normal,81724.971000000005,0.25
+summer,Gharbia,Potatoes_summer,normal_high,94537.877999999997,0.25
+summer,Gharbia,Potatoes_summer,high_dry,65718.144,0.25
+summer,Gharbia,Potatoes_summer,high_normal,94537.877999999997,0.25
+summer,Gharbia,Potatoes_summer,high_high,94537.877999999997,0.25
+nili,Gharbia,Maize_nili,low_dry,0,0.25
+nili,Gharbia,Maize_nili,low_normal,0,0.25
+nili,Gharbia,Maize_nili,low_high,0,0.25
+nili,Gharbia,Maize_nili,normal_dry,0,0.25
+nili,Gharbia,Maize_nili,normal_normal,0,0.25
+nili,Gharbia,Maize_nili,normal_high,0,0.25
+nili,Gharbia,Maize_nili,high_dry,0,0.25
+nili,Gharbia,Maize_nili,high_normal,0,0.25
+nili,Gharbia,Maize_nili,high_high,0,0.25
+nili,Gharbia,Potatoes_nili,low_dry,0,0.25
+nili,Gharbia,Potatoes_nili,low_normal,0,0.25
+nili,Gharbia,Potatoes_nili,low_high,0,0.25
+nili,Gharbia,Potatoes_nili,normal_dry,0,0.25
+nili,Gharbia,Potatoes_nili,normal_normal,0,0.25
+nili,Gharbia,Potatoes_nili,normal_high,0,0.25
+nili,Gharbia,Potatoes_nili,high_dry,0,0.25
+nili,Gharbia,Potatoes_nili,high_normal,0,0.25
+nili,Gharbia,Potatoes_nili,high_high,0,0.25
+summer,Menoufia,Rice,low_dry,0,0.25
+summer,Menoufia,Rice,low_normal,0,0.25
+summer,Menoufia,Rice,low_high,0,0.25
+summer,Menoufia,Rice,normal_dry,0,0.25
+summer,Menoufia,Rice,normal_normal,0,0.25
+summer,Menoufia,Rice,normal_high,0,0.25
+summer,Menoufia,Rice,high_dry,0,0.25
+summer,Menoufia,Rice,high_normal,0,0.25
+summer,Menoufia,Rice,high_high,0,0.25
+summer,Menoufia,Maize_summer,low_dry,0,0.25
+summer,Menoufia,Maize_summer,low_normal,0,0.25
+summer,Menoufia,Maize_summer,low_high,0,0.25
+summer,Menoufia,Maize_summer,normal_dry,0,0.25
+summer,Menoufia,Maize_summer,normal_normal,0,0.25
+summer,Menoufia,Maize_summer,normal_high,0,0.25
+summer,Menoufia,Maize_summer,high_dry,0,0.25
+summer,Menoufia,Maize_summer,high_normal,0,0.25
+summer,Menoufia,Maize_summer,high_high,0,0.25
+summer,Menoufia,Potatoes_summer,low_dry,31219.147000000001,0.25
+summer,Menoufia,Potatoes_summer,low_normal,57434.610000000001,0.25
+summer,Menoufia,Potatoes_summer,low_high,77811.016000000003,0.25
+summer,Menoufia,Potatoes_summer,normal_dry,40257.419000000002,0.25
+summer,Menoufia,Potatoes_summer,normal_normal,66472.881999999998,0.25
+summer,Menoufia,Potatoes_summer,normal_high,77811.016000000003,0.25
+summer,Menoufia,Potatoes_summer,high_dry,52308.449000000001,0.25
+summer,Menoufia,Potatoes_summer,high_normal,77811.016000000003,0.25
+summer,Menoufia,Potatoes_summer,high_high,77811.016000000003,0.25
+nili,Menoufia,Maize_nili,low_dry,0,0.25
+nili,Menoufia,Maize_nili,low_normal,0,0.25
+nili,Menoufia,Maize_nili,low_high,0,0.25
+nili,Menoufia,Maize_nili,normal_dry,0,0.25
+nili,Menoufia,Maize_nili,normal_normal,0,0.25
+nili,Menoufia,Maize_nili,normal_high,0,0.25
+nili,Menoufia,Maize_nili,high_dry,0,0.25
+nili,Menoufia,Maize_nili,high_normal,0,0.25
+nili,Menoufia,Maize_nili,high_high,0,0.25
+nili,Menoufia,Potatoes_nili,low_dry,0,0.25
+nili,Menoufia,Potatoes_nili,low_normal,0,0.25
+nili,Menoufia,Potatoes_nili,low_high,0,0.25
+nili,Menoufia,Potatoes_nili,normal_dry,0,0.25
+nili,Menoufia,Potatoes_nili,normal_normal,0,0.25
+nili,Menoufia,Potatoes_nili,normal_high,0,0.25
+nili,Menoufia,Potatoes_nili,high_dry,0,0.25
+nili,Menoufia,Potatoes_nili,high_normal,0,0.25
+nili,Menoufia,Potatoes_nili,high_high,0,0.25
+summer,Qalyubia,Rice,low_dry,0,0.25
+summer,Qalyubia,Rice,low_normal,0,0.25
+summer,Qalyubia,Rice,low_high,0,0.25
+summer,Qalyubia,Rice,normal_dry,0,0.25
+summer,Qalyubia,Rice,normal_normal,0,0.25
+summer,Qalyubia,Rice,normal_high,0,0.25
+summer,Qalyubia,Rice,high_dry,0,0.25
+summer,Qalyubia,Rice,high_normal,0,0.25
+summer,Qalyubia,Rice,high_high,0,0.25
+summer,Qalyubia,Maize_summer,low_dry,0,0.25
+summer,Qalyubia,Maize_summer,low_normal,0,0.25
+summer,Qalyubia,Maize_summer,low_high,0,0.25
+summer,Qalyubia,Maize_summer,normal_dry,0,0.25
+summer,Qalyubia,Maize_summer,normal_normal,0,0.25
+summer,Qalyubia,Maize_summer,normal_high,0,0.25
+summer,Qalyubia,Maize_summer,high_dry,0,0.25
+summer,Qalyubia,Maize_summer,high_normal,0,0.25
+summer,Qalyubia,Maize_summer,high_high,0,0.25
+summer,Qalyubia,Potatoes_summer,low_dry,22104.142,0.25
+summer,Qalyubia,Potatoes_summer,low_normal,34513.334999999999,0.25
+summer,Qalyubia,Potatoes_summer,low_high,43231.502,0.25
+summer,Qalyubia,Potatoes_summer,normal_dry,26382.444,0.25
+summer,Qalyubia,Potatoes_summer,normal_normal,38791.635999999999,0.25
+summer,Qalyubia,Potatoes_summer,normal_high,43231.502,0.25
+summer,Qalyubia,Potatoes_summer,high_dry,32086.846000000001,0.25
+summer,Qalyubia,Potatoes_summer,high_normal,43231.502,0.25
+summer,Qalyubia,Potatoes_summer,high_high,43231.502,0.25
+nili,Qalyubia,Maize_nili,low_dry,0,0.25
+nili,Qalyubia,Maize_nili,low_normal,0,0.25
+nili,Qalyubia,Maize_nili,low_high,0,0.25
+nili,Qalyubia,Maize_nili,normal_dry,0,0.25
+nili,Qalyubia,Maize_nili,normal_normal,0,0.25
+nili,Qalyubia,Maize_nili,normal_high,0,0.25
+nili,Qalyubia,Maize_nili,high_dry,0,0.25
+nili,Qalyubia,Maize_nili,high_normal,0,0.25
+nili,Qalyubia,Maize_nili,high_high,0,0.25
+nili,Qalyubia,Potatoes_nili,low_dry,0,0.25
+nili,Qalyubia,Potatoes_nili,low_normal,0,0.25
+nili,Qalyubia,Potatoes_nili,low_high,0,0.25
+nili,Qalyubia,Potatoes_nili,normal_dry,0,0.25
+nili,Qalyubia,Potatoes_nili,normal_normal,0,0.25
+nili,Qalyubia,Potatoes_nili,normal_high,0,0.25
+nili,Qalyubia,Potatoes_nili,high_dry,0,0.25
+nili,Qalyubia,Potatoes_nili,high_normal,0,0.25
+nili,Qalyubia,Potatoes_nili,high_high,0,0.25
+summer,Damietta,Rice,low_dry,0,0.25
+summer,Damietta,Rice,low_normal,0,0.25
+summer,Damietta,Rice,low_high,0,0.25
+summer,Damietta,Rice,normal_dry,0,0.25
+summer,Damietta,Rice,normal_normal,0,0.25
+summer,Damietta,Rice,normal_high,0,0.25
+summer,Damietta,Rice,high_dry,0,0.25
+summer,Damietta,Rice,high_normal,0,0.25
+summer,Damietta,Rice,high_high,0,0.25
+summer,Damietta,Maize_summer,low_dry,0,0.25
+summer,Damietta,Maize_summer,low_normal,0,0.25
+summer,Damietta,Maize_summer,low_high,0,0.25
+summer,Damietta,Maize_summer,normal_dry,0,0.25
+summer,Damietta,Maize_summer,normal_normal,0,0.25
+summer,Damietta,Maize_summer,normal_high,0,0.25
+summer,Damietta,Maize_summer,high_dry,0,0.25
+summer,Damietta,Maize_summer,high_normal,0,0.25
+summer,Damietta,Maize_summer,high_high,0,0.25
+summer,Damietta,Potatoes_summer,low_dry,12354.775,0.25
+summer,Damietta,Potatoes_summer,low_normal,21136.185000000001,0.25
+summer,Damietta,Potatoes_summer,low_high,28919.392,0.25
+summer,Damietta,Potatoes_summer,normal_dry,15382.331,0.25
+summer,Damietta,Potatoes_summer,normal_normal,24163.741000000002,0.25
+summer,Damietta,Potatoes_summer,normal_high,28919.392,0.25
+summer,Damietta,Potatoes_summer,high_dry,19419.072,0.25
+summer,Damietta,Potatoes_summer,high_normal,28919.392,0.25
+summer,Damietta,Potatoes_summer,high_high,28919.392,0.25
+nili,Damietta,Maize_nili,low_dry,0,0.25
+nili,Damietta,Maize_nili,low_normal,0,0.25
+nili,Damietta,Maize_nili,low_high,0,0.25
+nili,Damietta,Maize_nili,normal_dry,0,0.25
+nili,Damietta,Maize_nili,normal_normal,0,0.25
+nili,Damietta,Maize_nili,normal_high,0,0.25
+nili,Damietta,Maize_nili,high_dry,0,0.25
+nili,Damietta,Maize_nili,high_normal,0,0.25
+nili,Damietta,Maize_nili,high_high,0,0.25
+nili,Damietta,Potatoes_nili,low_dry,0,0.25
+nili,Damietta,Potatoes_nili,low_normal,0,0.25
+nili,Damietta,Potatoes_nili,low_high,0,0.25
+nili,Damietta,Potatoes_nili,normal_dry,0,0.25
+nili,Damietta,Potatoes_nili,normal_normal,0,0.25
+nili,Damietta,Potatoes_nili,normal_high,0,0.25
+nili,Damietta,Potatoes_nili,high_dry,0,0.25
+nili,Damietta,Potatoes_nili,high_normal,0,0.25
+nili,Damietta,Potatoes_nili,high_high,0,0.25
