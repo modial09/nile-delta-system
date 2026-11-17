@@ -1,0 +1,195 @@
+{
+ "montecarlo": {
+  "2200": {
+   "promised_cover": 0.19755080862698282,
+   "mean_delivered_t": 4088801.2304407535,
+   "share_reaching_target": 0.0,
+   "share_reaching_promised_cover": 0.56,
+   "mean_total_cost": 83667004204.46979,
+   "cvar_total_cost": 87450780210.84193,
+   "total_p10": 80744767712.16145,
+   "total_p90": 87760658848.65959
+  },
+  "2350": {
+   "promised_cover": 0.2022066766951265,
+   "mean_delivered_t": 4181952.3401749507,
+   "share_reaching_target": 0.0,
+   "share_reaching_promised_cover": 0.5595,
+   "mean_total_cost": 88258256902.29941,
+   "cvar_total_cost": 91805045340.55875,
+   "total_p10": 85626946826.26689,
+   "total_p90": 91917964754.71684
+  },
+  "2500": {
+   "promised_cover": 0.20686254476327023,
+   "mean_delivered_t": 4276066.447965353,
+   "share_reaching_target": 0.0,
+   "share_reaching_promised_cover": 0.5535,
+   "mean_total_cost": 92921741014.36703,
+   "cvar_total_cost": 96029335111.25278,
+   "total_p10": 90417965228.52194,
+   "total_p90": 96127434730.10513
+  },
+  "2650": {
+   "promised_cover": 0.2115184128314139,
+   "mean_delivered_t": 4372308.791447857,
+   "share_reaching_target": 0.0,
+   "share_reaching_promised_cover": 0.546,
+   "mean_total_cost": 97863751799.4773,
+   "cvar_total_cost": 100533845323.86337,
+   "total_p10": 95642275353.4411,
+   "total_p90": 100580467008.21773
+  },
+  "2800": {
+   "promised_cover": 0.21617428089955762,
+   "mean_delivered_t": 4462879.553438068,
+   "share_reaching_target": 0.0055,
+   "share_reaching_promised_cover": 0.551,
+   "mean_total_cost": 102899682493.33632,
+   "cvar_total_cost": 105189975614.17697,
+   "total_p10": 100780599732.83856,
+   "total_p90": 105234373079.62663
+  },
+  "3000": {
+   "promised_cover": 0.22238210499041589,
+   "mean_delivered_t": 4582703.748490035,
+   "share_reaching_target": 0.064,
+   "share_reaching_promised_cover": 0.532,
+   "mean_total_cost": 110107000197.32985,
+   "cvar_total_cost": 112268994241.50552,
+   "total_p10": 107552215049.66565,
+   "total_p90": 111865717976.05328
+  },
+  "3250": {
+   "promised_cover": 0.2301418851039887,
+   "mean_delivered_t": 4753293.747665115,
+   "share_reaching_target": 0.196,
+   "share_reaching_promised_cover": 0.5195,
+   "mean_total_cost": 120073814597.98947,
+   "cvar_total_cost": 124009068531.14319,
+   "total_p10": 116451072695.23637,
+   "total_p90": 124000397705.45941
+  },
+  "3500": {
+   "promised_cover": 0.23790166521756154,
+   "mean_delivered_t": 4910190.783251864,
+   "share_reaching_target": 0.445,
+   "share_reaching_promised_cover": 0.5015,
+   "mean_total_cost": 131128487430.00447,
+   "cvar_total_cost": 138104106066.77258,
+   "total_p10": 125765687226.28772,
+   "total_p90": 137962901637.1357
+  }
+ },
+ "breakeven": {
+  "berseem_margin_per_ha": 129326.93358292134,
+  "wheat_cost_per_ha": 82066.66666666667,
+  "by_governorate": {
+   "Beheira": {
+    "yield_t_ha": 6.838,
+    "needed_value_per_tonne": 30914.536450656335,
+    "breakeven_ardeb_blended": 5808.381002520389,
+    "breakeven_ardeb_full_delivery": 4637.18046759845
+   },
+   "Sharkia": {
+    "yield_t_ha": 7.338,
+    "needed_value_per_tonne": 28808.067627362772,
+    "breakeven_ardeb_blended": 5411.517733155056,
+    "breakeven_ardeb_full_delivery": 4321.210144104416
+   },
+   "Dakahlia": {
+    "yield_t_ha": 6.593,
+    "needed_value_per_tonne": 32063.339943817387,
+    "breakeven_ardeb_blended": 6015.000420272718,
+    "breakeven_ardeb_full_delivery": 4809.500991572608
+   },
+   "Kafr El Sheikh": {
+    "yield_t_ha": 6.314,
+    "needed_value_per_tonne": 33480.1394123516,
+    "breakeven_ardeb_blended": 6261.428953952565,
+    "breakeven_ardeb_full_delivery": 5022.02091185274
+   },
+   "Gharbia": {
+    "yield_t_ha": 6.876,
+    "needed_value_per_tonne": 30743.688227107043,
+    "breakeven_ardeb_blended": 5777.093405143315,
+    "breakeven_ardeb_full_delivery": 4611.553234066057
+   },
+   "Menoufia": {
+    "yield_t_ha": 7.045,
+    "needed_value_per_tonne": 30006.188821801,
+    "breakeven_ardeb_blended": 5640.274168120021,
+    "breakeven_ardeb_full_delivery": 4500.92832327015
+   },
+   "Qalyubia": {
+    "yield_t_ha": 6.786,
+    "needed_value_per_tonne": 31151.429450278225,
+    "breakeven_ardeb_blended": 5851.517740151663,
+    "breakeven_ardeb_full_delivery": 4672.714417541733
+   },
+   "Damietta": {
+    "yield_t_ha": 6.569,
+    "needed_value_per_tonne": 32180.48412994185,
+    "breakeven_ardeb_blended": 6035.715559200026,
+    "breakeven_ardeb_full_delivery": 4827.072619491278
+   }
+  }
+ },
+ "sensitivity": {
+  "base_delivered_t": 4357279.304327127,
+  "base_total": 97419118780.17986,
+  "rows": {
+   "response curve": {
+    "total_low": 97305535578.28906,
+    "total_high": 97820417609.72887,
+    "swing_total": 514882031.4398041,
+    "swing_delivered": 204830.79499887023
+   },
+   "production basis": {
+    "total_low": 96480496638.72295,
+    "total_high": 98272299924.24115,
+    "swing_total": 1791803285.5182037,
+    "swing_delivered": 712816.6629314418
+   },
+   "world price": {
+    "total_low": 95714623495.2554,
+    "total_high": 100508516484.10544,
+    "swing_total": 4793892988.850037,
+    "swing_delivered": 0.0
+   },
+   "exchange rate": {
+    "total_low": 97262204949.53828,
+    "total_high": 97771169041.23468,
+    "swing_total": 508964091.6963959,
+    "swing_delivered": 0.0
+   },
+   "financing rate": {
+    "total_low": 97084261865.64232,
+    "total_high": 97852123411.04736,
+    "swing_total": 767861545.4050446,
+    "swing_delivered": 0.0
+   },
+   "holding period": {
+    "total_low": 93688803553.53091,
+    "total_high": 101149434006.82881,
+    "swing_total": 7460630453.297897,
+    "swing_delivered": 0.0
+   },
+   "storage cost": {
+    "total_low": 96983390849.74715,
+    "total_high": 98072710675.82893,
+    "swing_total": 1089319826.081787,
+    "swing_delivered": 0.0
+   }
+  },
+  "ranking": [
+   "holding period",
+   "world price",
+   "production basis",
+   "storage cost",
+   "financing rate",
+   "response curve",
+   "exchange rate"
+  ]
+ }
+}

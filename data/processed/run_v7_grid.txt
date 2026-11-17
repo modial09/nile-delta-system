@@ -1,0 +1,68 @@
+============================================================================
+NILE DELTA ALLOCATION MODEL VERSION 7, PROCUREMENT PRICE EXTENSION
+Built 17 November 2026 on version 6, which is unchanged on disk.
+The procurement price is a decision variable. The grid runs from
+2,200 to 3,500 pounds per ardeb of 150 kilograms. The announced
+price for the coming season is 2650 pounds per ardeb.
+
+DELIVERY RESPONSE, fitted from data/external/v7_delivery_evidence.csv
+  Central curve, 6 fit seasons 2019 to 2024: share = 0.2611 + 0.1682 times ratio
+  Slope standard error 0.0331, intercept standard error 0.0286, residual standard deviation 0.0105 of share, R squared 0.866
+  Refit without 2022 (the legal delivery requirement season): share = 0.2831 + 0.1384 times ratio
+  Low curve (slope less one standard error, pivoted at the mean): share = 0.2893 + 0.1351 times ratio
+  High curve (all eight seasons, constructed alternative for 2025 and 2026): share = 0.2464 + 0.1989 times ratio
+  Validation 2025: ratio 0.820 on the carried alternative, fitted share 0.3990, actual share 0.4301
+  Validation 2026: ratio 0.932 on the carried alternative, fitted share 0.4178, actual share 0.4804
+
+Alternative price for the coming season: the model farm gate wheat price of 17,891.58 pounds per tonne (expected layer, version 6 basis).
+Production basis: 10,200,000 tonnes, the FAO record 2026 harvest carried as the planning basis, labelled in the evidence note.
+Delivery target: 5,000,000 tonnes, the announced goal for the 2026 season.
+World price scenarios, dollars per tonne cost and freight: low 265, central 313, high 400. Exchange rate, pounds per dollar: low 54.47, central 55.25, high 57.00.
+Financing rate on treasury bill yields: low 0.23956, central 0.25, high 0.2635.
+Holding period in months (labelled assumption): low 3, central 5, high 7. Storage in pounds per tonne per month (labelled assumption): low 40, central 60, high 90. Shipping lag on gap imports: 75 days, labelled assumption, cost carried through the arrival quarter world scenario.
+============================================================================
+
+Pattern floor for the plan readings: cover 0.2238, 4,610,705 tonnes of wheat production held in every scenario, the level the version 6 pattern test found the observed pattern can hold.
+
+PRICE GRID, central response curve and central financial parameters
+Price per ardeb | price per tonne | ratio | share low, central, high | delivered central, million tonnes | cover percent | months | bill B | gap million tonnes | gap cost B | carrying B | total B | step cost per extra tonne
+2200 | 14,666.67 | 0.8198 | 0.4001, 0.3990, 0.4095 | 4.0695 | 19.76 | 2.37 | 59.6867 | 0.9305 | 16.0906 | 7.4382 | 83.2155 | first row
+    free plan at the blended price: margin 221,699,177,650 pounds, wheat area 0 hectares, expected wheat production 0 tonnes
+    pattern floor plan: margin 191,490,439,608 pounds, wheat area 670,548 hectares, expected wheat production 4,654,407 tonnes, cost of holding the floor at this price 30,208,738,042 pounds, study area deliveries on the central share 1,856,993 tonnes
+    curve band on the total: low curve 83.2064 billion, high curve 83.1298 billion | seconds 13
+2350 | 15,666.67 | 0.8756 | 0.4076, 0.4084, 0.4206 | 4.1655 | 20.22 | 2.43 | 65.2588 | 0.8345 | 14.4320 | 8.0474 | 87.7382 | 47,156
+    free plan at the blended price: margin 221,699,177,650 pounds, wheat area 0 hectares, expected wheat production 0 tonnes
+    pattern floor plan: margin 193,241,911,595 pounds, wheat area 670,548 hectares, expected wheat production 4,654,407 tonnes, cost of holding the floor at this price 28,457,266,055 pounds, study area deliveries on the central share 1,900,758 tonnes
+    curve band on the total: low curve 87.7359 billion, high curve 87.7763 billion | seconds 18
+2500 | 16,666.67 | 0.9315 | 0.4152, 0.4178, 0.4317 | 4.2614 | 20.69 | 2.48 | 71.0228 | 0.7386 | 12.7733 | 8.6766 | 92.4728 | 49,364
+    free plan at the blended price: margin 221,699,177,650 pounds, wheat area 0 hectares, expected wheat production 0 tonnes
+    pattern floor plan: margin 195,080,914,612 pounds, wheat area 670,548 hectares, expected wheat production 4,654,407 tonnes, cost of holding the floor at this price 26,618,263,038 pounds, study area deliveries on the central share 1,944,524 tonnes
+    curve band on the total: low curve 92.4357 billion, high curve 92.6732 billion | seconds 22
+2650 | 17,666.67 | 0.9874 | 0.4228, 0.4272, 0.4428 | 4.3573 | 21.15 | 2.54 | 76.9786 | 0.6427 | 11.1147 | 9.3258 | 97.4191 | 51,572
+    free plan at the blended price: margin 221,699,177,650 pounds, wheat area 0 hectares, expected wheat production 0 tonnes
+    pattern floor plan: margin 197,007,448,659 pounds, wheat area 670,548 hectares, expected wheat production 4,654,407 tonnes, cost of holding the floor at this price 24,691,728,991 pounds, study area deliveries on the central share 1,988,289 tonnes
+    curve band on the total: low curve 97.3055 billion, high curve 97.8204 billion | seconds 19
+2800 | 18,666.67 | 1.0433 | 0.4303, 0.4366, 0.4540 | 4.4532 | 21.62 | 2.59 | 83.1262 | 0.5468 | 9.4561 | 9.9949 | 102.5773 | 53,781
+    free plan at the blended price: margin 221,699,177,650 pounds, wheat area 0 hectares, expected wheat production 0 tonnes
+    pattern floor plan: margin 199,021,517,141 pounds, wheat area 670,539 hectares, expected wheat production 4,654,426 tonnes, cost of holding the floor at this price 22,677,660,509 pounds, study area deliveries on the central share 2,032,063 tonnes
+    curve band on the total: low curve 102.3455 billion, high curve 103.2181 billion | seconds 22
+3000 | 20,000.00 | 1.1178 | 0.4404, 0.4491, 0.4688 | 4.5811 | 22.24 | 2.67 | 91.6214 | 0.4189 | 7.2446 | 10.9182 | 109.7843 | 56,357
+    free plan at the blended price: margin 221,699,212,868 pounds, wheat area 22,921 hectares, expected wheat production 169,949 tonnes
+    pattern floor plan: margin 201,843,108,127 pounds, wheat area 670,539 hectares, expected wheat production 4,654,426 tonnes, cost of holding the floor at this price 19,856,104,740 pounds, study area deliveries on the central share 2,090,417 tonnes
+    curve band on the total: low curve 109.3302 billion, high curve 110.8045 billion | seconds 24
+3250 | 21,666.67 | 1.2110 | 0.4530, 0.4648, 0.4873 | 4.7409 | 23.01 | 2.76 | 102.7200 | 0.2591 | 4.4803 | 12.1223 | 119.3226 | 59,670
+    free plan at the blended price: margin 222,040,964,184 pounds, wheat area 90,402 hectares, expected wheat production 670,299 tonnes
+    pattern floor plan: margin 205,590,155,454 pounds, wheat area 670,457 hectares, expected wheat production 4,656,813 tonnes, cost of holding the floor at this price 16,450,808,730 pounds, study area deliveries on the central share 2,164,470 tonnes
+    curve band on the total: low curve 118.4863 billion, high curve 120.9135 billion | seconds 10
+3500 | 23,333.33 | 1.3042 | 0.4656, 0.4805, 0.5058 | 4.9008 | 23.79 | 2.85 | 114.3514 | 0.0992 | 1.7159 | 13.3818 | 129.4492 | 63,350
+    free plan at the blended price: margin 222,642,346,312 pounds, wheat area 116,250 hectares, expected wheat production 857,409 tonnes
+    pattern floor plan: margin 209,586,597,386 pounds, wheat area 670,457 hectares, expected wheat production 4,666,030 tonnes, cost of holding the floor at this price 13,055,748,926 pounds, study area deliveries on the central share 2,241,879 tonnes
+    curve band on the total: low curve 128.1151 billion, high curve 134.4757 billion | seconds 6
+
+WHEAT ENTRY THRESHOLD, free plan, flat wheat price in every layer
+  at the farm gate price 17,892: wheat area 0 hectares
+  at 30,000 pounds per tonne: wheat area 837,615 hectares
+  first wheat enters the free plan at a blended price of about 19,027 pounds per tonne
+  on the central response curve that blended price is reached at a state price of about 20,398 pounds per tonne, 3,060 pounds per ardeb
+
+Unrounded results written to data/processed/results_v7_grid.json
