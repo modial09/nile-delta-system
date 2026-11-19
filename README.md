@@ -1,37 +1,46 @@
-# Pricing the Food Guarantee: A Stochastic Water Allocation Model for the Nile Delta
+# Nile Delta wheat study
 
-I am Mohamed Diallo. This repository holds my applied project for graduate study in business analytics: a two stage stochastic water allocation model for eight Nile Delta governorates and five crops, built to price a staple food guarantee level by level.
+I am Mohamed Diallo. This repository holds my applied project for graduate study in business analytics. I study wheat in the Nile Delta with two linked models. The first allocates land and water across eight governorates when the season inflow is still uncertain, and asks what it costs to hold wheat production at a promised share of national consumption in every state the model represents. The second treats the state procurement price as a choice and estimates how much wheat farmers deliver to the state at each candidate price, and what the buying programme then costs.
 
-## The question
+## What is in the folders
 
-Egypt divides a fixed share of Nile water among districts and crops every season. I ask what it costs, in expected farm margin, to promise that aggregate wheat, paddy rice and summer maize tonnage holds at a stated share of its current level in every water and price state the model represents, and what one more cubic metre of water earns in each governorate at the margin.
+- `src/` holds the model code, described below.
+- `data/external/` holds the input tables, all from public sources.
+- `data/processed/` holds files the runs produce, plus the forecast table the allocation model reads.
+- `notebooks/` holds a first look at the data.
+- `paper/` holds the written documents and the script that builds them.
 
-## What the model does
+## The code
 
-Planting is decided at two points. Winter planting is fixed before the inflow state is known. Summer and Nili planting respond to the observed state. Land binds by season against physical cultivated area, with a reserve held for crops outside the model. A planted crop may be abandoned in a bad state, taking no water and no output, with its cost already sunk. The guarantee is a hard floor in every scenario. A forecasting module supplies prices and yields: ridge, random forest and gradient boosting models raced against simple baselines on rolling backtests, with every error printed. On prices, no learning model beat the drift line, and the paper says so.
+- `forecasting.py` forecasts next season prices and yields from the historical series, scores itself with rolling backtests, and writes the forecast table.
+- `allocation_model.py` builds the allocation model, a two stage stochastic linear programme in PuLP. Winter planting is chosen before the inflow state is known, later planting adjusts, and a wheat floor can be imposed in every scenario so its cost in expected farm margin can be read level by level.
+- `procurement_model.py` adds the delivery response and the price grid on top of the allocation model.
+- `methods.py` runs the Monte Carlo replay, the ten year backtest and the break even sensitivity for the allocation results.
+- `procurement_methods.py` runs the same kind of testing for the price results.
+- `user_template.py` reads an optional input template, so a reader can supply district figures of their own and rerun with them. With no template supplied, the model runs on the data in `data/external/`.
+- `check_v6.py` and `check_v7.py` are the checking routines the papers describe. They reread the saved results and test the headline numbers by separate routes.
+- `data_loading.py` and `routing_model.py` are earlier working files I keep for reference.
+
+## How to run
+
+Install the packages in `requirements.txt`, then from the project root:
+
+```
+python src/forecasting.py
+python src/allocation_model.py
+python src/procurement_model.py
+```
+
+Results are written to `data/processed/`. The methods and check scripts run the same way, after the models.
 
 ## Data
 
-Ministry of Agriculture bulletins for land, cropping pattern and district yields, read first hand in Arabic. The ministry cost bulletin through 2022 for costs. FAOSTAT for prices, with observed 2024 values for wheat, maize and potatoes. The gauged Aswan inflow record, 1871 to 1970, for water states. FAO WaPOR satellite consumption as a validation comparison only. Every input carries its source, year and unit in the data appendix of the paper and in docs/foundation_rebuild/S2_Parameter_Dictionary.md.
+The inputs are public. Egyptian official statistics carry the land, cropping pattern, yield and cost figures: CAPMAS tables and Ministry of Agriculture bulletins, with the cost bulletin running to 2022. FAOSTAT carries the producer price and crop series. The water states come from the gauged Aswan inflow record. FAO WaPOR satellite figures are used as a comparison only. `data/SOURCES.md` lists what came from where, file by file.
 
-## What version 5 found
+## The papers
 
-These are verified model results on a stated basis: forecast 2025 prices, official 2022 costs, a calibrated water anchor of 11.00 billion cubic metres for the model area. They are not measurements of Egypt.
+`paper/Academic_Paper.pdf` is the main paper. `paper/Larson_Paper.pdf` is a shorter account written for a methods reader, `paper/Ministry_Brief.pdf` is a two page brief for a policy reader, and `paper/User_Walkthrough.pdf` explains the project in plain language. The Markdown sources sit beside the PDFs, and `paper/build_papers.py` rebuilds the HTML and PDF files from them.
 
-The highest guarantee the model holds in every scenario is 82.41 percent of the reference tonnage. The 80 percent level costs 268,610,886,052 pounds of expected margin against the same model left free. The pattern Egypt actually plants holds the 65 percent level and fails from 70. Under market sanity caps on crop areas, the 75 percent guarantee costs 32,666,817,585 pounds and the capped ceiling is 79.50 percent. A tenth less water deletes the 80 percent rung entirely. Full results sit in paper/Results_Note_v5.md and the addendum runs in data/processed/.
+## A note on status
 
-## Verification
-
-This project has been audited four times: an internal audit, an independent audit brief I commissioned, and in November 2026 two blind independent checks run for the foundation rebuild, one numerical and one a domain critique, followed by a blind verification of the repaired build. The checks killed real claims. The earlier statement that the historical pattern holds no guarantee at any level was false and is corrected above. The full record, including every failure, is in docs/foundation_rebuild/ and paper/.
-
-## What is not here
-
-An earlier design chained a fertilizer routing model on top of the allocation model. I cut it to protect the core, and it is not in this repository as working code. No interface has been built. The paper in paper/ is the November 2026 version whose numbers version 5 supersedes; the results note and the research memo are the current documents.
-
-## Limits I state wherever the numbers travel
-
-The water anchor is a calibration, not a published release series. Prices and costs stand on different years, bridged in sensitivity runs by labelled assumed factors. The low and high price and yield layers carry nominal probabilities; their measured coverage is weaker than their construction. The uncapped optima plant potatoes far beyond any market, so the capped ladder is the implementable price list. No Egyptian irrigation specialist has reviewed the work yet; Professor Anusha of Hult reviews it next, before it goes anywhere else.
-
-## Reproduce
-
-Install the requirements in requirements.txt, then run src/forecasting_v5.py and src/allocation_model_v5.py. The runs regenerate the saved result files exactly, which the independent verification confirmed.
+This is exploratory research. Every number is a model result on stated assumptions and a stated data basis, not a measurement of Egypt, and the papers say plainly where the evidence is thin, including where my own checks failed. I am glad to receive criticism of the model and the data choices.

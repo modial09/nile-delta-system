@@ -1,0 +1,150 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><style>
+@page { size: A4; margin: 1.9cm 2.0cm; @bottom-center { content: counter(page); font-size: 9pt; color: #444; } }
+body { font-family: "Times New Roman", "Liberation Serif", serif; font-size: 11pt; line-height: 1.34; hyphens: none; }
+h1 { font-size: 16pt; line-height: 1.25; margin-bottom: 0.2cm; }
+h2 { font-size: 12.5pt; margin-top: 0.45cm; border-bottom: 0.5pt solid #999; padding-bottom: 2pt; }
+h3 { font-size: 11.5pt; margin-top: 0.6cm; }
+table { border-collapse: collapse; width: 100%; margin: 0.3cm 0; font-size: 9pt; }
+th, td { border: 0.5pt solid #888; padding: 2.5pt 5pt; text-align: left; vertical-align: top; }
+th { background: #eeeeee; }
+p { margin: 0.16cm 0; text-align: justify; }
+li { margin: 0.1cm 0; }
+code { font-family: "DejaVu Sans Mono", monospace; font-size: 9.5pt; }
+pre { font-family: "DejaVu Sans Mono", monospace; font-size: 9.5pt; margin: 0.3cm 0 0.3cm 0.6cm; line-height: 1.4; }
+</style></head><body><h1>Wheat Procurement Price: What Each Candidate Price Buys</h1>
+<p>Planning brief. Nile Delta wheat model, version 7. Mohamed Diallo, 18 November 2026.</p>
+<p><strong>Finding.</strong> In October the state announced a price of 2,650 pounds per ardeb and a delivery target of 5,000,000 tonnes. On the delivery record of the last eight seasons, that price brings 4,357,279 tonnes to the collection points. The remaining 642,721 tonnes arrive later, by ship, at world prices: 11.1 billion pounds of imports inside a total programme cost of 97.4 billion pounds. In 2,000 simulated seasons at this price, no season reaches the target.</p>
+<h2>The price grid, central response curve</h2>
+<table>
+<thead>
+<tr>
+<th>Price per ardeb</th>
+<th>Delivered, tonnes</th>
+<th>Cover, percent</th>
+<th>Months of stock</th>
+<th>Total programme cost, pounds</th>
+<th>Step cost per extra tonne, pounds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2200</td>
+<td>4,069,547</td>
+<td>19.76</td>
+<td>2.37</td>
+<td>83,215,473,521</td>
+<td>first row</td>
+</tr>
+<tr>
+<td>2350</td>
+<td>4,165,458</td>
+<td>20.22</td>
+<td>2.43</td>
+<td>87,738,218,743</td>
+<td>47,156</td>
+</tr>
+<tr>
+<td>2500</td>
+<td>4,261,368</td>
+<td>20.69</td>
+<td>2.48</td>
+<td>92,472,767,162</td>
+<td>49,364</td>
+</tr>
+<tr>
+<td>2650</td>
+<td>4,357,279</td>
+<td>21.15</td>
+<td>2.54</td>
+<td>97,419,118,780</td>
+<td>51,572</td>
+</tr>
+<tr>
+<td>2800</td>
+<td>4,453,190</td>
+<td>21.62</td>
+<td>2.59</td>
+<td>102,577,273,596</td>
+<td>53,781</td>
+</tr>
+<tr>
+<td>3000</td>
+<td>4,581,071</td>
+<td>22.24</td>
+<td>2.67</td>
+<td>109,784,284,993</td>
+<td>56,357</td>
+</tr>
+<tr>
+<td>3250</td>
+<td>4,740,923</td>
+<td>23.01</td>
+<td>2.76</td>
+<td>119,322,557,234</td>
+<td>59,670</td>
+</tr>
+<tr>
+<td>3500</td>
+<td>4,900,774</td>
+<td>23.79</td>
+<td>2.85</td>
+<td>129,449,171,692</td>
+<td>63,350</td>
+</tr>
+</tbody>
+</table>
+<h2>The cost build at four prices, pounds</h2>
+<table>
+<thead>
+<tr>
+<th>Price per ardeb</th>
+<th>Procurement bill</th>
+<th>Gap, tonnes</th>
+<th>Gap import cost</th>
+<th>Carrying cost</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2200</td>
+<td>59,686,684,313</td>
+<td>930,453</td>
+<td>16,090,562,261</td>
+<td>7,438,226,947</td>
+<td>83,215,473,521</td>
+</tr>
+<tr>
+<td>2650</td>
+<td>76,978,601,043</td>
+<td>642,721</td>
+<td>11,114,729,670</td>
+<td>9,325,788,067</td>
+<td>97,419,118,780</td>
+</tr>
+<tr>
+<td>3000</td>
+<td>91,621,427,256</td>
+<td>418,929</td>
+<td>7,244,637,655</td>
+<td>10,918,220,081</td>
+<td>109,784,284,993</td>
+</tr>
+<tr>
+<td>3500</td>
+<td>114,351,400,415</td>
+<td>99,226</td>
+<td>1,715,934,776</td>
+<td>13,381,836,501</td>
+<td>129,449,171,692</td>
+</tr>
+</tbody>
+</table>
+<h2>Readings</h2>
+<p><strong>The target.</strong> The question is which response curve the record supports, reported that way rather than as a flat failure. On the central curve, fitted on 2019 to 2024, even the top of the demand range falls short: at 3,500 pounds, deliveries of 4,900,774 tonnes miss the target by 99,226 tonnes. On the high curve, fitted on all eight seasons, the same price delivers 5,159,464 tonnes and passes. The two most recent seasons ran above the central curve.</p>
+<p><strong>The step.</strong> Each extra tonne a higher price attracts costs 47,156 to 63,350 pounds, roughly three times the price itself. The reason is arithmetic: the higher price is paid on every tonne delivered, not only on the extra tonnes. The move from 2,650 to 3,000 buys 223,792 extra tonnes for 12,365,166,213 extra pounds, an average of 55,254 pounds per extra tonne.</p>
+<p><strong>The risk.</strong> Monte Carlo simulation, 2,000 draws per price across the three response curves, the production history of 2015 to 2024 and the world price scenarios: draws reaching the target run at 0.0 percent at 2,650, 6.4 percent at 3,000 and 44.5 percent at 3,500. The worst quarter mean total at 2,650 is 100,533,845,324 pounds.</p>
+<p><strong>The planting side.</strong> Inside the cropping model, margin alone first plants Delta wheat at a state price of about 3,060 pounds per ardeb. Below that point the wheat area stands on the observed planting pattern, not on margin. Holding pattern production costs the farm economy 30.2 billion pounds at a price of 2,200 and 13.1 billion at 3,500: a higher price is a more expensive purchase and a cheaper production guarantee at the same time.</p>
+<h2>Basis and assumptions</h2>
+<p>Production basis 10,200,000 tonnes; national consumption 20,600,000 tonnes; delivery target 5,000,000 tonnes. Central world price 313 dollars per tonne, cost and freight; exchange rate 55.25 pounds per dollar; financing at 25 percent a year, on treasury bill yields. Delivery response: share equals 0.2611 plus 0.1682 times the ratio of the state price to the farm gate price, fitted on six seasons, 2019 to 2024, R squared 0.866. The fit underpredicts the delivered share in 2025 and in 2026, which is why low, central and high curves are carried through every table. Carrying is charged on delivered local tonnes over a holding period of five months, financing on the bill, storage at 60 pounds per tonne per month. The holding period is a labelled assumption with no public source, and the largest single sensitivity of the total: between three and seven months it swings the total at the announced price by 7.5 billion pounds, ahead of the world price at 4.8 billion. Grid rows at 2,800 pounds and above extend the fitted response beyond its observed ratio range of 0.654 to 1.000 and are extrapolations. The total counts the bill, the gap import cost and carrying only; the baseline import programme for the rest of consumption is excluded, as is the bread subsidy system downstream.</p>
+<p>Verification: an independent check recomputed the fit, the grid arithmetic and the Monte Carlo shares, and replayed the announced price plans under a second solver. Thirteen of thirteen checks pass; one passes weakly, the rice decree bound, which does not bind the optimised plans. Label: a numerically verified exploratory planning instrument on a stated basis, not validated empirical evidence.</p></body></html>

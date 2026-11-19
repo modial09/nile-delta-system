@@ -1,6 +1,6 @@
 """Independent check routine for version 7.
 
-Written separately from allocation_model_v7.py and methods_v7.py.
+Written separately from procurement_model.py and procurement_methods.py.
 It recomputes the headline numbers by paths the build did not use:
 the response fit is recomputed with numpy polyfit rather than the
 build lstsq call; the grid arithmetic is recomputed from the saved
@@ -26,8 +26,8 @@ import pandas as pd
 import pulp
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import allocation_model_v6 as m
-import allocation_model_v7 as v7
+import allocation_model as m
+import procurement_model as v7
 
 BASE = m.BASE_DIR
 PROC = m.PROC_DIR
@@ -44,12 +44,12 @@ def close(a, b, tol):
     return abs(a - b) <= tol
 
 
-grid = json.loads((PROC / "results_v7_grid.json").read_text())
+grid = json.loads((PROC / "results_grid.json").read_text())
 resp_saved = grid["response"]
 rows = grid["grid"]
 
 # 1. The response fit, recomputed with polyfit.
-df = pd.read_csv(EXT / "v7_delivery_evidence.csv")
+df = pd.read_csv(EXT / "delivery_evidence.csv")
 fit = df[df["in_fit"] == "yes"]
 x = fit["price_ratio"].to_numpy(dtype=float)
 y = fit["delivery_share"].to_numpy(dtype=float)
@@ -137,7 +137,7 @@ for tag, fc, saved in (("free", 0.0, ann["free"]), ("floor", floor_cover, ann["f
             f"{res['wheat_expected']:,.0f} against {saved['wheat_expected_t']:,.0f}")
 
 # 5. The saved announced price floor plan against the rice decree.
-plan, _ = m.load_plan(PROC / f"plan_v7_floor_price{v7.ANNOUNCED_ARDEB}.csv")
+plan, _ = m.load_plan(PROC / f"plan_floor_price{v7.ANNOUNCED_ARDEB}.csv")
 rice_by_state = {}
 for (d, c, w), val in plan["summer"].items():
     if c == "Rice":
@@ -149,8 +149,8 @@ verdict("Announced price floor plan inside the rice decree",
         f"{m.RICE_DECREE_HA:,.0f}")
 
 # 6. Monte Carlo shares recomputed from the saved samples.
-meth_path = PROC / "results_v7_methods.json"
-mc_path = PROC / "montecarlo_samples_v7.csv"
+meth_path = PROC / "results_methods_delivery.json"
+mc_path = PROC / "montecarlo_samples_delivery.csv"
 if meth_path.exists() and mc_path.exists():
     meth = json.loads(meth_path.read_text())
     if "montecarlo" in meth:

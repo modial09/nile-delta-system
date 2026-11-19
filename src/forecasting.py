@@ -1,8 +1,5 @@
 """Forecasting module: next season prices and yields.
 
-Version 4 implementation, built to docs/FOUNDATIONS.md Section 6 and
-docs/REASSESSMENT_AND_UPGRADE_DESIGN.md Part 2.1.
-
 The module forecasts producer prices and national yields per crop from
 historical series, scores itself with rolling origin backtests, and
 hands forecast means and error spreads to the allocation model as
@@ -37,12 +34,21 @@ in every headline score. A sensitivity line in the run log and the
 report shows the selected model score with that single origin removed,
 labelled as a sensitivity only.
 
+Data notes: the prices input is the corrected December 2025
+vintage extract, in which wheat, maize and potatoes are observed to
+2024; every price forecast targets 2025, the same target year as the
+yield forecasts, with paddy rice and sugar beet forecast two steps
+ahead from their last observed year of 2023; and the scenario band
+is built at the quartiles of the backtest residuals, the convention
+the allocation model weights of 0.25, 0.50 and 0.25 describe.
+Sequential band coverage is reported for every crop and target.
+
 Run with the project venv python:
     .venv/bin/python src/forecasting.py
 Outputs:
-    data/processed/forecast_prices_yields_v4.csv
-    data/processed/backtest_scores_v4.csv
-    data/processed/run_forecasting_v4.txt
+    data/processed/forecast_prices_yields.csv
+    data/processed/backtest_scores.csv
+    data/processed/run_forecasting.txt
 """
 
 from pathlib import Path
@@ -66,8 +72,10 @@ MIN_TRAIN_ROWS = 8
 
 PRICE_FIRST_TRAIN_END = 2010
 YIELD_FIRST_TRAIN_END = 2000
-BAND_Q_LOW = 0.10
-BAND_Q_HIGH = 0.90
+PRICE_TARGET_YEAR = 2025
+YIELD_TARGET_YEAR = 2025
+BAND_Q_LOW = 0.25
+BAND_Q_HIGH = 0.75
 
 # Published yield outliers flagged by the crops pull provenance file.
 YIELD_OUTLIER_YEARS = {"maize": 2019, "sugar_beet": 2020}
@@ -77,7 +85,7 @@ YIELD_OUTLIER_YEARS = {"maize": 2019, "sugar_beet": 2020}
 
 def load_price_series():
     """Return {crop: DataFrame[year, value]} for EGP per tonne prices."""
-    df = pd.read_csv(EXT / "faostat_producer_prices_egypt.csv")
+    df = pd.read_csv(EXT / "faostat_producer_prices_egypt_dec2025.csv")
     df = df[df["unit"] == "EGP per tonne"].copy()
     out = {}
     for crop in CROPS:
@@ -418,6 +426,76 @@ def score_predictions(preds: pd.DataFrame) -> pd.DataFrame:
 
 # ------------------------------------------------------------ forecast
 
+def forecast_ahead(series, selected_model, horizon, area_by_year=None,
+                   fert_by_year=None):
+    """Forecast horizon steps ahead, recursively for ML models.
+
+    The naive line repeats the last observed value. The drift line
+    adds the mean observed step once per step. A machine learning
+    model is refitted at each step on the series extended with the
+    forecasts already made, so the features of a later step are
+    built only from values observed or forecast at earlier steps.
+    """
+    s = series.sort_values("year").reset_index(drop=True)
+    values = s["value"].to_numpy(dtype=float)
+    if selected_model == "naive_last":
+        return float(values[-1])
+    if selected_model == "drift":
+        return float(values[-1] + horizon * drift_step(values))
+    work = s.copy()
+    pred = None
+    for _ in range(horizon):
+        feat = build_features(work)
+        cols = feature_columns(feat)
+        fitted = train_models(feat, "y")
+        model = fitted.get(selected_model)
+        if model is None:
+            raise RuntimeError(
+                f"selected model {selected_model} failed in recursion: "
+                f"{fitted.get(selected_model + '_error')}"
+            )
+        nxt, last_year = next_season_features(work, area_by_year,
+                                              fert_by_year)
+        pred = float(predict_model(model, nxt[cols].astype(float))[0])
+        new_row = {"year": last_year + 1, "value": pred}
+        if "area_prev" in work.columns:
+            new_row["area_prev"] = (
+                area_by_year.get(last_year, np.nan)
+                if area_by_year is not None else np.nan
+            )
+        if "fert_prev" in work.columns:
+            new_row["fert_prev"] = np.nan
+        work = pd.concat([work, pd.DataFrame([new_row])],
+                         ignore_index=True)
+    return pred
+
+
+def band_coverage(preds, min_prior=5):
+    """Sequential coverage of the quartile band for one crop.
+
+    For each backtest origin in year order, the band is built from
+    the residuals of the earlier origins only, at the same quartile
+    convention the scenario parameters use. The returned coverage
+    is the share of the later origins whose realised residual fell
+    inside the band built without them. With quartile edges, the
+    long run value of this measure is 50 percent by construction;
+    the printed value is the measured one on this backtest.
+    """
+    p = preds.sort_values("year")
+    resid = (p["actual"].to_numpy(dtype=float)
+             - p["forecast"].to_numpy(dtype=float))
+    hits, n = 0, 0
+    for i in range(min_prior, len(resid)):
+        lo = float(np.quantile(resid[:i], BAND_Q_LOW))
+        hi = float(np.quantile(resid[:i], BAND_Q_HIGH))
+        n += 1
+        if lo <= resid[i] <= hi:
+            hits += 1
+    if n == 0:
+        return float("nan"), 0
+    return 100.0 * hits / n, n
+
+
 def forecast_next(series, selected_model, area_by_year=None,
                   fert_by_year=None):
     """Retrain the selected model on all data and forecast one step.
@@ -447,12 +525,14 @@ def forecast_next(series, selected_model, area_by_year=None,
 def scenario_parameters(backtest: pd.DataFrame, forecasts: pd.DataFrame) -> dict:
     """Convert forecasts and backtest errors into scenario inputs.
 
-    backtest is the one step predictions frame for the selected model
-    of one crop and target. forecasts is a one row frame with the
-    forecast value. Returns the expected value plus the low and high
-    band states, where the band is the forecast shifted by the
-    empirical 10th and 90th percentiles of the one step backtest
-    residuals of the selected model.
+    backtest is the predictions frame at the used horizon for the
+    selected model of one crop and target. forecasts is a one row
+    frame with the forecast value. Returns the expected value plus
+    the low and high band states, where the band is the forecast
+    shifted by the empirical 25th and 75th percentiles of the
+    backtest residuals of the selected model, the residual
+    quartiles. The allocation model weights the three layers 0.25,
+    0.50 and 0.25, which matches this construction.
     """
     residuals = (
         backtest["actual"].to_numpy() - backtest["forecast"].to_numpy()
@@ -462,18 +542,21 @@ def scenario_parameters(backtest: pd.DataFrame, forecasts: pd.DataFrame) -> dict
         "expected": fc,
         "low": fc + float(np.quantile(residuals, BAND_Q_LOW)),
         "high": fc + float(np.quantile(residuals, BAND_Q_HIGH)),
-        "residual_q10": float(np.quantile(residuals, BAND_Q_LOW)),
-        "residual_q90": float(np.quantile(residuals, BAND_Q_HIGH)),
+        "residual_q25": float(np.quantile(residuals, BAND_Q_LOW)),
+        "residual_q75": float(np.quantile(residuals, BAND_Q_HIGH)),
     }
 
 
 # ----------------------------------------------------------------- run
 
 def run_one(series, crop, target, first_train_end, area_by_year,
-            fert_by_year, log):
+            fert_by_year, log, target_year):
     """Backtest, select, forecast. Returns dicts for scores and forecast."""
     series = attach_lagged_externals(series, area_by_year, fert_by_year)
-    preds, failures = rolling_backtest(series, first_train_end, horizon=1)
+    last_year = int(series["year"].max())
+    horizon = target_year - last_year
+    preds, failures = rolling_backtest(series, first_train_end,
+                                       horizon=horizon)
     scores = score_predictions(preds)
     scores.insert(0, "target", target)
     scores.insert(0, "crop", crop)
@@ -492,19 +575,56 @@ def run_one(series, crop, target, first_train_end, area_by_year,
     for name in fail_models:
         scores.loc[scores["model"] == name, "status"] = "failed"
     ok = scores[scores["status"] == "ok"].copy()
-    selected = ok.sort_values("rmse").iloc[0]
+    # Selection is by backtest score, with one stated condition: the
+    # winning model must also produce a finite, positive forecast
+    # when refitted on the full series at the used horizon. A model
+    # whose refit diverges at the forecast step is recorded as
+    # failed in the run log, never silently, and selection passes
+    # to the next model in score order.
+    selected = None
+    fc_value = None
+    for _, cand in ok.sort_values("rmse").iterrows():
+        name_try = cand["model"]
+        try:
+            val_try = forecast_ahead(series, name_try, horizon,
+                                     area_by_year, fert_by_year)
+        except Exception as exc:
+            log.append(
+                f"  failure note: {crop} {target} model {name_try} "
+                f"raised at the forecast step: "
+                f"{type(exc).__name__}: {exc}"
+            )
+            continue
+        if not np.isfinite(val_try) or val_try <= 0:
+            log.append(
+                f"  failure note: {crop} {target} model {name_try} "
+                f"scored best in the backtest but its full data refit "
+                f"at horizon {horizon} returned {val_try}, which is "
+                f"not a usable forecast. It is recorded as failed at "
+                f"the forecast step and selection passes on."
+            )
+            continue
+        selected = cand
+        fc_value = val_try
+        break
+    if selected is None:
+        raise RuntimeError(
+            f"no model produced a usable forecast for {crop} {target}"
+        )
     sel_name = selected["model"]
     sel_preds = preds[preds["model"] == sel_name]
-    fc_value = forecast_next(series, sel_name, area_by_year, fert_by_year)
-    last_year = int(series["year"].max())
     fc_frame = pd.DataFrame([{"forecast_value": fc_value}])
+    cov_pct, cov_n = band_coverage(sel_preds)
     params = scenario_parameters(sel_preds, fc_frame)
     residuals = sel_preds["actual"].to_numpy() - sel_preds["forecast"].to_numpy()
     result = {
         "crop": crop,
         "target": target,
         "last_observed_year": last_year,
-        "forecast_season": last_year + 1,
+        "forecast_season": target_year,
+        "horizon_steps": horizon,
+        "band_coverage_pct": cov_pct,
+        "coverage_origins": cov_n,
         "selected_model": sel_name,
         "forecast_value": fc_value,
         "band_low": params["low"],
@@ -514,15 +634,12 @@ def run_one(series, crop, target, first_train_end, area_by_year,
         "backtest_mape_pct": float(selected["mape_pct"]),
         "skill_vs_naive": float(selected["skill_vs_naive"]),
         "n_test": int(selected["n_test"]),
-        "residual_q10": params["residual_q10"],
-        "residual_q90": params["residual_q90"],
+        "residual_q25": params["residual_q25"],
+        "residual_q75": params["residual_q75"],
     }
-    # Secondary two step ahead scores, for the report only.
-    preds2, _ = rolling_backtest(series, first_train_end, horizon=2)
-    scores2 = score_predictions(preds2) if not preds2.empty else pd.DataFrame()
-    if not scores2.empty:
-        scores2.insert(0, "target", target + " two step")
-        scores2.insert(0, "crop", crop)
+    # The primary backtest now runs at the horizon the forecast
+    # itself uses, so no separate two step score table is produced.
+    scores2 = pd.DataFrame()
     # Outlier sensitivity for the selected model, yields only.
     sensitivity = None
     if target == "yield" and crop in YIELD_OUTLIER_YEARS:
@@ -548,10 +665,16 @@ def run_one(series, crop, target, first_train_end, area_by_year,
 
 def main():
     log = []
-    log.append("Nile Delta forecasting module version 4 run log")
+    log.append("Nile Delta forecasting module run log")
     log.append("Selection metric: lowest one step backtest RMSE per crop")
-    log.append("Band: forecast plus empirical 10th and 90th percentiles of")
-    log.append("the selected model one step backtest residuals")
+    log.append("Band: forecast plus empirical 25th and 75th percentiles of")
+    log.append("the selected model backtest residuals at the used horizon,")
+    log.append("the residual quartiles, matching the layer weights of")
+    log.append("0.25, 0.50 and 0.25 the allocation model applies. Price")
+    log.append("forecasts target 2025 for every crop: one step from the")
+    log.append("2024 observation for wheat, maize and potatoes, two steps")
+    log.append("from the 2023 observation for paddy rice and sugar beet,")
+    log.append("whose farm gate series end in 2023 in every vintage held.")
     fert = load_fertilizer_series()
     if fert is None:
         log.append("Fertilizer feature: NOT BUILT. The Pink Sheet file in this")
@@ -570,15 +693,15 @@ def main():
     yields, areas = load_yield_and_area_series()
 
     all_scores, all_forecasts, sensitivities = [], [], []
-    for target, series_map, train_end in [
-        ("price", prices, PRICE_FIRST_TRAIN_END),
-        ("yield", yields, YIELD_FIRST_TRAIN_END),
+    for target, series_map, train_end, target_year in [
+        ("price", prices, PRICE_FIRST_TRAIN_END, PRICE_TARGET_YEAR),
+        ("yield", yields, YIELD_FIRST_TRAIN_END, YIELD_TARGET_YEAR),
     ]:
         for crop in CROPS:
             series = series_map[crop]
             scores, scores2, result, sens, _ = run_one(
                 series, crop, target, train_end, areas[crop],
-                fert_by_year, log,
+                fert_by_year, log, target_year,
             )
             all_scores.append(scores)
             if scores2 is not None and not scores2.empty:
@@ -609,6 +732,12 @@ def main():
                 f"{result['backtest_rmse']:.4f} and MAPE "
                 f"{result['backtest_mape_pct']:.2f} percent"
             )
+            log.append(
+                f"  horizon {result['horizon_steps']} step(s) to target "
+                f"year {result['forecast_season']}; sequential quartile "
+                f"band coverage {result['band_coverage_pct']:.1f} percent "
+                f"over {result['coverage_origins']} later origins"
+            )
     log.append("")
     log.append("Outlier sensitivity, selected model, headline scores keep the")
     log.append("published values and score those origins in full:")
@@ -626,14 +755,15 @@ def main():
     PROC.mkdir(parents=True, exist_ok=True)
     out_cols = [
         "crop", "target", "last_observed_year", "forecast_season",
-        "selected_model", "forecast_value", "band_low", "band_high",
-        "backtest_rmse", "backtest_mape_pct",
+        "horizon_steps", "selected_model", "forecast_value", "band_low",
+        "band_high", "backtest_rmse", "backtest_mape_pct",
+        "band_coverage_pct", "coverage_origins",
     ]
     fc_out = fc_df[out_cols]
-    fc_out.to_csv(PROC / "forecast_prices_yields_v4.csv", index=False)
-    scores_df.to_csv(PROC / "backtest_scores_v4.csv", index=False)
+    fc_out.to_csv(PROC / "forecast_prices_yields.csv", index=False)
+    scores_df.to_csv(PROC / "backtest_scores.csv", index=False)
     text = "\n".join(log) + "\n"
-    (PROC / "run_forecasting_v4.txt").write_text(text)
+    (PROC / "run_forecasting.txt").write_text(text)
     print(text)
     return fc_df, scores_df
 

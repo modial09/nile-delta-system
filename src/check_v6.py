@@ -1,6 +1,6 @@
 """Independent check routine for version 6.
 
-Written separately from allocation_model_v6.py. It recomputes the
+Written separately from allocation_model.py. It recomputes the
 headline numbers by paths the build did not use: the cost bridge is
 recomputed from the workbook file itself; the scenario rule is
 recomputed from the inflow series file; the headline capped
@@ -25,7 +25,7 @@ import pulp
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import allocation_model_v5 as m5
-import allocation_model_v6 as m
+import allocation_model as m
 
 BASE = m.BASE_DIR
 PROC = m.PROC_DIR
@@ -94,7 +94,7 @@ verdict("Berseem study area construction", close(expect_b, par["berseem_total_ha
         f"{expect_b:,.1f} hectares against model {par['berseem_total_ha']:,.1f}")
 
 # 4. Ladder arithmetic from the saved results files.
-caps = json.loads((PROC / "results_v6_caps.json").read_text())
+caps = json.loads((PROC / "results_caps.json").read_text())
 fr = caps["frontier_caps"]
 levels = sorted(float(k) for k in fr)
 margins = [fr[f"{lv:.2f}"]["margin"] for lv in levels if fr[f"{lv:.2f}"]]
@@ -109,7 +109,7 @@ verdict("Cover and months conversion", close(top * 12, m.months_of(top * m.WHEAT
         f"at {100*top:.0f} percent cover the stock unit is {top*12:.2f} months")
 
 # 5. The saved headline plan against the rice decree, from its file.
-plan, plan_cover = m.load_plan(PROC / f"plan_v6_caps_cover{int(round(top*100))}.csv")
+plan, plan_cover = m.load_plan(PROC / f"plan_caps_cover{int(round(top*100))}.csv")
 rice_by_state = {}
 for (d, c, w), val in plan["summer"].items():
     if c == "Rice":
@@ -139,7 +139,7 @@ else:
     verdict("HiGHS replay of the capped ceiling", False, f"HiGHS status {st_c}")
 
 # 7. DRO ordering, from the saved dro results if present.
-dro_path = PROC / "results_v6_dro.json"
+dro_path = PROC / "results_dro.json"
 if dro_path.exists():
     dro = json.loads(dro_path.read_text())["dro"]
     ok = all(v["robust_worst"] >= v["nominal_worst"] - 1.0
@@ -149,8 +149,8 @@ if dro_path.exists():
             "nominal plan and an expected margin no higher" if ok else "ordering violated")
 
 # 8. Monte Carlo hold share recomputed from the saved samples.
-mc_path = PROC / "montecarlo_samples_v6.csv"
-meth_path = PROC / "results_v6_methods.json"
+mc_path = PROC / "montecarlo_samples.csv"
+meth_path = PROC / "results_methods.json"
 if mc_path.exists() and meth_path.exists():
     df = pd.read_csv(mc_path)
     meth = json.loads(meth_path.read_text())
